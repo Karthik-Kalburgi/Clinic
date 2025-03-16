@@ -12,6 +12,7 @@ import Gallery from './Components/Gallery'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import Header from './Components/Header'
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
   return (
 <Router>
   <Navbar/>
+
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>

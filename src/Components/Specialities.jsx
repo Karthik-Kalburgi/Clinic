@@ -1,17 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const Specialities = () => {
   return (
-    
-    <div>
-   
-    <h1 className='text-center font-bold text-4xl p-8'>Specialities</h1>
-    
-    <div className='grid grid-cols-2  border-white px-14 py-20 border-8 rounded-3xl font-semibold bg-yellow-500'>
-    
-        <div >
-     
-        <ul>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-center text-4xl font-bold text-gray-800 mb-12">
+        Specialities
+      </h1>
+
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 px-6 py-12 bg-yellow-400 rounded-3xl shadow-lg">
+        {/* First Column */}
+        <div className="space-y-4">
+          <ul className="text-lg font-medium text-gray-800 list-disc pl-6">
             <li>✔️ Implantable Cardioverter Defibrillator</li>
             <li>✔️ Transesophageal Echocardiogram</li>
             <li>✔️ Permanent Pacemaker</li>
@@ -25,29 +24,30 @@ const Specialities = () => {
             <li>✔️ Micra Insertion</li>
             <li>✔️ IABP</li>
             <li>✔️ TAVI. PBMV & Structural Interventions</li>
-          
-        </ul>
-
+          </ul>
         </div>
-        <ul>
-            <li>✔️ ASD </li>
-            <li>✔️ VSD </li>
-            <li>✔️ PDA Device closures </li>
-            <li>✔️ Endovascular interventions like Aneurysm Repair </li>
-            <li>✔️ Angioplasty and /Stenting </li>
-            <li>✔️ Right and Left Heart catheterization </li>
-            <li>✔️ Transcatheter Aortic </li>
-            <li>✔️ Valve Replacement (TAVR) </li>
-            <li>✔️ Angioplasty </li>
-            <li>✔️ Device Closure </li>
-            <li>✔️ Endovascular Stent Grafting </li>
-            <li>✔️ Peripheral Angiogram/ Angioplasty </li>
-            <li>✔️ Carotid Stenting </li>
-          
-        </ul>
+
+        {/* Second Column */}
+        <div className="space-y-4">
+          <ul className="text-lg font-medium text-gray-800 list-disc pl-6">
+            <li>✔️ ASD</li>
+            <li>✔️ VSD</li>
+            <li>✔️ PDA Device closures</li>
+            <li>✔️ Endovascular interventions like Aneurysm Repair</li>
+            <li>✔️ Angioplasty and /Stenting</li>
+            <li>✔️ Right and Left Heart catheterization</li>
+            <li>✔️ Transcatheter Aortic</li>
+            <li>✔️ Valve Replacement (TAVR)</li>
+            <li>✔️ Angioplasty</li>
+            <li>✔️ Device Closure</li>
+            <li>✔️ Endovascular Stent Grafting</li>
+            <li>✔️ Peripheral Angiogram/ Angioplasty</li>
+            <li>✔️ Carotid Stenting</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Specialities
+export default Specialities;

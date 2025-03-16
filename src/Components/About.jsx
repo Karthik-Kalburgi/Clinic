@@ -1,8 +1,8 @@
 import React from 'react'
 
-import aboutdoct from '../Images/AboutDoct.jpg'
+import about from '../Images/AboutDoc.png'
 import ProPic from '../Images/ProfilePicture.jpg'
-import EducationandExp from '../Images/EducationAndExperience.jpg'
+
 import Education from './Education'
 import Certifications from './Certifications'
 
@@ -10,8 +10,8 @@ const About = () => {
   return (
     <div className=''>
       <div className='relative'>
-        <img src={aboutdoct} alt='About us ' className=' h-[450px] w-full filter  ' />
-        <h1 className='  absolute top-4 flex justify-end mx-4 items-start mt-4 text-yellow-300 font-bold text-5xl '>About The Doctor </h1>
+        <img src={about} alt='About us ' className=' h-[400px] w-[98%] filter  ' />
+        <h1 className='  absolute top-4 flex justify-end mx-4 items-start mt-4 text-black font-semibold ml-8 text-3xl   '>About The Doctor </h1>
       </div>
 
       <div>
