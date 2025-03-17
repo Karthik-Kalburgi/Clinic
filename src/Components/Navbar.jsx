@@ -64,11 +64,7 @@ const Navbar = () => {
                   <Link to={link}>{link === '/' ? 'Home' : link.slice(1).charAt(0).toUpperCase() + link.slice(2)}</Link>
                 </li>
               ))}
-              <li className="w-full cursor-pointer text-black">
-                <button className="bg-gray-800 text-white p-1 px-4 ">
-                  <Link to="/contact">Contact</Link>
-                </button>
-              </li>
+              
             </ul>
           </div>
         </div>
