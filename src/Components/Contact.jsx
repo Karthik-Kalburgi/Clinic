@@ -41,15 +41,15 @@ const Contact = () => {
             <h2 className="text-2xl font-semibold text-gray-800">General Information</h2>
             <img alt="profile" src="https://via.placeholder.com/150" className="w-32 h-32 rounded-full mt-4 mx-auto" />
             <p className="text-gray-700 mt-4 flex items-center gap-3">
-              <IoLocationSharp className='text-2xl text-yellow-500' /> 
+              <IoLocationSharp className='text-2xl text-blue-500' /> 
               #23 Dummy Nagar, Near Smart Point, Bangalore - 5811653
             </p>
             <p className="text-gray-700 flex items-center gap-3 mt-2">
-              <FaPhoneVolume className='text-2xl text-yellow-500' /> 
+              <FaPhoneVolume className='text-2xl text-blue-500' /> 
               Phone: 897463150000
             </p>
             <p className="text-gray-700 flex items-center gap-3 mt-2">
-              <MdEmail className='text-2xl text-yellow-500' />
+              <MdEmail className='text-2xl text-blue-500' />
               Email: sfvbjvbsk@gmail.com
             </p>
           </div>
@@ -57,7 +57,7 @@ const Contact = () => {
           {/* Card 2 - Working Hours */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <h2 className="text-2xl font-semibold text-gray-800 flex items-center gap-3">
-              <IoTimeSharp className='text-2xl text-yellow-500' /> 
+              <IoTimeSharp className='text-2xl text-blue-500' /> 
               Working Hours
             </h2>
             <p className="text-gray-700 mt-4">Monday – Saturday: 9:00 AM - 6:00 PM</p>
@@ -120,7 +120,7 @@ const Contact = () => {
                     value="Male"
                     checked={formData.gender === 'Male'}
                     onChange={handleChange}
-                    className="form-radio text-yellow-500"
+                    className="form-radio text-blue-500"
                   />
                   <span className="ml-2 text-gray-700">Male</span>
                 </label>
@@ -131,7 +131,7 @@ const Contact = () => {
                     value="Female"
                     checked={formData.gender === 'Female'}
                     onChange={handleChange}
-                    className="form-radio text-yellow-500"
+                    className="form-radio text-blue-500"
                   />
                   <span className="ml-2 text-gray-700">Female</span>
                 </label>
@@ -165,7 +165,7 @@ const Contact = () => {
             <div className="mb-4">
               <button
                 type="submit"
-                className="w-full bg-yellow-600 text-white py-3 rounded-lg hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
               >
                 Submit
               </button>

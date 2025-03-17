@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sm:max-xl items-center font-bold p-5">
+      <nav className="sm:max-xl bg-white  items-center font-bold p-5">
         {/* Menu Section */}
         <div className="menu bg-white p-5 w-full">
           {/* Desktop and Tablet Navbar */}

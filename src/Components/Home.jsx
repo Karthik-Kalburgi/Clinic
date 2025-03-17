@@ -6,9 +6,9 @@ import Certifications from './Certifications'
 
 const Home = () => {
   return (
-    <div>
+    <div className='' >
 
-<div className="relative">
+<div className="relative  ">
       {/* Background Image */}
       <img src={wallpaper} alt="Doctor Wallpaper" className="w-full h-[400px] md:h-[500px] object-cover" />
 
@@ -33,9 +33,11 @@ const Home = () => {
         </p>
 
         {/* Appointment Button */}
-        <button className="bg-blue-800 text-white px-4 py-2 rounded-full mt-6 ml-4 sm:ml-8 sm:px-6 sm:py-3 text-sm md:text-base lg:text-lg">
+        <div>
+        <button className="bg-blue-800 p-4 text-white hover:bg-yellow-600 text-semibold mt-8 ml-[25%] rounded-xl  ">
   Book an appointment
 </button>
+</div>
 
 
 
