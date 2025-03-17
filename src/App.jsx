@@ -7,12 +7,12 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Treatment from './Components/Treatment'
 import News from './Components/News'
-import Testimonial from './Components/testimonial'
+import Testimonial from './Components/Testimonial'
 import Gallery from './Components/Gallery'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
-import Header from './Components/Header'
+
 
 function App() {
  
