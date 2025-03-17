@@ -1,40 +1,43 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaLocationDot } from "react-icons/fa6";
-import logos from '../Images/Loogo.jpg'
+import logos from '../Images/Loogo.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('/'); // Track the active link
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = (link) => {
+    setActiveLink(link); // Set the active link when clicked
+  };
+
   return (
     <>
-      <nav className="sm:max-xl items-center font-bold p-5 ">
+      <nav className="sm:max-xl items-center font-bold p-5">
         {/* Menu Section */}
-        <div className="menu bg-white  p-5 w-full">
+        <div className="menu bg-white p-5 w-full">
           {/* Desktop and Tablet Navbar */}
           <ul className="hidden md:flex justify-between items-center text-black font-semibold w-full">
             {/* Logo on the Left */}
             <div className="flex items-center gap-12">
-              <img src={logos} alt="Logo" className="w-[28%] rounded-lg " />
+              <img src={logos} alt="Logo" className="w-[28%] rounded-lg" />
             </div>
 
             {/* Menu items on the Right */}
-            <div className="flex items-center gap-16 text-xl ">
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/">Home</Link></li>
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/about">About </Link></li>
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/treatment">Treatment</Link></li>
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/news">News</Link></li>
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/testimonial">Testimonial</Link></li>
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/gallery">Gallery</Link></li>
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800"><Link to="/blog">Blog</Link></li>
-              {/* Contact Button */}
-              <li className="mx-[10px] cursor-pointer hover:text-blue-800">
-                <Link to="/contact">ContactUs</Link>
-              </li>
+            <div className="flex items-center gap-16 text-xl">
+              {['/', '/about', '/treatment', '/news', '/testimonial', '/gallery', '/blog', '/contact'].map((link, index) => (
+                <li
+                  key={index}
+                  onClick={() => handleLinkClick(link)} // Set active link on click
+                  className={`mx-[10px] cursor-pointer hover:text-blue-800 ${activeLink === link ? 'text-blue-800 border-b-2 border-blue-800' : ''}`} // Active state styling
+                >
+                  <Link to={link}>{link === '/' ? 'Home' : link.slice(1).charAt(0).toUpperCase() + link.slice(2)}</Link>
+                </li>
+              ))}
             </div>
           </ul>
 
@@ -52,13 +55,15 @@ const Navbar = () => {
           {/* Mobile Navbar */}
           <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
             <ul className="flex flex-wrap bg-blue-400 p-4">
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/">Home</Link></li>
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/about">About Doctor</Link></li>
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/treatment">Treatment</Link></li>
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/news">News</Link></li>
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/testimonial">Testimonial</Link></li>
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/gallery">Gallery</Link></li>
-              <li className="w-1/2 cursor-pointer text-black hover:text-blue-800"><Link to="/blog">Blog</Link></li>
+              {['/', '/about', '/treatment', '/news', '/testimonial', '/gallery', '/blog', '/contact'].map((link, index) => (
+                <li
+                  key={index}
+                  onClick={() => handleLinkClick(link)} // Set active link on click
+                  className={`w-1/2 cursor-pointer text-black hover:text-blue-800 ${activeLink === link ? 'text-blue-800 border-b-2 border-blue-800' : ''}`} // Active state styling
+                >
+                  <Link to={link}>{link === '/' ? 'Home' : link.slice(1).charAt(0).toUpperCase() + link.slice(2)}</Link>
+                </li>
+              ))}
               <li className="w-full cursor-pointer text-black">
                 <button className="bg-gray-800 text-white p-1 px-4 ">
                   <Link to="/contact">Contact</Link>
