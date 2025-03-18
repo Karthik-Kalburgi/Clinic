@@ -5,10 +5,16 @@ import { MdEmail } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
 import profile from '../Images/ContactProfile.jpg';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contacts = () => {
   const form = useRef();
-  const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    message: ''
+  });
 
   // Function to send email (auto-reply + notification to the admin)
   const sendEmail = (e) => {
@@ -19,15 +25,26 @@ const Contacts = () => {
       .sendForm('service_k8h3jh3', 'template_odtrfvk', form.current, 'KlO73PmloElJU-C1p')
       .then(
         () => {
-          setShowPopup(true); // Show popup on successful submission
-          setTimeout(() => {
-            setShowPopup(false); // Hide the popup after 3 seconds
-          }, 3000);
+          toast.success("Your response has been submitted successfully!");
+          setFormData({
+            user_name: '',
+            user_email: '',
+            message: ''
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);
+          toast.error("Something went wrong, please try again.");
         }
       );
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
   };
 
   return (
@@ -80,6 +97,8 @@ const Contacts = () => {
                 <input
                   type="text"
                   name="user_name"
+                  value={formData.user_name}
+                  onChange={handleInputChange}
                   className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
                   required
                 />
@@ -91,6 +110,8 @@ const Contacts = () => {
                 <input
                   type="email"
                   name="user_email"
+                  value={formData.user_email}
+                  onChange={handleInputChange}
                   className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
                   required
                 />
@@ -101,6 +122,8 @@ const Contacts = () => {
                 <label className="block text-sm font-medium text-gray-700">Message</label>
                 <textarea
                   name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   className="mt-2 block w-full p-12 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
                   placeholder='Enter your phone number to book an appointment with the cardiologist.'
                   required
@@ -121,14 +144,8 @@ const Contacts = () => {
         </div>
       </div>
 
-      {/* Popup Message */}
-      {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg text-center shadow-lg">
-            <p className="text-lg font-semibold text-gray-700">Your response has been submitted!</p>
-          </div>
-        </div>
-      )}
+      {/* Toastify Notifications */}
+      <ToastContainer position="top-center" autoClose={5000} hideProgressBar={true} />
     </>
   );
 };
