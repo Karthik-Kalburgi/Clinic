@@ -16,7 +16,7 @@ const Home = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-75 flex flex-col justify-center px-4 sm:px-8 md:px-16">
         {/* Heading */}
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold mt-[10%] sm:mt-[15%] ml-4 sm:ml-8">
-          Dr. Santosh C
+          Dr. Santosh C 
         </h1>
         
         {/* Description */}

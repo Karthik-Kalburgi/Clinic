@@ -15,7 +15,7 @@ const Consultation = () => {
           <FaHospitalAlt className="text-2xl" /> Apollo Hospitals
         </h2>
         <p className="text-base mt-4 flex items-start gap-2">
-          <IoLocationSharp className="text-3xl text-blue-600" /> 
+          <IoLocationSharp className="text-5xl text-blue-600" /> 
           154, Apollo Hospitals, 11, Bannerghatta Rd, Opp. I, I.M, Amalodbhavi Nagar, Panduranga Nagar, Bengaluru, Karnataka 560076
         </p>
         <p className="text-base mt-2 flex items-center gap-2">
@@ -29,7 +29,7 @@ const Consultation = () => {
           <FaHospitalAlt className="text-2xl" /> Apollo Hospitals
         </h2>
         <p className="text-base mt-4 flex items-start gap-2">
-          <IoLocationSharp className="text-3xl text-blue-600" /> 
+          <IoLocationSharp className="text-5xl text-blue-600" /> 
           154, Apollo Hospitals, 11, Bannerghatta Rd, Opp. I, I.M, Amalodbhavi Nagar, Panduranga Nagar, Bengaluru, Karnataka 560076
         </p>
         <p className="text-base mt-2 flex items-center gap-2">

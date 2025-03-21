@@ -16,7 +16,7 @@ const About = () => {
           alt="About us"
           className="h-[400px] w-full object-cover rounded-xl"
         />
-        <h1 className="absolute top-4 right-4 text-black text-3xl font-semibold">
+        <h1 className="absolute top-4  right-4 text-black text-3xl font-semibold">
           About The Doctor
         </h1>
       </div>
