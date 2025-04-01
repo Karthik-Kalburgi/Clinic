@@ -13,27 +13,27 @@ const Navbar = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link); // Set the active link when clicked
+    setIsMenuOpen(false); // Close the menu after clicking a link on mobile
   };
 
   return (
     <>
-      <nav className="sm:max-xl bg-white  items-center font-bold p-5">
-        {/* Menu Section */}
-        <div className="menu bg-white p-5 w-full">
-          {/* Desktop and Tablet Navbar */}
-          <ul className="hidden md:flex justify-between items-center text-black font-semibold w-full">
+      <nav className="bg-sky-50 p-7 relative">
+        {/* Desktop and Tablet Navbar */}
+        <div className="menu bg-sky-50 p-5 w-full">
+          <ul className="hidden md:flex justify-between items-center text-zinc-500 font-semibold w-full">
             {/* Logo on the Left */}
             <div className="flex items-center gap-12">
               <img src={logos} alt="Logo" className="w-[28%] rounded-lg" />
             </div>
 
             {/* Menu items on the Right */}
-            <div className="flex items-center gap-16 text-xl">
+            <div className="flex items-center gap-16 text-xl font-poppins font-bold tracking-wide">
               {['/', '/about', '/treatment', '/news', '/testimonial', '/gallery', '/blog', '/contact'].map((link, index) => (
                 <li
                   key={index}
                   onClick={() => handleLinkClick(link)} // Set active link on click
-                  className={`mx-[10px] cursor-pointer hover:text-blue-800 ${activeLink === link ? 'text-blue-800 border-b-2 border-blue-800' : ''}`} // Active state styling
+                  className={`mx-[10px] cursor-pointer hover:text-cyan-500 ${activeLink === link ? 'text-cyan-800 border-b-2 border-cyan-800' : ''}`} // Active state styling
                 >
                   <Link to={link}>{link === '/' ? 'Home' : link.slice(1).charAt(0).toUpperCase() + link.slice(2)}</Link>
                 </li>
@@ -48,23 +48,24 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="text-4xl text-black"
             >
-              &#8801;
+              &#8801; {/* Hamburger Icon */}
             </button>
           </div>
 
           {/* Mobile Navbar */}
-          <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
-            <ul className="flex flex-wrap bg-blue-400 p-4">
+          <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-blue-400 p-4`}>
+            <ul className="flex flex-col items-center">
               {['/', '/about', '/treatment', '/news', '/testimonial', '/gallery', '/blog', '/contact'].map((link, index) => (
                 <li
                   key={index}
                   onClick={() => handleLinkClick(link)} // Set active link on click
-                  className={`w-1/2 cursor-pointer text-black hover:text-blue-800 ${activeLink === link ? 'text-blue-800 border-b-2 border-blue-800' : ''}`} // Active state styling
+                  className={`w-full text-center cursor-pointer text-black hover:text-cyan-500 ${activeLink === link ? 'text-cyan-800 border-b-2 border-cyan-800' : ''}`} // Active state styling
                 >
-                  <Link to={link}>{link === '/' ? 'Home' : link.slice(1).charAt(0).toUpperCase() + link.slice(2)}</Link>
+                  <Link to={link} className="block p-3">
+                    {link === '/' ? 'Home' : link.slice(1).charAt(0).toUpperCase() + link.slice(2)}
+                  </Link>
                 </li>
               ))}
-              
             </ul>
           </div>
         </div>
