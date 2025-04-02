@@ -1,9 +1,8 @@
 import React from 'react';
-
 import about from '../Images/AboutDoc.png';
-import about2 from '../Images/AboutDocc.png';
 import Certifications from './Certifications';
 import Education from './Education';
+import stesscope from '../Images/Stesctecope.png';
 
 const About = () => {
   return (
@@ -14,42 +13,43 @@ const About = () => {
         <img 
           src={about} 
           alt="About us"
-          className="h-[400px] w-full object-cover rounded-xl"
+          className="h-[300px] sm:h-[400px] w-full object-cover rounded-xl"
         />
-        <h1 className="absolute top-4  right-4 text-black text-3xl font-semibold">
+        <h1 className="absolute top-4 right-4 text-black text-3xl sm:text-4xl font-semibold">
           About The Doctor
         </h1>
       </div>
 
       {/* Main Content Section */}
-      <div className="mt-12 flex flex-col md:flex-row gap-12 justify-center">
+      <div className="mt-12 flex flex-col sm:flex-row gap-8 sm:gap-12 justify-center">
 
         {/* Doctor's Profile Picture and Info */}
         <div className="flex-1">
           <img 
-            src={about2} 
+            src={stesscope} 
             alt="About Doctor" 
-            className="w-full h-[500px] object-cover rounded-xl shadow-lg"
+            className="w-full h-[350px] sm:h-[500px] object-cover rounded-xl shadow-lg"
           />
-          <h1 className="text-xl font-bold underline mt-4 text-center">Dr. Santosh C</h1>
+          <h1 className="text-xl font-bold underline text-cyan-500 mt-4 text-center">Dr. Santosh C</h1>
         </div>
 
         {/* Doctor's Information */}
         <div className="flex-1 space-y-6">
-          <h1 className="text-4xl font-bold text-blue-600 hover:text-blue-800 transition duration-300 text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl font-bold text-cyan-500 hover:text-blue-800 transition duration-300 text-center sm:text-left">
             Dr. Santosh C
           </h1>
-          <h2 className="mt-4 text-2xl font-semibold text-center md:text-left">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-center sm:text-left">
             21 Years of Experience | MBBS, MD (Gen Medicine), DNB (Cardiology)
           </h2>
 
           {/* Additional Information Box */}
-          <div className="border-4 border-blue-500 p-6 mt-6 bg-gray-100 text-blue-600 font-semibold text-xl rounded-lg shadow-md">
+          <div className="border-4 border-cyan-500 p-4 sm:p-6 mt-6 bg-gray-100 text-cyan-500 font-semibold text-lg sm:text-2xl text-center rounded-lg shadow-md">
             Senior Consultant Interventional Cardiologist & Certified TAVR Specialist, Lead Consultant - Structural Heart Disease & Heart Failure
           </div>
 
           {/* Paragraph Section */}
-          <div className="text-lg text-gray-700 space-y-4">
+          <div className="text-gray-700 space-y-4 text-lg sm:text-xl">
+
             {/* First Paragraph */}
             <p>
               Dr. Santosh C has over 21 years of experience in the field of cardiology. He is known for his expertise in treating complex heart conditions and is recognized as a top cardiologist in the region.
@@ -77,15 +77,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='mt-8'>
 
-      </div>
-      <div>
-        <Education  />
+      {/* Education and Certifications Section */}
+      <div className='mt-8'>
+        <Education />
         <Certifications />
       </div>
     </div>
-    
   );
 };
 
