@@ -51,7 +51,7 @@ const Contacts = () => {
     <>
       <div className="bg-gray-100 py-12 sm:px-8 md:px-16 lg:px-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-yellow-700">Have A Question? Get In Touch</h1>
+          <h1 className="text-4xl font-extrabold text-yellow-700  font-poppins  "   >Have A Question? Get In Touch</h1>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
