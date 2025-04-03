@@ -1,16 +1,16 @@
 import React from 'react';
-import Certificate from '../Images/certi.jpg';
+import medicine from '../Images/medicine.jpg'
  
 
 const Certifications = () => {
   return (
     <div className="relative  py-12">
       {/* Image */}
-      <div className="w-full max-w-5xl mx-auto">
+      <div className="w-full bg-sky-50 max-w-5xl mx-auto">
         <img 
-          src={Certificate} 
+          src={medicine} 
           alt="Certifications" 
-          className="w-full h-[950px] object-cover rounded-2xl shadow-xl"  
+          className="w-full   h-[950px] object-cover rounded-2xl shadow-xl"  
         />
       </div>
       
