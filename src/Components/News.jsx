@@ -23,7 +23,7 @@ const News = () => {
 
   return (
     <div className="news-container">
-     <h1 className="text-center text-3xl font-bold mt-8">Latest News</h1>
+     <h1 className="text-center text-3xl font-bold mt-8">Daily News Updates</h1>
 <div>
 <Slider {...settings} className="mt-8">
   {/* News 1 */}

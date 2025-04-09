@@ -2,12 +2,12 @@ import React from 'react';
 
 const Specialities = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-white ">
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-12">
         Specialities
       </h1>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 px-6 py-12 bg-yellow-400 rounded-3xl shadow-lg">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 px-6 py-12 bg-sky-50 rounded-3xl shadow-lg">
         {/* First Column */}
         <div className="space-y-4">
           <ul className="text-lg font-medium text-gray-800 list-disc pl-6">

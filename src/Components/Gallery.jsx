@@ -17,24 +17,26 @@ const Gallery = () => {
   const [isImageGallery, setIsImageGallery] = useState(true);
 
   return (
-    <div>
-      <div className="relative w-full h-[250px] overflow-hidden">
-        <img src={wallpaper} alt="Gallery Wallpaper" className="h-[630px] w-full object-cover rounded-xl" />
-        <h1 className="text-black absolute left-[4%] top-[10%] text-3xl font-bold">
+    <div className="px-4 sm:px-6 md:px-12 py-8">
+
+      {/* Gallery Header Section */}
+      <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] overflow-hidden">
+        <img src={wallpaper} alt="Gallery Wallpaper" className="h-full w-full object-cover rounded-xl" />
+        <h1 className="text-white absolute left-[4%] top-[10%] text-3xl sm:text-4xl font-bold">
           About The Doctor
         </h1>
       </div>
 
       {/* Gallery Buttons */}
-      <div className="relative flex justify-center gap-6 mb-14 mt-8">
+      <div className="flex justify-center gap-6 mb-14 mt-8">
         <button
-          className="bg-yellow-500 rounded-2xl px-6 py-2 text-lg text-black font-semibold transition-all duration-300 hover:bg-yellow-600"
+          className="bg-yellow-500 rounded-2xl px-6 py-2 text-lg sm:text-xl text-black font-semibold transition-all duration-300 hover:bg-yellow-600"
           onClick={() => setIsImageGallery(true)} // Set state to show image gallery
         >
           Image Gallery
         </button>
         <button
-          className="bg-yellow-500 rounded-2xl px-6 py-2 text-lg text-black font-semibold transition-all duration-300 hover:bg-yellow-600"
+          className="bg-yellow-500 rounded-2xl px-6 py-2 text-lg sm:text-xl text-black font-semibold transition-all duration-300 hover:bg-yellow-600"
           onClick={() => setIsImageGallery(false)} // Set state to show video gallery
         >
           Video Gallery
@@ -47,16 +49,16 @@ const Gallery = () => {
           {isImageGallery ? (
             // Image Gallery
             <>
-              <img src={gal1} alt="Gallery1" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal2} alt="Gallery2" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal3} alt="Gallery3" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal4} alt="Gallery4" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal5} alt="Gallery5" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal6} alt="Gallery6" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal7} alt="Gallery7" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal8} alt="Gallery8" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal9} alt="Gallery9" className="w-full h-full object-cover rounded-lg" />
-              <img src={gal10} alt="Gallery10" className="w-full h-full object-cover rounded-lg" />
+              <img src={gal1} alt="Gallery1" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal2} alt="Gallery2" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal3} alt="Gallery3" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal4} alt="Gallery4" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal5} alt="Gallery5" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal6} alt="Gallery6" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal7} alt="Gallery7" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal8} alt="Gallery8" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal9} alt="Gallery9" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
+              <img src={gal10} alt="Gallery10" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
             </>
           ) : (
             // Video Gallery using iframe
@@ -64,7 +66,7 @@ const Gallery = () => {
               <div className="w-full h-full mb-6">
                 <iframe 
                   width="100%" 
-                  height="100%" 
+                  height="auto" 
                   src="https://www.youtube.com/embed/O_gORx4L_Oc" 
                   title="Video 1" 
                   frameBorder="0" 
@@ -75,7 +77,7 @@ const Gallery = () => {
               <div className="w-full h-full mb-6">
                 <iframe 
                   width="100%" 
-                  height="100%" 
+                  height="auto" 
                   src="https://www.youtube.com/embed/xGUfA5wyNXk" 
                   title="Video 2" 
                   frameBorder="0" 
@@ -86,7 +88,7 @@ const Gallery = () => {
               <div className="w-full h-full mb-6">
                 <iframe 
                   width="100%" 
-                  height="100%" 
+                  height="auto" 
                   src="https://www.youtube.com/embed/5ECQtxnFESk" 
                   title="Video 3" 
                   frameBorder="0" 
