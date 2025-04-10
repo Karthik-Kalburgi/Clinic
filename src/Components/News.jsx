@@ -22,6 +22,7 @@ const News = () => {
   };
 
   return (
+    // small kinds of news for daily updates
     <div className="news-container">
      <h1 className="text-center text-3xl font-bold mt-8">Daily News Updates</h1>
 <div>
