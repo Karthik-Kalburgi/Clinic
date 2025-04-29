@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaLocationDot } from "react-icons/fa6";
-import logos from '../Images/Loogo.jpg';
+import logo from '../Images/mainlogo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
     setIsMenuOpen(false); // Close the menu after clicking a link on mobile
   };
 
-  return (
+  return (  
     <>
       <nav className="bg-sky-50 p-7 relative">
         {/* Desktop and Tablet Navbar */}
@@ -24,7 +24,7 @@ const Navbar = () => {
           <ul className="hidden md:flex justify-between items-center text-zinc-500 font-semibold w-full">
             {/* Logo on the Left */}
             <div className="flex items-center gap-12">
-              <img src={logos} alt="Logo" className="w-[28%] rounded-lg" />
+              <img src={logo} alt="Logo" className="w-[38%] rounded-lg" />
             </div>
 
             {/* Menu items on the Right */}
@@ -43,7 +43,7 @@ const Navbar = () => {
 
           {/* Hamburger Menu for Mobile */}
           <div className="md:hidden flex justify-between items-center">
-            <img src={logos} alt="Logo" className="w-[80px] h-[40px] rounded-full" />
+            <img src={logo} alt="Logo" className="w-[80px] h-[40px] rounded-full" />
             <button
               onClick={toggleMenu}
               className="text-4xl text-black"
