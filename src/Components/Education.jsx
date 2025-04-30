@@ -1,40 +1,44 @@
 import React from 'react';
-import educations from '../Images/education.jpg'
-
 
 
 const Education = () => {
   return (
-    <div className="relative bg-white ">
+    <div className="relative py-12"> {/* Move bg-sky-50 here */}
+      {/* Image */}
+    
+      {/* Text Overlay */}
+      <div className="relative z-10 flex justify-start items-center p-8">
       
-      <img src={educations}
-       alt='Education and Experience' 
-      
-        className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[700px] rounded-full object-cover  bg-sky-50"
-       /> 
-       
-       
-        
-      
-      
-      {/* Overlay Section with Content */}
-      <div className="absolute top-0 left-0 w-full h-full bg-sky-50 bg-opacity-50 flex justify-center items-center text-zinc-700 rounded-full sm:p-6 md:p-8  ">
-        <div className="text-center max-w-4xl mx-auto space-y-4  ">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">Qualification and Experience</h1>
+        <div className="text-between   max-w-6xl mx-auto px-4 bg-custom-blue p-8 rounded-lg shadow-lg w-full sm:w-auto">
+        <div className='text-center font-poppins text-4xl  font-semibold ' >
 
-          {/* First Paragraph */}
-          <p className="mt-4 text-sm sm:text-lg md:text-xl text-black text-center ">
-            With more than 9000 angiograms through Femoral, Ulnar, and Radial approach and over 1500 coronary and peripheral angioplasties, Dr. Girish is one of the senior cardiologists based in Bangalore. In 1998, he obtained his MBBS degree from JSS Medical College. In 2003, he completed his MD in General Medicine from Jawaharlal Nehru Medical College, Belgaum. In 2006, Dr. Girish passed his DNB in Cardiology. He currently serves as a Senior Consultant & Interventional Cardiologist at Apollo Hospitals in Bangalore.
+      <span className="text-black   ">Certifications & Achievements</span>
+     </div>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-6">
+           
+          </h1>
+          <p className="mt-4 text-lg md:text-xl font-poppins text-center  font-medium leading-relaxed text-black">
+            Dr Santosh V. Chikkodi served as senior resident in Pariyaram Medical College, Kannur, Kerala (2019-2020).
+            A very high volume center with around 300-400 PCI/month. Got experienced in interventions and got training
+            under Dr S.M.Ashraf, HOD of the dept of Cardiology, Pariyaram Medical college, Kannur.
           </p>
-
-          {/* Second Paragraph */}
-          <p className="mt-4 text-sm sm:text-lg md:text-xl text-black  text-center ">
-            His services include Transesophageal Echocardiogram, Mitral Valve Repair, Implantable Cardioverter Defibrillator, Balloon Mitral Valvotomy, and Angioplasty.
+          <p className="mt-4 text-lg md:text-xl font-medium text-center font-poppins leading-relaxed text-black">
+            Served as a Associate Consultant in Apollo Hospitals and Trustwell Hospital, Bangalore (2020-2021). During
+            this period he worked with India’s Finest Cardiologist – Dr Girish B. Navasundi.
           </p>
-
-          {/* Third Paragraph */}
-          <p className="mt-4 text-sm sm:text-lg md:text-xl text-black  text-center ">
-            Dr. Girish B Navasundi served in various capacities at other premier hospitals before joining Apollo Hospitals, Bengaluru as a Senior Consultant. He worked as a Registrar in Endocrinology at Mallya Hospital and Wockhardt Hospital Bengaluru, Registrar in Cardiology at St. Johns Medical College, Bengaluru. He served as a Registrar in Cardiology as DNB Trainee at Apollo Hospitals, Hyderabad, and later joined as a Consultant Cardiologist.
+          <p className="mt-4 text-lg md:text-xl font-medium text-center font-poppins leading-relaxed text-black">
+            Currently working as a senior consultant Interventional cardiologist in Bagalkot, Karnataka since June 2021.
+          </p>
+          <p className="mt-4 text-lg md:text-xl font-medium text-center leading-relaxed text-black">
+            Another paper on <strong>PRIMARY ANGIOPLASTY AND STENTING EXPERIENCE</strong>, presented at the Indian
+            College of Cardiology, 2003, Mumbai, earned him the second-best paper award at the National level.
+          </p>
+          <p className="mt-4 text-lg md:text-xl font-medium text-center font-poppins leading-relaxed text-black">
+            MBBS – KIMS, Hubli, 2012<br />
+            MD – Internal Medicine, PGIMER, Chandigarh, 2015<br />
+            DNB – Medicine, NBE Delhi, 2018<br />
+            DM – Cardiology, Sri Jayadeva Institute of Cardiovascular Sciences, Bangalore, 2019<br />
+            DNB – Cardiology, NBE Delhi, 2021
           </p>
         </div>
       </div>
