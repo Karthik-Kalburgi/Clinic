@@ -99,9 +99,11 @@ const About = () => {
         <div>{/* Card 1 */}
           <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
             <p className="text-lg font-semibold text-black">
-            Research & Medical Education
+            Research & Medical Educationdchdshkcscnsjcjkbk
             </p>
+            
           </div>
+          
           </div>
           </div>
 
