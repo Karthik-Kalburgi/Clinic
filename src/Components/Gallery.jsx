@@ -20,11 +20,16 @@ const Gallery = () => {
     <div className="px-4 sm:px-6 md:px-12 py-8">
 
       {/* Gallery Header Section */}
-      <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] overflow-hidden">
-        <img src={wallpaper} alt="Gallery Wallpaper" className="h-full w-full object-cover rounded-xl" />
+      {/* <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] overflow-hidden">
+        <img src={} alt="Gallery Wallpaper" className="h-full w-full object-cover rounded-xl" />
         <h1 className="text-white absolute left-[4%] top-[10%] text-3xl sm:text-4xl font-bold">
           About The Doctor
         </h1>
+      </div> */}
+
+      {/* Certifications and achievement from about section to gallery section  */}
+      <div>
+        <h1 className=' text-center  text-5xl font-poppins  md:text-4xl font-extrabold  mt-20 text-black bg-custom-blue py-8  '>About the Doctor</h1>
       </div>
 
       {/* Gallery Buttons */}

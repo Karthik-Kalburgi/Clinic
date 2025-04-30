@@ -113,7 +113,7 @@ const About = () => {
       {/* Education and Certifications Section */}
       <div className='mt-8'>
         <Education />
-        <Certifications />
+        
       </div>
     </div>
   );
