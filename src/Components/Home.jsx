@@ -2,9 +2,11 @@ import React from "react";
 import doctors from '../Images/1mainpage.png'
 import Consultation from "./Consultation";
 import Specialities from "./Specialities";
+import HomeAbout from "./HomeAbout";
 
 const Home = () => {
   return (
+    <>
     <div className="relative bg-sky-50 ">
       {/* Content Container */}
       <div className="relative w-full h-32">
@@ -54,14 +56,21 @@ const Home = () => {
 </div>
 
 
+
+
+
       {/* Additional Section (Consultation) */}
       <div className="mt-[25%]"> {/* Added margin-top here */}
         <Consultation />
       </div>
       <div>
+        <HomeAbout />
+      </div>
+      <div>
         <Specialities />
       </div>
     </div>
+    </>
   );
 };
 

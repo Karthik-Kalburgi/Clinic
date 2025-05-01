@@ -2,8 +2,11 @@ import React from 'react';
 
 import Certifications from './Certifications';
 import Education from './Education';
+import Coronary from '../Images/Coronary.png'
+import about from '../Images/AboutDocto.jpg';
+import Complex from '../Images/Complex&High.png'
 
-import about from '../Images/aboutmainprofile.png';
+
 
 const About = () => {
   return (
@@ -61,43 +64,52 @@ const About = () => {
       <div>
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <h1 className="text-3xl md:text-4xl font-extrabold text-center mt-20 text-black">
-          Certifications & Achievements
+        Areas of Expertise
         </h1>
         <div className="grid grid-cols-3 gap-6  mt-20 ">
           {/* Card 1 */}
-          <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
+          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-2 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
+          <div>
+          <img src={Complex} alt='Coronary'  className='h-[350px]    ' 
+            
+          />
             <p className="text-lg font-semibold text-black">
             Complex & High-Risk PCI (CHIP)
             </p>
           </div>
+          
+          </div>
 
        
-        <div>{/* Card 1 */}
-          <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
+        <div>{/* Card 2 */}
+          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300">
+          <div>
+            <img src={Coronary} alt='Coronary'/>
+          </div>
             <p className="text-lg font-semibold text-black">
             Coronary & Peripheral Angioplasty
             </p>
           </div></div>
-        <div>{/* Card 1 */}
-          <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
+        <div>{/* Card 3 */}
+          <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
             <p className="text-lg font-semibold text-black">
             Structural Heart Interventions
             </p>
           </div></div>
         <div>{/* Card 1 */}
-          <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
+          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200  transition-transform duration-300 ">
             <p className="text-lg font-semibold text-black">
             Advanced Cardiac Imaging & Diagnostics
             </p>
           </div></div>
         <div>{/* Card 1 */}
-          <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
+          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105  hover:bg-blue-200 transition-transform duration-300 ">
             <p className="text-lg font-semibold text-black">
             Heart Disease Prevention & Risk Reduction
             </p>
           </div></div>
         <div>{/* Card 1 */}
-          <div className="bg-custom-blue bg-opacity-80 p-6 rounded-lg shadow-lg">
+          <div className="bg-custom-blue   font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
             <p className="text-lg font-semibold text-black">
             Research & Medical Educationdchdshkcscnsjcjkbk
             </p>
