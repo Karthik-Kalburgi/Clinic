@@ -3,16 +3,23 @@ import React from 'react';
 
 const Education = () => {
   return (
+
+    
     <div className="relative py-12"> {/* Move bg-sky-50 here */}
+     <div className='justify-center  text-center  items-center  mt-12'>
+      <span className="text-3xl md:text-4xl font-extrabold text-center mt-30 text-black  ">Qualification and Experience</span>
+
+      </div>
       {/* Image */}
     
       {/* Text Overlay */}
+     
       <div className="relative z-10 flex justify-start items-center p-8">
       
-        <div className="text-between   max-w-6xl mx-auto px-4 bg-custom-blue p-8 rounded-lg shadow-lg w-full sm:w-auto">
+        <div className="text-between  mt-12  max-w-6xl mx-auto px-4 bg-custom-blue p-8 rounded-xl shadow-lg w-full sm:w-auto">
         <div className='text-center font-poppins text-4xl  font-semibold ' >
 
-      <span className="text-black   ">Certifications & Achievements</span>
+     
      </div>
           <h1 className="text-3xl md:text-4xl font-extrabold mb-6">
            

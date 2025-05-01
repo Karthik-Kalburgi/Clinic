@@ -2,9 +2,14 @@ import React from 'react';
 
 import Certifications from './Certifications';
 import Education from './Education';
-import Coronary from '../Images/Coronary.png'
-import about from '../Images/AboutDocto.jpg';
-import Complex from '../Images/Complex&High.png'
+
+import complex from '../Images/Complexicons.png';
+import cardiac from '../Images/cardiacimagingicons.png';
+import conoary from '../Images/Coronaryicons.png';
+import prevention from '../Images/preventionicons.png';
+import healthcare from '../Images/healtcareeducationicons.png';
+import structural from '../Images/structuralicons.png';
+import about from '../Images/aboutmainprofile.png';
 
 
 
@@ -49,13 +54,17 @@ const About = () => {
           {/* Description Paragraphs */}
           <div className="text-gray-700 font-poppins space-y-4 text-lg sm:text-xl">
             <p>
-            As an Interventional Cardiologist, I specialize in minimally invasive procedures to diagnose and treat complex cardiovascular conditions. My expertise spans coronary and peripheral interventions, structural heart procedures, and complex PCI, with a focus on optimizing patient outcomes through the latest innovations in cardiology.
+            As an Interventional Cardiologist, I specialize in minimally invasive procedures to diagnose and treat complex cardiovascular conditions.
+            </p>
+            <p>My expertise spans coronary and peripheral interventions,
+
+structural heart procedures, and complex PCI, with a focus on optimizing patient outcomes through the latest innovations in cardiology.</p>
+            <p>
+            I am deeply committed to preventive cardiology, risk stratification, and patient education, ensuring that heart disease is not just treated but proactively managed.
+
             </p>
             <p>
-            I am deeply committed to preventive cardiology, risk stratification, and patient education, ensuring that heart disease is not just treated but proactively managed. Combining clinical excellence with a patient-first approach, I strive to deliver precision, innovation, and compassionate care in every procedure.
-            </p>
-            <p>
-          
+            Combining clinical excellence with a patient-first approach, I strive to deliver precision, innovation, and compassionate care in every procedure.
             </p>
            
           </div>
@@ -66,14 +75,14 @@ const About = () => {
         <h1 className="text-3xl md:text-4xl font-extrabold text-center mt-20 text-black">
         Areas of Expertise
         </h1>
-        <div className="grid grid-cols-3 gap-6  mt-20 ">
+        <div className="grid grid-cols-3 gap-6  mt-20 justify-between items-center ">
           {/* Card 1 */}
-          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-2 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
+          <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
           <div>
-          <img src={Complex} alt='Coronary'  className='h-[350px]    ' 
+          <img src={complex} alt='Coronary ' className='justify-between items-center ml-12 '  
             
           />
-            <p className="text-lg font-semibold text-black">
+            <p className="text-lg font-semibold text-black justify-between items-center  ml-6">
             Complex & High-Risk PCI (CHIP)
             </p>
           </div>
@@ -82,36 +91,49 @@ const About = () => {
 
        
         <div>{/* Card 2 */}
-          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300">
+          <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300">
           <div>
-            <img src={Coronary} alt='Coronary'/>
+            <img src={conoary} alt='Coronary'  className='justify-between items-center ml-12 '    />
           </div>
-            <p className="text-lg font-semibold text-black">
+            <p className="text-lg font-semibold text-black  justify-between items-center   ml-6">
             Coronary & Peripheral Angioplasty
             </p>
           </div></div>
         <div>{/* Card 3 */}
           <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
-            <p className="text-lg font-semibold text-black">
+          <div>
+            <img src={structural} alt='Coronary'  className='justify-between items-center ml-12 '   />
+          </div>
+            <p className="text-lg font-semibold text-black  justify-between items-center  ml-6">
             Structural Heart Interventions
             </p>
           </div></div>
         <div>{/* Card 1 */}
-          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200  transition-transform duration-300 ">
-            <p className="text-lg font-semibold text-black">
+          <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
+          <div>
+            <img src={cardiac} alt='Coronary'   className='justify-between items-center ml-12 '   />
+          </div>
+            <p className="text-lg font-semibold text-black justify-between items-center  ml-6">
             Advanced Cardiac Imaging & Diagnostics
             </p>
+            
           </div></div>
         <div>{/* Card 1 */}
-          <div className="bg-custom-blue  font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105  hover:bg-blue-200 transition-transform duration-300 ">
-            <p className="text-lg font-semibold text-black">
+          <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
+          <div>
+            <img src={prevention} alt='Coronary'   className='justify-between items-center ml-12 '   />
+          </div>
+            <p className="text-lg font-semibold text-black justify-between items-center -mt-2  ml-6">
             Heart Disease Prevention & Risk Reduction
             </p>
           </div></div>
         <div>{/* Card 1 */}
-          <div className="bg-custom-blue   font-semibold bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
-            <p className="text-lg font-semibold text-black">
-            Research & Medical Educationdchdshkcscnsjcjkbk
+          <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
+          <div>
+            <img src={healthcare} alt='Coronary'  className='justify-between items-center ml-12 '   />
+          </div>
+            <p className="text-lg font-semibold text-black  justify-between items-center  ml-6 ">
+            Research & Medical Education
             </p>
             
           </div>

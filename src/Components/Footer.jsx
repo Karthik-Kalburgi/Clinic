@@ -8,7 +8,7 @@ import { FaTwitterSquare } from "react-icons/fa"; // Corrected FaTwitter import
 const Footer = () => {
   return (
     // Footer Section
-    <footer className="bg-gray-800 text-white py-12 sm:px-8 md:px-16 lg:px-24">
+    <footer className="bg-gray-800 text-white py-12 sm:px-8 md:px-16 mt-10 lg:px-24">
       <div className='flex justify-between items-center'>
         <h1 className='text-2xl font-semibold hover:text-blue-400'>
         Dr. Santosh V. Chikkodi

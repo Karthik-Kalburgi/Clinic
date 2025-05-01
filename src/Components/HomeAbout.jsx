@@ -24,7 +24,7 @@ const HomeAbout = () => {
           <img 
             src={about} 
             alt="About Doctor" 
-            className="w-full h-[750px]  object-cover rounded-xl shadow-lg"
+            className="w-full h-[900px]  object-cover rounded-xl shadow-lg"
           />
         </div>
 
@@ -42,17 +42,25 @@ Bagalkot, Karnataka, India
         
 
           {/* Description Paragraphs */}
-          <div className="text-gray-700 font-poppins text-justify space-y-4 text-lg sm:text-xl">
+          <div className="text-gray-700  font-poppins text-justify space-y-4 text-lg sm:text-xl">
             <p>
-            With more than  <span className='font-bold '> 5000 </span>angiograms through Femoral, Ulnar and Radial approach and more than <span className='font-bold '> 2500 </span> coronary angioplasty,  & <span className='font-bold '> 100+ </span> Pacemaker devices. Dr. Santosh V. Chikkodi is one of the one senior cardiologists based at Bagalkot. In 2012, He obtained his MBBS degree from Karnataka Institute of Medical Sciences, Hubli. In 2015, he completed his MD in Internal Medicine, from India’s topmost medical college that is Postgraduate Institute of Medical Education and Research, Chandigarh.   In 2019, obtained his DM in Interventional Cardiology from Asia’s topmost Cardiac center that is Sri Jayadeva Institute of Cardiovascular Sciences and Research, Bangalore. 
+            With more than  <span className='font-bold '> 5000 </span>angiograms through Femoral, Ulnar and Radial approach and more than <span className='font-bold '> 2500 </span> coronary angioplasty,  & <span className='font-bold '> 100+ </span> 
+            Pacemaker devices. Dr. Santosh V. Chikkodi is one of the one senior cardiologists based at Bagalkot.
             </p>
             <p>
-            Currently, Dr. Santosh is providing his services as a Senior Consultant & Interventional Cardiologist at Kerudi Hospital in Bagalkot. His services include Coronary angiogram, Coronary Angioplasty, Peripheral Angiograms and peripheral angioplasty, Pacemaker Devices, Venoplasty, IVC filter insetion, Transesophageal Echocardiogram,  Implantable Cardioverter Defibrillator. Dr. Santosh is an esteemed member of the Cardiology Society of India, Indian College of Cardiology,  Indian Medical Association.
+            In 2012, He obtained his MBBS degree from Karnataka Institute of Medical Sciences, Hubli. In 2015, he completed his MD in Internal Medicine, from India’s topmost medical college that is Postgraduate Institute of Medical Education and Research, Chandigarh.
             </p>
             <p>
+            In 2019, obtained his DM in Interventional Cardiology from Asia’s topmost Cardiac center that is Sri Jayadeva Institute of Cardiovascular Sciences and Research, Bangalore.  Currently, Dr. Santosh is providing his services as a Senior Consultant & Interventional Cardiologist at Kerudi Hospital in Bagalkot.
+            </p>
+            His services include Coronary angiogram, Coronary Angioplasty, Peripheral Angiograms and peripheral angioplasty, Pacemaker Devices, Venoplasty, IVC filter insetion, Transesophageal Echocardiogram,  Implantable Cardioverter Defibrillator.
+            <p >
+            Dr. Santosh is an esteemed member of the Cardiology Society of India, Indian College of Cardiology,  Indian Medical Association.
+            </p>
+       
           
-            </p>
-            <button className="bg-teal-400 text-white text-lg sm:text-xl p-4  sm:p-15 ml-[22%] sm:ml-[35%] lg:ml-[0%] px-6 font-bold mt-4 sm:mt-4  bg-gradient-to-r from-teal-500 to-cyan-400 hover:bg-gradient-to-l hover:from-cyan-400 hover:to-teal-500  " onClick={() => window.location.href = '/about'}>
+    
+            <button className=" text-white text-lg sm:text-xl p-4  hover:bg-custom-cyan  sm:p-15 ml-[22%] sm:ml-[35%] lg:ml-[0%] px-6 font-bold mt-4 sm:mt-4  bg-blue-600 rounded-md " onClick={() => window.location.href = '/about'}>
   Read More 
   </button>
           </div>
