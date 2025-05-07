@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 
-import gal1 from '../Images/gallery1.jpg';
-import gal2 from '../Images/gallery2.jpg';
-import gal3 from '../Images/gallery3.jpg';
-import gal4 from '../Images/gallery4.jpg';
-import gal5 from '../Images/gallery5.jpg';
-import gal6 from '../Images/gallery6.jpg';
-import gal7 from '../Images/gallery7.jpg';
-import gal8 from '../Images/gallery8.jpg';
-import gal9 from '../Images/gallery9.jpg';
-import gal10 from '../Images/gallery10.jpg';
-import wallpaper from '../Images/News1-picaai.png';
+import gal1 from '../../Images/gallery1.jpg';
+import gal2 from '../../Images/gallery2.jpg';
+import gal3 from '../../Images/gallery3.jpg';
+import gal4 from '../../Images/gallery4.jpg';
+import gal5 from '../../Images/gallery5.jpg';
+import gal6 from '../../Images/gallery6.jpg';
+import gal7 from '../../Images/gallery7.jpg';
+import gal8 from '../../Images/gallery8.jpg';
+import gal9 from '../../Images/gallery9.jpg';
+import gal10 from '../../Images/gallery10.jpg';
+
+
 
 const Gallery = () => {
   // State to toggle between image and video gallery
@@ -76,7 +77,7 @@ const Gallery = () => {
                   title="Video 1" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
+                  allowFullScreen className='w-[450px] h-[350px] '
                 ></iframe>
               </div>
               <div className="w-full h-full mb-6">
@@ -87,7 +88,7 @@ const Gallery = () => {
                   title="Video 2" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
+                  allowFullScreen className='w-[450px] h-[350px] '
                 ></iframe>
               </div>
               <div className="w-full h-full mb-6">
@@ -98,7 +99,7 @@ const Gallery = () => {
                   title="Video 3" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
+                  allowFullScreen className='w-[450px] h-[350px] '
                 ></iframe>
               </div>
               {/* Add more iframe elements for additional videos */}

@@ -1,10 +1,8 @@
 import React from 'react'
+import about from '../../Images/aboutmainprofile.png'
 
 
-import Certifications from './Certifications';
-import Education from './Education';
 
-import about from '../Images/AboutDocto.jpg';
 
 const HomeAbout = () => {
   return (

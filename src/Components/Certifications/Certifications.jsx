@@ -1,6 +1,6 @@
 import React from 'react';
-import medicine from '../Images/medicine.jpg'
- 
+// import medicine from '../Blog/Images/medicine.jpg'
+import medicine from '../../Images/medicine.jpg' 
 
 const Certifications = () => {
   return (

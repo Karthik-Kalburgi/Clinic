@@ -1,7 +1,7 @@
 import React from "react";
-import doctors from '../Images/1mainpage.png'
-import Consultation from "./Consultation";
-import Specialities from "./Specialities";
+import doctors from '../../Images/1mainpage.png'
+import Consultation from '../../Components/Consulation/Consultation'
+import Specialities from '../Speacialities/Specialities'
 import HomeAbout from "./HomeAbout";
 import CountUp from 'react-countup'; // Add this at the top with other imports
 
@@ -23,19 +23,19 @@ const Home = () => {
           p-6 mt-[52%] rounded-3xl  grid grid-cols-3 bg-white mr-12 hover:bg-blue-50 ">
          <div>
   <p className="text-custom-cyan font-bold font-poppins text-3xl">
-    <CountUp end={5000} duration={6.5} />
+    <CountUp end={5000} duration={2.5} />
   </p>
   <p className="font-semibold text-black text-2xl mt-2">Angiograms</p>
 </div>
 <div>
   <p className="text-custom-cyan font-bold text-3xl font-poppins">
-    <CountUp end={2500} duration={6.5} />
+    <CountUp end={2500} duration={2.5} />
   </p>
   <p className="font-semibold text-black text-2xl mt-2">Angioplasty</p>
 </div>
 <div>
   <p className="text-custom-cyan font-bold text-3xl font-poppins">
-    <CountUp end={100} duration={6.5} />
+    <CountUp end={100} duration={2.5} />
   </p>
   <p className="font-semibold text-black text-2xl mt-2">Pacemaker Devices</p>
 </div>

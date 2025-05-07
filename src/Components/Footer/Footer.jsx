@@ -5,6 +5,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa"; // Corrected FaTwitter import
 
+
 const Footer = () => {
   return (
     // Footer Section

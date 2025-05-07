@@ -1,16 +1,18 @@
 import React from 'react';
-
+import Specialitiespng from '../../Images/specialities.png'
 const Specialities = () => {
   return (
-    <div className="container mx-auto px-4 py-8 bg-white ">
+    <div className="container mx-auto px-20 py-8 bg-white ">
       <h1 className="text-center text-5xl font-bold text-gray-800 mb-12 mt-22">
         Specialities
       </h1>
-
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 px-6 py-12 custom-blue rounded-3xl shadow-lg">
+      <div className='absolute'>
+          <img src={Specialitiespng} alt='speacicliaties png' className='relative  w-[980px] left-[15%] -mt-24 ' />
+        </div>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2   gap-12 px-12 py-20   custom-blue rounded-3xl shadow-lg bg-custom-blue">
         {/* First Column */}
-        <div className="space-y-4">
-          <ul className="text-lg font-medium text-custom-cyan list-disc pl-6">
+        <div className="space-y-4  ">
+          <ul className="text-lg font-medium text-custom-cyan list-disc  space-y-4 pl-6">
             <li> Implantable Cardioverter Defibrillator</li>
             <li> Transesophageal Echocardiogram</li>
             <li> Permanent Pacemaker</li>
@@ -26,11 +28,12 @@ const Specialities = () => {
             <li> TAVI. PBMV & Structural Interventions</li>
           </ul>
         </div>
+       
 
         {/* Second Column */}
         <div className="space-y-4">
-          <ul className="text-lg font-medium text-custom-cyan list-disc pl-6">
-            <li> ASD</li>
+          <ul className="text-lg font-medium  text-custom-cyan list-disc  space-y-4 pl-6">
+            <li > ASD</li>
             <li> VSD</li>
             <li> PDA Device closures</li>
             <li> Endovascular interventions like Aneurysm Repair</li>

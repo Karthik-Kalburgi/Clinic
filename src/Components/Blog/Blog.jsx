@@ -3,7 +3,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
-import profile from '../Images/ContactProfile.jpg';
+import profile from '../../Images/ContactProfile.jpg';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

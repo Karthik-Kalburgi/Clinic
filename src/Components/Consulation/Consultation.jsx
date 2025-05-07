@@ -2,9 +2,9 @@ import React from 'react'
 import { FaHospitalAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosTime } from "react-icons/io";
-import hospitalicon from '../Images/hospitalicons.png';
-import locationicon from '../Images/markericons.png'
-import timeicon from '../Images/Timeicon.png'
+import hospitalicon from '../../Images/hospitalicons.png';
+import locationicon from '../../Images/markericons.png'
+import timeicon from '../../Images/Timeicon.png'
 
 const Consultation = () => {
   return (

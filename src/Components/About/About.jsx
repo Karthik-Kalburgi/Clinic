@@ -1,15 +1,17 @@
 import React from 'react';
 
-import Certifications from './Certifications';
-import Education from './Education';
 
-import complex from '../Images/Complexicons.png';
-import cardiac from '../Images/cardiacimagingicons.png';
-import conoary from '../Images/Coronaryicons.png';
-import prevention from '../Images/preventionicons.png';
-import healthcare from '../Images/healtcareeducationicons.png';
-import structural from '../Images/structuralicons.png';
-import about from '../Images/aboutmainprofile.png';
+
+
+import complex from '../../Images/Complexicons.png';
+import cardiac from '../../Images/cardiacimagingicons.png';
+import conoary from '../../Images/Coronaryicons.png';
+import prevention from '../../Images/preventionicons.png';
+import healthcare from '../../Images/healtcareeducationicons.png';
+import structural from '../../Images/structuralicons.png';
+import about from '../../Images/aboutmainprofile.png';
+
+import Education from '../Education/Education';
 
 
 

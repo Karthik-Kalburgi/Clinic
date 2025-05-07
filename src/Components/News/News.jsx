@@ -4,10 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Import images for each news section
-import news1 from '../Images/News1-picaai.png'
+import news1 from '../../Images/News1-picaai.png'
 
-import gal3 from '../Images/gallery3.jpg'
-import gal4 from '../Images/gallery4.jpg'
+import gal3 from '../../Images/gallery3.jpg'
+import gal4 from '../../Images/gallery4.jpg'
 
 
 const News = () => {
