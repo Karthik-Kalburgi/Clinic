@@ -22,7 +22,7 @@ const NavbarDemo = () => {
       <nav className="bg-sky-50 p-7 relative">
       <div className='right-0 absolute top-0 mt-8 mr-2'>
       <Link to='/Info'>
-      <button className='bg-custom-cyan rounded-lg mr-8 font-semibold font-poppins text-white p-2 'onClick={()=> window.location.href = '/Info' }  >Dr  Chikkodi Cardiac Center</button>
+      <button className='bg-custom-cyan rounded-lg mr-8 font-semibold font-poppins text-white p-2 'onClick={()=> window.location.href = '/Clinic-main/src/Components/Info.jsx' }  >Dr  Chikkodi Cardiac Center</button>
       </Link>
       </div>
         {/* Desktop and Tablet Navbar */}

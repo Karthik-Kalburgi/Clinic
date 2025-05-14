@@ -77,11 +77,12 @@ structural heart procedures, and complex PCI, with a focus on optimizing patient
         <h1 className="text-3xl md:text-4xl font-extrabold text-center mt-20 text-black">
         Areas of Expertise
         </h1>
-        <div className="grid grid-cols-3 gap-6  mt-20 justify-between items-center ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20 justify-center items-center">
+
           {/* Card 1 */}
           <div className="bg-custom-blue font-semibold  bg-opacity-80 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-blue-200 transition-transform duration-300 ">
           <div>
-          <img src={complex} alt='Coronary ' className='justify-between items-center ml-12 '  
+          <img src={complex} alt='Coronary ' className='justify-between text-center items-center ml-12 '  
             
           />
             <p className="text-lg font-semibold text-black justify-between items-center  ml-6">
