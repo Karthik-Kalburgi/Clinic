@@ -1,153 +1,59 @@
-import React, { useRef, useState } from 'react';
-import { IoLocationSharp } from "react-icons/io5";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoTimeSharp } from "react-icons/io5";
-import profile from '../../Images/ContactProfile.jpg';
-import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from 'react';
+import blogImg from '../../Images//Blog/BlogImage.jpg'; // Replace with your actual image path
 
-const Contacts = () => {
-  const form = useRef();
-  const [formData, setFormData] = useState({
-    user_name: '',
-    user_email: '',
-    message: ''
-  });
-
-  // Function to send email (auto-reply + notification to the admin)
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    // Send the email to the user as an auto-reply
-    emailjs
-      .sendForm('service_k8h3jh3', 'template_odtrfvk', form.current, 'KlO73PmloElJU-C1p')
-      .then(
-        () => {
-          toast.success("Your response has been submitted successfully!");
-          setFormData({
-            user_name: '',
-            user_email: '',
-            message: ''
-          });
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          toast.error("Something went wrong, please try again.");
-        }
-      );
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
+const Blog = () => {
   return (
-    <>
-      <div className="bg-gray-100 py-12 sm:px-8 md:px-16 lg:px-24">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-yellow-700  font-poppins  "   >Have A Question? Get In Touch</h1>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Left Side - Basic Info Cards */}
-          <div className="space-y-8">
-            {/* Card 1 - General Information */}
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-              <h2 className="text-2xl font-semibold text-gray-800">General Information</h2>
-              <img alt="profile" src={profile} className="w-32 h-32 rounded-full mt-4 mx-auto" />
-              <p className="text-gray-700 mt-4 flex items-center gap-3">
-                <IoLocationSharp className='text-2xl text-blue-500' />
-                #23 Dummy Nagar, Near Smart Point, Bangalore - 5811653
-              </p>
-              <p className="text-gray-700 flex items-center gap-3 mt-2">
-                <FaPhoneVolume className='text-2xl text-blue-500' />
-                Phone: 897463150000
-              </p>
-              <p className="text-gray-700 flex items-center gap-3 mt-2">
-                <MdEmail className='text-2xl text-blue-500' />
-                Email: sfvbjvbsk@gmail.com
-              </p>
-            </div>
-
-            {/* Card 2 - Working Hours */}
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-              <h2 className="text-2xl font-semibold text-gray-800 flex items-center gap-3">
-                <IoTimeSharp className='text-2xl text-blue-500' />
-                Working Hours
-              </h2>
-              <p className="text-gray-700 mt-4">Monday – Saturday: 9:00 AM - 6:00 PM</p>
-              <p className="text-gray-700">Sunday: Closed</p>
-              <p className="text-gray-700 mt-4">Emergency Services Available</p>
-            </div>
-          </div>
-
-          {/* Right Side - Contact Form */}
-          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">Contact Form</h2>
-            <form ref={form} onSubmit={sendEmail} className="space-y-6">
-              {/* Name Field */}
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">Name</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  value={formData.user_name}
-                  onChange={handleInputChange}
-                  className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
-                  required
-                />
-              </div>
-
-              {/* Email Field */}
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">Email</label>
-                <input
-                  type="email"
-                  name="user_email"
-                  value={formData.user_email}
-                  onChange={handleInputChange}
-                  className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
-                  required
-                />
-              </div>
-
-              {/* Message Field */}
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">Message</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  className="mt-2 block w-full p-12 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
-                  placeholder='Enter your phone number to book an appointment with the cardiologist.'
-                  required
-                />
-              </div>
-
-              {/* Submit Button */}
-              <div className="mb-4">
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      {/* Blog Header */}
+      <div className="mb-8 text-center">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
+          Revolutionizing Cardiac Care: The Journey of Innovation
+        </h1>
+        <p className="mt-4 text-gray-500 text-md md:text-lg">
+          By Dr. Santosh V. Chikkodi | April 2025
+        </p>
       </div>
 
-      {/* Toastify Notifications */}
-      <ToastContainer position="top-center" autoClose={5000} hideProgressBar={true} />
-    </>
+      {/* Blog Image */}
+      <div className="rounded-xl overflow-hidden shadow-lg mb-10">
+        <img
+          src={blogImg}
+          alt="Cardiology Innovation"
+          loading="lazy"
+          className="w-full h-64 sm:h-96 object-cover"
+        />
+      </div>
+
+      {/* Blog Content */}
+      <div className="text-gray-700 text-base sm:text-lg leading-relaxed">
+        <p className="mb-6">
+          Cardiovascular diseases have long been a major challenge in global healthcare. Over the years, medical science has made tremendous strides in early diagnosis, advanced procedures, and post-treatment rehabilitation.
+        </p>
+        <p className="mb-6">
+          At the forefront of this evolution stands Dr. Santosh V. Chikkodi, whose contributions to interventional cardiology have helped save thousands of lives. From pioneering transradial interventions to leading research in non-invasive diagnostics, Dr. Chikkodi's journey is one of relentless innovation.
+        </p>
+        <p className="mb-6">
+          One of his key achievements includes successful adoption of advanced imaging techniques such as Intravascular Ultrasound (IVUS) and Optical Coherence Tomography (OCT), which have redefined how arterial blockages are diagnosed and treated.
+        </p>
+        <p className="mb-6">
+          Beyond procedures, patient education and awareness campaigns have been instrumental in encouraging lifestyle changes, preventive checkups, and timely consultations — all of which have significantly reduced emergency cases.
+        </p>
+        <p className="mb-6">
+          In 2025 and beyond, the integration of AI into cardiology — from predictive diagnostics to robotic-assisted surgeries — will further transform this space. Dr. Chikkodi's work continues to inspire young practitioners and medical students alike to pursue research-based, patient-centered care.
+        </p>
+        <p className="mb-6 font-semibold italic">
+          “The heart is not just a muscle — it's a story of resilience, rhythm, and recovery,” says Dr. Chikkodi.
+        </p>
+      </div>
+
+      {/* Footer/Signature */}
+      <div className="mt-12 border-t pt-6 text-center">
+        <p className="text-sm text-gray-500">
+          &copy; 2025 Dr. Santosh V. Chikkodi. All Rights Reserved.
+        </p>
+      </div>
+    </div>
   );
 };
 
-export default Contacts;
+export default Blog;

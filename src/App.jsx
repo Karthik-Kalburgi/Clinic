@@ -13,6 +13,7 @@ import Footer from './Components/Footer/Footer'
 
 import Reviews from './Components/Reviews/Reviews'
 import NavbarDemo from "./Components/Navbar/NavbarDemo"
+import Info from "./Components2/DR_NEW_CARDIAC_CENTER/Info/Info"
 
 
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
 <Router>
+    
     <NavbarDemo />
 
 
@@ -34,6 +36,8 @@ function App() {
     <Route path='/gallery' element={<Gallery/>}/>
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/contact' element={<Contacts/>}/>
+    <Route path='/info' element={<Info/>}/>
+    {/* Add more routes as needed */}
    
   
     

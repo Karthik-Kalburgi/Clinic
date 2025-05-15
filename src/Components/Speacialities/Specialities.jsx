@@ -2,7 +2,7 @@ import React from 'react';
 import Specialitiespng from '../../Images/specialities.png'
 const Specialities = () => {
   return (
-    <div className="container mx-auto px-20 py-8 bg-white ">
+    <div className="container mx-auto px-4 sm:px-8 py-8 bg-white relative ">
       <h1 className="text-center text-5xl font-bold text-gray-800 mb-12 mt-22">
         Specialities
       </h1>

@@ -9,7 +9,6 @@ import news2 from '../../Images/News/NewsHeart2.jpg';
 import news3 from '../../Images/News/NewsHeart3.jpg';
 import news4 from '../../Images/News/NewsHeart4.jpg';
 
-
 const News = () => {
   const settings = {
     dots: true,
@@ -19,10 +18,29 @@ const News = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  // Fallback image handler
+  const handleImageError = (event) => {
+    event.target.src = 'path/to/fallback-image.jpg'; // Provide fallback image path here
   };
 
   return (
-    <div className="news-container px-4 sm:px-6 lg:px-12 py-12 max-w-7xl mx-auto bg-custom-blue ">
+    <div className="news-container px-4 sm:px-6 lg:px-12 py-12 max-w-7xl mx-auto bg-custom-blue">
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
         Daily News Updates
       </h1>
@@ -38,8 +56,10 @@ const News = () => {
             >
               <img
                 src={news1}
-                alt="Cardiothoracic Imaging"
+                alt="Cardiothoracic Imaging Techniques"
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
+                loading="lazy"
+                onError={handleImageError}
               />
             </a>
             <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
@@ -67,8 +87,10 @@ const News = () => {
             >
               <img
                 src={news2}
-                alt="Colchicine CV Reduction"
+                alt="Colchicine CV Reduction: Cardiologists Divided"
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
+                loading="lazy"
+                onError={handleImageError}
               />
             </a>
             <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
@@ -96,8 +118,10 @@ const News = () => {
             >
               <img
                 src={news3}
-                alt="Cardiology News"
+                alt="Latest News on Cardiology"
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
+                loading="lazy"
+                onError={handleImageError}
               />
             </a>
             <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
@@ -125,8 +149,10 @@ const News = () => {
             >
               <img
                 src={news4}
-                alt="Cardiovascular Health News"
+                alt="The Hindu: Latest Cardiovascular Health News"
                 className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
+                loading="lazy"
+                onError={handleImageError}
               />
             </a>
             <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">

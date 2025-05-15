@@ -11,26 +11,30 @@ import gal8 from '../../Images/gallery8.jpg';
 import gal9 from '../../Images/gallery9.jpg';
 import gal10 from '../../Images/gallery10.jpg';
 
-
-
 const Gallery = () => {
   // State to toggle between image and video gallery
   const [isImageGallery, setIsImageGallery] = useState(true);
+
+  // Array for images
+  const images = [
+    gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10
+  ];
+
+  // Array for video URLs
+  const videos = [
+    "https://www.youtube.com/embed/O_gORx4L_Oc",
+    "https://www.youtube.com/embed/xGUfA5wyNXk",
+    "https://www.youtube.com/embed/5ECQtxnFESk"
+  ];
 
   return (
     <div className="px-4 sm:px-6 md:px-12 py-8">
 
       {/* Gallery Header Section */}
-      {/* <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] overflow-hidden">
-        <img src={} alt="Gallery Wallpaper" className="h-full w-full object-cover rounded-xl" />
-        <h1 className="text-white absolute left-[4%] top-[10%] text-3xl sm:text-4xl font-bold">
-          About The Doctor
-        </h1>
-      </div> */}
-
-      {/* Certifications and achievement from about section to gallery section  */}
       <div>
-        <h1 className=' text-center  text-5xl font-poppins  md:text-4xl font-extrabold  mt-20 text-black bg-custom-blue py-8  '>About the Doctor</h1>
+        <h1 className=' text-center text-5xl font-poppins md:text-4xl font-extrabold mt-20 text-black bg-custom-blue py-8'>
+          About the Doctor
+        </h1>
       </div>
 
       {/* Gallery Buttons */}
@@ -54,56 +58,30 @@ const Gallery = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mb-16">
           {isImageGallery ? (
             // Image Gallery
-            <>
-              <img src={gal1} alt="Gallery1" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal2} alt="Gallery2" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal3} alt="Gallery3" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal4} alt="Gallery4" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal5} alt="Gallery5" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal6} alt="Gallery6" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal7} alt="Gallery7" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal8} alt="Gallery8" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal9} alt="Gallery9" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-              <img src={gal10} alt="Gallery10" className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg" />
-            </>
+            images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Gallery ${index + 1}`}
+                className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg"
+              />
+            ))
           ) : (
             // Video Gallery using iframe
-            <>
-              <div className="w-full h-full mb-6">
-                <iframe 
-                  width="100%" 
-                  height="auto" 
-                  src="https://www.youtube.com/embed/O_gORx4L_Oc" 
-                  title="Video 1" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen className='w-[450px] h-[350px] '
+            videos.map((video, index) => (
+              <div key={index} className="w-full h-full mb-6">
+                <iframe
+                  width="100%"
+                  height="auto"
+                  src={video}
+                  title={`Video ${index + 1}`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className='w-[450px] h-[350px]'
                 ></iframe>
               </div>
-              <div className="w-full h-full mb-6">
-                <iframe 
-                  width="100%" 
-                  height="auto" 
-                  src="https://www.youtube.com/embed/xGUfA5wyNXk" 
-                  title="Video 2" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen className='w-[450px] h-[350px] '
-                ></iframe>
-              </div>
-              <div className="w-full h-full mb-6">
-                <iframe 
-                  width="100%" 
-                  height="auto" 
-                  src="https://www.youtube.com/embed/5ECQtxnFESk" 
-                  title="Video 3" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen className='w-[450px] h-[350px] '
-                ></iframe>
-              </div>
-              {/* Add more iframe elements for additional videos */}
-            </>
+            ))
           )}
         </div>
       </div>

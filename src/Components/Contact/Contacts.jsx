@@ -20,6 +20,12 @@ const Contacts = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Validate form data
+    if (!formData.user_name || !formData.user_email || !formData.message) {
+      toast.error("All fields are required.");
+      return;
+    }
+
     // Send the email to the user as an auto-reply
     emailjs
       .sendForm('service_k8h3jh3', 'template_odtrfvk', form.current, 'KlO73PmloElJU-C1p')
@@ -51,7 +57,7 @@ const Contacts = () => {
     <>
       <div className="bg-gray-100 py-12 sm:px-8 md:px-16 lg:px-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-yellow-700  font-poppins  "   >Have A Question? Get In Touch</h1>
+          <h1 className="text-4xl font-extrabold text-yellow-700 font-poppins">Have A Question? Get In Touch</h1>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -101,6 +107,7 @@ const Contacts = () => {
                   onChange={handleInputChange}
                   className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
                   required
+                  aria-label="Your Name"
                 />
               </div>
 
@@ -114,6 +121,7 @@ const Contacts = () => {
                   onChange={handleInputChange}
                   className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
                   required
+                  aria-label="Your Email"
                 />
               </div>
 
@@ -127,6 +135,7 @@ const Contacts = () => {
                   className="mt-2 block w-full p-12 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
                   placeholder='Enter your phone number to book an appointment with the cardiologist.'
                   required
+                  aria-label="Your Message"
                 />
               </div>
 
