@@ -14,6 +14,8 @@ import Footer from './Components/Footer/Footer'
 import Reviews from './Components/Reviews/Reviews'
 import NavbarDemo from "./Components/Navbar/NavbarDemo"
 import Info from "./Components2/DR_NEW_CARDIAC_CENTER/Info/Info"
+import TreatmentPointDetails from "./Components/Treatment/TreatmentPointDetails";
+
 
 
 
@@ -30,7 +32,9 @@ function App() {
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
-    <Route path='/treatment' element={<Treatment/>}/>
+    <Route path="/treatment" element={<Treatment />} />
+
+    <Route path="/treatment-point/:slug" element={<TreatmentPointDetails />} />
     <Route path='/news' element={<News/>}/>
     <Route path='/testimonial' element={<Reviews/>}/>
     <Route path='/gallery' element={<Gallery/>}/>
