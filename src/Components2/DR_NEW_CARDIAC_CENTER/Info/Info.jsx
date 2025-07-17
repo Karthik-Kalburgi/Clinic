@@ -1,12 +1,34 @@
 import React from 'react';
 import drHeart from '../../../Images/DR_NEW_CARDIAC_CENTER_IMAGES/IMG_3330.jpeg';
 import scope from '../../../Images/DR_NEW_CARDIAC_CENTER_IMAGES/steto_heart.png';
+import { Helmet } from 'react-helmet';
+
 
 const Info = () => {
   return (
     <div>
       {/* Doctor Holding Heart Section */}
       <div className="relative w-full h-screen text-white">
+      <Helmet>
+  <title>Dr. Chikkodi’s Cardiac Center | Expert Heart Care in Bagalkot</title>
+  <meta 
+    name="description" 
+    content="Welcome to Dr. Chikkodi’s Cardiac Center – led by Dr. Santosh Chikkodi. We provide advanced cardiac care in Bagalkot, including angioplasty, valve interventions, and heart failure treatment." 
+  />
+  <meta 
+    name="keywords" 
+    content="Cardiac center Bagalkot, Dr. Santosh Chikkodi, heart specialist, angioplasty Bagalkot, pacemaker implantation, cardiac valve treatment, cardiologist near me, heart failure specialist" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Dr. Chikkodi’s Cardiac Center – Trusted Cardiac Specialist in Bagalkot" />
+  <meta property="og:description" content="Get specialized and compassionate cardiac care from Dr. Santosh Chikkodi. Our center offers the latest treatments for heart conditions in Karnataka." />
+  <meta property="og:image" content="https://yourdomain.com/assets/dr-holding-heart.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/info" />
+  <link rel="canonical" href="https://yourdomain.com/info" />
+</Helmet>
+
         <img
           src={drHeart}
           alt="Doctor Holding Heart"

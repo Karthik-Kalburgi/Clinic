@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -1163,6 +1165,26 @@ const TreatmentPointDetails = () => {
 
   return (
     <div className="p-10 bg-white min-h-screen">
+    <Helmet>
+  <title>Advanced Cardiac Treatments | Dr. Santosh V. Chikkodi</title>
+  <meta 
+    name="description" 
+    content="Explore specialized treatments including angioplasty, pacemakers, RF ablation, and structural heart disease therapies by Dr. Santosh V. Chikkodi in Bagalkot, Karnataka." 
+  />
+  <meta 
+    name="keywords" 
+    content="cardiac treatments, heart treatment Bagalkot, angioplasty, pacemaker, RF ablation, hypertension treatment, structural heart disease, interventional cardiologist, Dr. Santosh Chikkodi" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Treatment Options | Dr. Santosh V. Chikkodi - Cardiology Care in Bagalkot" />
+  <meta property="og:description" content="Get expert care for heart conditions like heart attack, failure, arrhythmia, and structural heart diseases with advanced therapies." />
+  <meta property="og:image" content="https://yourdomain.com/assets/treatment-cover.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/treatment" />
+  <link rel="canonical" href="https://yourdomain.com/treatment" />
+</Helmet>
+
       <h1 className="text-3xl font-bold text-custom-cyan mb-6 font-poppins capitalize">
         {slug.replace(/-/g, ' ')}
       </h1>

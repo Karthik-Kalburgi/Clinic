@@ -1,8 +1,30 @@
 import React from 'react';
 import Specialitiespng from '../../Images/specialities.png'
+import { Helmet } from 'react-helmet';
+
 const Specialities = () => {
   return (
     <div className="container mx-auto px-4 sm:px-8 py-8 bg-white relative ">
+    <Helmet>
+  <title>Cardiology Treatments & Specialities | Dr. Santosh V. Chikkodi</title>
+  <meta 
+    name="description" 
+    content="Explore a wide range of cardiology treatments offered by Dr. Santosh V. Chikkodi including angioplasty, pacemaker implantation, TAVR, ASD/VSD closure, and more." 
+  />
+  <meta 
+    name="keywords" 
+    content="Cardiology specialities, angioplasty, pacemaker doctor Bagalkot, TAVR, balloon valvotomy, ICD implantation, structural heart interventions, best heart doctor in Karnataka" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Dr. Santosh Chikkodi's Cardiology Treatments and Specialities" />
+  <meta property="og:description" content="Get expert heart care in Bagalkot. View the complete list of procedures like Micra insertion, CRT, angioplasty, device closures, and more." />
+  <meta property="og:image" content="https://your-domain.com/assets/specialities-og.jpg" />
+  <meta property="og:url" content="https://your-domain.com/specialities" />
+  <link rel="canonical" href="https://your-domain.com/specialities" />
+</Helmet>
+
       <h1 className="text-center text-5xl font-bold text-gray-800 mb-12 mt-22">
         Specialities
       </h1>

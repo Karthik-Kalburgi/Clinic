@@ -8,6 +8,7 @@ import images4 from '../../Images/Treatment/StructuralHeartDisease.jpg';
 import images5 from '../../Images/Treatment/Syncope.jpg';
 import images6 from '../../Images/Treatment/Arrhythmia.jpg';
 import images7 from '../../Images/Treatment/SuddenCardiacDeathPrevention.jpg';
+import { Helmet } from 'react-helmet';
 
 const treatmentOptions = [
   {
@@ -94,6 +95,26 @@ const slugify = (text) =>
 const Treatment = () => {
   return (
     <div className="bg-white py-12 px-4 sm:px-10 lg:px-20">
+    <Helmet>
+  <title>Advanced Cardiac Treatments | Dr. Santosh V. Chikkodi</title>
+  <meta 
+    name="description" 
+    content="Explore a range of specialized heart treatments by Dr. Santosh V. Chikkodi including angioplasty, pacemaker insertion, ICD therapy, and structural heart procedures in Bagalkot." 
+  />
+  <meta 
+    name="keywords" 
+    content="heart treatments, angioplasty, pacemaker, ICD therapy, EP study, RF ablation, Dr. Santosh V. Chikkodi, cardiologist Bagalkot, heart failure treatment, hypertension treatment, structural heart disease" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Treatment Options | Dr. Santosh V. Chikkodi - Cardiac Specialist" />
+  <meta property="og:description" content="Browse life-saving treatment options including heart attack, heart failure, arrhythmia, and structural heart disease therapies by Dr. Chikkodi." />
+  <meta property="og:image" content="https://your-domain.com/assets/treatment-banner.jpg" />
+  <meta property="og:url" content="https://your-domain.com/treatment" />
+  <link rel="canonical" href="https://your-domain.com/treatment" />
+</Helmet>
+
       <h1 className="text-3xl md:text-4xl font-extrabold text-center text-black font-poppins">
         Treatment Options
       </h1>

@@ -4,10 +4,34 @@ import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
+import { Helmet } from 'react-helmet';
+
 
 const Footer = () => {
+
+
   return (
     <footer className="bg-gray-800 text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24 mt-10">
+    <Helmet>
+  <title>Dr. Santosh V. Chikkodi | Best Cardiologist Near You | Trusted Heart Specialist in Karnataka</title>
+  <meta 
+    name="description" 
+    content="Contact Dr. Santosh V. Chikkodi, a senior interventional cardiologist in Bagalkot. Expert in angioplasty, pacemakers, and heart care services. Call now to book your appointment!" 
+  />
+  <meta 
+    name="keywords" 
+    content="cardiologist near me, heart doctor Bagalkot, Dr. Santosh Chikkodi, Bangalore cardiologist, interventional cardiologist India, top heart specialist Karnataka, pacemaker expert" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Dr. Santosh Chikkodi - Trusted Cardiologist in Karnataka" />
+  <meta property="og:description" content="Consult one of Karnataka’s top heart specialists. Advanced cardiac treatments available at multiple locations. Book now!" />
+  <meta property="og:image" content="https://your-domain.com/footer-og-image.jpg" />
+  <meta property="og:url" content="https://your-domain.com" />
+  <link rel="canonical" href="https://your-domain.com" />
+</Helmet>
+
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
@@ -103,3 +127,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

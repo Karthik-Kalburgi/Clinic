@@ -7,8 +7,12 @@ import profile from '../../Images/ContactProfile.jpg';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
+
 
 const Contacts = () => {
+
+
   const form = useRef();
   const [formData, setFormData] = useState({
     user_name: '',
@@ -56,6 +60,28 @@ const Contacts = () => {
   return (
     <>
       <div className="bg-gray-100 py-12 sm:px-8 md:px-16 lg:px-24">
+      <Helmet>
+  <title>Contact | Dr. Santosh V. Chikkodi - Cardiologist in Bagalkot</title>
+  <meta
+    name="description"
+    content="Get in touch with Dr. Santosh V. Chikkodi, Senior Interventional Cardiologist in Bagalkot, Karnataka. Contact via email or phone. Book your appointment today."
+  />
+  <meta
+    name="keywords"
+    content="Cardiologist contact Bagalkot, heart doctor phone number, Dr. Santosh Chikkodi appointment, cardiologist email Karnataka, book heart appointment"
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta property="og:title" content="Contact | Dr. Santosh V. Chikkodi - Cardiologist" />
+  <meta
+    property="og:description"
+    content="Contact Dr. Santosh V. Chikkodi for cardiology consultation. Reach out via phone or email to book an appointment in Bagalkot or Ramdurg."
+  />
+  <meta property="og:image" content="https://your-domain.com/path-to/contact-page-image.jpg" />
+  <meta property="og:url" content="https://your-domain.com/contact" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/contact" />
+</Helmet>
+
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-yellow-700 font-poppins">Have A Question? Get In Touch</h1>
         </div>

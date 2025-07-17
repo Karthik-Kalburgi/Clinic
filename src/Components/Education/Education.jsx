@@ -1,11 +1,37 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 
 
 const Education = () => {
+
+
   return (
 
     
     <div className="relative py-12"> {/* Move bg-sky-50 here */}
+    <Helmet>
+  <title>Qualification & Experience | Dr. Santosh V. Chikkodi - Cardiologist in Bagalkot</title>
+  <meta
+    name="description"
+    content="Explore the educational qualifications and extensive cardiology experience of Dr. Santosh V. Chikkodi, an expert interventional cardiologist serving Bagalkot and Karnataka."
+  />
+  <meta
+    name="keywords"
+    content="Cardiologist education, Dr Santosh Chikkodi qualification, DM Cardiology, Interventional cardiologist experience, Bagalkot heart specialist"
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta property="og:title" content="Education & Experience | Dr. Santosh V. Chikkodi" />
+  <meta
+    property="og:description"
+    content="Learn about Dr. Chikkodi’s qualifications: MBBS, MD, DNB, DM in Cardiology from top institutions like PGIMER and Jayadeva Institute."
+  />
+  <meta property="og:image" content="https://your-domain.com/path-to/education-image.jpg" />
+  <meta property="og:url" content="https://your-domain.com/education" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/education" />
+</Helmet>
+
      <div className='justify-center  text-center  items-center  mt-12'>
       <span className="text-3xl md:text-4xl font-extrabold text-center mt-30 text-black  ">Qualification and Experience</span>
 

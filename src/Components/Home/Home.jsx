@@ -5,10 +5,33 @@ import CountUp from 'react-countup';
 const Consultation = lazy(() => import('../../Components/Consulation/Consultation'));
 const Specialities = lazy(() => import('../Speacialities/Specialities'));
 const HomeAbout = lazy(() => import("./HomeAbout"));
+import { Helmet } from 'react-helmet';
+
 
 const Home = () => {
+
+
   return (
     <div className="bg-sky-50 w-full overflow-x-hidden">
+      <Helmet>
+  <title>Dr. Santosh V. Chikkodi | Top Cardiologist in Bagalkot | Angioplasty & Heart Care</title>
+  <meta 
+    name="description" 
+    content="Consult Dr. Santosh V. Chikkodi, senior interventional cardiologist in Bagalkot, Karnataka. Book appointments for angiograms, angioplasty, and pacemaker implants." 
+  />
+  <meta 
+    name="keywords" 
+    content="cardiologist Bagalkot, heart doctor Karnataka, interventional cardiologist, angioplasty specialist India, pacemaker doctor, Dr. Santosh Chikkodi" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Dr. Santosh V. Chikkodi - Trusted Cardiologist in Karnataka" />
+  <meta property="og:description" content="Get expert cardiac care from one of Karnataka's top heart specialists. Over 5000 angiograms and 2500 angioplasties performed." />
+  <meta property="og:image" content="https://your-domain.com/assets/doctor-home-og.jpg" />
+  <meta property="og:url" content="https://your-domain.com" />
+  <link rel="canonical" href="https://your-domain.com" />
+</Helmet>
       {/* Hero Section */}
       <div className="relative flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 pt-10 pb-16 gap-10">
         {/* Doctor Info */}

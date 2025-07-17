@@ -1,5 +1,7 @@
 import React from 'react'
 import about from '../../Images/aboutmainprofile.png'
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -7,6 +9,26 @@ import about from '../../Images/aboutmainprofile.png'
 const HomeAbout = () => {
   return (
 <div className="px-4 sm:px-6 md:px-12 py-8  bg-white ">
+<Helmet>
+  <title>Dr. Santosh V. Chikkodi | Senior Cardiologist in Bagalkot | Experience & Background</title>
+  <meta 
+    name="description" 
+    content="Learn more about Dr. Santosh V. Chikkodi, Senior Interventional Cardiologist in Bagalkot, with over 5000 angiograms and 2500 angioplasties. Discover his journey and services." 
+  />
+  <meta 
+    name="keywords" 
+    content="Dr. Santosh Chikkodi, Cardiologist Bagalkot, MBBS MD DM Cardiology, angioplasty expert Karnataka, interventional cardiologist profile, pacemaker cardiologist, top doctor Bagalkot" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Dr. Santosh V. Chikkodi - Cardiologist Background & Achievements" />
+  <meta property="og:description" content="Meet Dr. Santosh Chikkodi, an experienced interventional cardiologist in Karnataka with thousands of successful procedures and a strong educational background." />
+  <meta property="og:image" content="https://your-domain.com/assets/aboutmainprofile-og.jpg" />
+  <meta property="og:url" content="https://your-domain.com/about" />
+  <link rel="canonical" href="https://your-domain.com/about" />
+</Helmet>
+
       
       {/* Top Image Section */}
       <div className="relative">

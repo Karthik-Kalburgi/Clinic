@@ -9,7 +9,12 @@ import { Helmet } from 'react-helmet';
 
 
 const Consultation = () => {
-  <Helmet>
+
+
+  return (
+    <div className='bg-white' >
+    <div className="container mx-auto px-4  p-8 "> {/* Main Container */}
+    <Helmet>
   <title>Consultation Locations | Dr. Santosh V. Chikkodi - Cardiologist</title>
   <meta
     name="description"
@@ -31,9 +36,6 @@ const Consultation = () => {
   <link rel="canonical" href="https://your-domain.com/consultation" />
 </Helmet>
 
-  return (
-    <div className='bg-white' >
-    <div className="container mx-auto px-4  p-8 "> {/* Main Container */}
 
     <h1 className="text-cyan-950 text-5xl font-bold text-center mt-28">
       Consultation Locations

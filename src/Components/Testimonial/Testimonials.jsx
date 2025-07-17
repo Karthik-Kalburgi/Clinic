@@ -16,6 +16,8 @@ import user5 from '../Testimonial/Assets/user5.jpg';
 import user6 from '../Testimonial/Assets/user6.jpg';
 import user7 from '../Testimonial/Assets/user7.jpg';
 import user8 from '../Testimonial/Assets/user8.jpg';
+import { Helmet } from 'react-helmet';
+
 
 const testimonials = [
   {
@@ -89,6 +91,26 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <Helmet>
+  <title>Patient Testimonials | Dr. Santosh V. Chikkodi - Trusted Cardiologist</title>
+  <meta 
+    name="description" 
+    content="Read real testimonials from patients treated by Dr. Santosh V. Chikkodi, Senior Interventional Cardiologist in Bagalkot. Learn about their successful heart treatment journeys." 
+  />
+  <meta 
+    name="keywords" 
+    content="Dr. Santosh V. Chikkodi reviews, patient testimonials cardiologist Bagalkot, heart treatment success stories, trusted heart doctor in Karnataka, best cardiologist feedback" 
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="What Our Patients Say | Dr. Santosh V. Chikkodi" />
+  <meta property="og:description" content="See how Dr. Chikkodi's expert heart care has changed lives through real patient testimonials." />
+  <meta property="og:image" content="https://your-domain.com/assets/testimonials-og.jpg" />
+  <meta property="og:url" content="https://your-domain.com/testimonials" />
+  <link rel="canonical" href="https://your-domain.com/testimonials" />
+</Helmet>
+
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
           What Our Patients Say
