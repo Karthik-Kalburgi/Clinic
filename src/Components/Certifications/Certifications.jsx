@@ -1,7 +1,31 @@
 import React from 'react';
 import medicine from '../../Images/medicine.jpg';
+import { Helmet } from 'react-helmet';
+
 
 const Certifications = () => {
+  <Helmet>
+  <title>Certifications & Publications | Dr. Santosh Chikkodi</title>
+  <meta
+    name="description"
+    content="Explore certifications, awards, and research publications of Dr.  Santosh Chikkodi, including journal articles on coronary angiogram, VSD closure, and hyperkalemia."
+  />
+  <meta
+    name="keywords"
+    content="Cardiology Certifications, Dr.  Santosh Chikkodi, Indian Heart Journal, Transulnar Approach, Coronary Angiogram, Hyperkalemia ECG, Ventricular Septal Defect, Primary Angioplasty"
+  />
+  <meta name="author" content="Dr.  Santosh Chikkodi" />
+  <meta property="og:title" content="Certifications & Achievements | Dr. Santosh Chikkodi" />
+  <meta
+    property="og:description"
+    content="View Dr.  Santosh Chikkodi contributions to cardiology, featuring award-winning papers and collaborative journal publications."
+  />
+  <meta property="og:image" content="https://your-domain.com/path-to/medicine.jpg" />
+  <meta property="og:url" content="https://your-domain.com/certifications" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/certifications" />
+</Helmet>
+
   return (
     <div className="relative py-12">
       {/* Image */}

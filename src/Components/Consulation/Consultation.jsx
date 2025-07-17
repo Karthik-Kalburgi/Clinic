@@ -5,8 +5,32 @@ import { IoIosTime } from "react-icons/io";
 import hospitalicon from '../../Images/hospitalicons.png';
 import locationicon from '../../Images/markericons.png'
 import timeicon from '../../Images/Timeicon.png'
+import { Helmet } from 'react-helmet';
+
 
 const Consultation = () => {
+  <Helmet>
+  <title>Consultation Locations | Dr. Santosh V. Chikkodi - Cardiologist</title>
+  <meta
+    name="description"
+    content="Find consultation locations for Dr. Santosh V. Chikkodi, Senior Interventional Cardiologist, at Bagalkot and Ramdurg, Karnataka. View timings and address details here."
+  />
+  <meta
+    name="keywords"
+    content="Cardiologist in Bagalkot, Heart Doctor Ramdurg, Dr. Santosh Chikkodi, Heart Specialist Karnataka, Kerudi Heart Center, Cardiac Center Ramdurg"
+  />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta property="og:title" content="Consultation Locations | Dr. Santosh V. Chikkodi" />
+  <meta
+    property="og:description"
+    content="Dr. Santosh V. Chikkodi is available at Kerudi Heart Center in Bagalkot and Dr Chikkodi’s Cardiac Center in Ramdurg. Find addresses, timings, and more."
+  />
+  <meta property="og:image" content="https://your-domain.com/path-to/location-map-or-hospital-image.jpg" />
+  <meta property="og:url" content="https://your-domain.com/consultation" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/consultation" />
+</Helmet>
+
   return (
     <div className='bg-white' >
     <div className="container mx-auto px-4  p-8 "> {/* Main Container */}
