@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 
@@ -49,7 +50,7 @@ const treatmentDetails = {
 
   'primary-angioplasty': (
   <>
-    <p>
+    <p> 
       <strong>Primary Angioplasty</strong>, also known as Percutaneous Coronary Intervention (PCI), is an emergency procedure
       performed to open blocked coronary arteries during a heart attack.
     </p>
@@ -86,47 +87,48 @@ const treatmentDetails = {
   </>
 ),
 
-'Coronary Physiology Testing: FFR/iFR/RFR': (
-  <div className="space-y-4">
-    <p>
-      <strong>Coronary Physiology Testing</strong>involves advanced diagnostic techniques such as 
-      <strong>FFR(Fractional Flow Reserve)</strong>,<strong>iFR (Instantaneous Wave-Free Ratio)</strong>, 
-      and <strong>RFR(Resting Full-cycle Ratio)</strong>to assess the functional significance of coronary artery blockages.
-    </p>
+// 'coronary-physiology-testing': (
+//   <div className="space-y-4">
+//     <p>
+//       <strong>Coronary Physiology Testing</strong> involves advanced diagnostic techniques such as 
+//       <strong> FFR (Fractional Flow Reserve)</strong>, <strong>iFR (Instantaneous Wave-Free Ratio)</strong>, 
+//       and <strong> RFR (Resting Full-cycle Ratio)</strong> to assess the functional significance of coronary artery blockages.
+//     </p>
 
-    <h2 className="text-xl font-semibold mt-6 mb-2">Why is it Performed?</h2>
-    <ul className="list-disc list-inside text-gray-700">
-      <li>To determine whether a coronary artery narrowing is causing significant reduction in blood flow</li>
-      <li>To guide decisions on stenting or medical therapy</li>
-      <li>To avoid unnecessary stenting when lesions are not functionally significant</li>
-    </ul>
+//     <h2 className="text-xl font-semibold mt-6 mb-2">Why is it Performed?</h2>
+//     <ul className="list-disc list-inside text-gray-700">
+//       <li>To determine whether a coronary artery narrowing is causing significant reduction in blood flow</li>
+//       <li>To guide decisions on stenting or medical therapy</li>
+//       <li>To avoid unnecessary stenting when lesions are not functionally significant</li>
+//     </ul>
 
-    <h2 className="text-xl font-semibold mt-6 mb-2">Testing Methods</h2>
-    <ul className="list-disc list-inside text-gray-700">
-      <li><strong>FFR:</strong>Measures pressure differences across a stenosis during hyperemia (increased blood flow)</li>
-      <li><strong>iFR:</strong>Measures resting pressure gradient without the need for medications like adenosine</li>
-      <li><strong>RFR:</strong>Evaluates the full cardiac cycle to identify ischemia at rest</li>
-    </ul>
+//     <h2 className="text-xl font-semibold mt-6 mb-2">Testing Methods</h2>
+//     <ul className="list-disc list-inside text-gray-700">
+//       <li><strong>FFR:</strong> Measures pressure differences across a stenosis during hyperemia (increased blood flow)</li>
+//       <li><strong>iFR:</strong> Measures resting pressure gradient without the need for medications like adenosine</li>
+//       <li><strong>RFR:</strong> Evaluates the full cardiac cycle to identify ischemia at rest</li>
+//     </ul>
 
-    <LazyLoadImage 
-      src="/Treatments/ffr-ifr-rfr.jpg"
-      alt="FFR / iFR / RFR Coronary Physiology Testing"
-      className="my-6 w-[20%] h-[50%] rounded-md shadow"
-    />
+//     <img
+//       src="/Treatments/ffr-ifr-rfr.jpg"
+//       alt="FFR / iFR / RFR Coronary Physiology Testing"
+//       className="my-6 w-[20%] h-[50%] rounded-md shadow"
+//     />
 
-    <p>
-      These tests provide real-time physiological data that help interventional cardiologists make precise, patient-specific treatment decisions.
-      They are especially valuable in intermediate coronary lesions, where visual angiography alone may not be sufficient.
-    </p>
+//     <p>
+//       These tests provide real-time physiological data that help interventional cardiologists make precise, patient-specific treatment decisions.
+//       They are especially valuable in intermediate coronary lesions, where visual angiography alone may not be sufficient.
+//     </p>
 
-    <h2 className="text-xl font-semibold mt-6 mb-2">Benefits</h2>
-    <ul className="list-disc list-inside text-gray-700">
-      <li>Reduces unnecessary stent placement</li>
-      <li>Improves patient outcomes by targeting only flow-limiting lesions</li>
-      <li>Minimally invasive and safe</li>
-    </ul>
-  </div>
-),
+//     <h2 className="text-xl font-semibold mt-6 mb-2">Benefits</h2>
+//     <ul className="list-disc list-inside text-gray-700">
+//       <li>Reduces unnecessary stent placement</li>
+//       <li>Improves patient outcomes by targeting only flow-limiting lesions</li>
+//       <li>Minimally invasive and safe</li>
+//     </ul>
+//   </div>
+// ),
+
 'image-guided-angioplasty-oct-ivus': (
   <>
     <p>
@@ -1029,7 +1031,7 @@ const treatmentDetails = {
       <li>May reduce the need for biventricular pacing</li>
     </ul>
     <LazyLoadImage
-      src="/Treatments/left-bundle-branch-pacing.jpg"
+      src="/Treatments/left-bundle.jpg"
       alt="Coarctoplasty"
       className="my-6 w-[20%] h-[50%] rounded-md shadow"
     />
@@ -1099,7 +1101,7 @@ const treatmentDetails = {
       <li>Effectively terminates many types of tachycardia</li>
       <li>Can be automatically and repeatedly delivered</li>
     </ul>
-    <LazyLoadImage
+    <img
       src="/Treatments/anti-tachycardia-pacing.jpg"
       alt="Coarctoplasty"
       className="my-6 w-[20%] h-[50%] rounded-md shadow"
@@ -1155,6 +1157,9 @@ const treatmentDetails = {
 const TreatmentPointDetails = () => {
   const { slug } = useParams();
   const description = treatmentDetails[slug];
+    useEffect(() => {
+    window.scrollTo(0, 0); // 🔁 This scrolls to the top every time you visit a treatment
+  }, []);
 
   return (
     <div className="p-10 bg-white min-h-screen">

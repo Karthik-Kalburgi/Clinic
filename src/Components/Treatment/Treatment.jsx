@@ -16,8 +16,8 @@ const treatmentOptions = [
     points: [
       'Coronary Angiogram',
       'Primary Angioplasty',
-      'Coronary Physiology Testing: FFR/iFR/RFR',
-      'Image Guided: Precision Angioplasty with OCT/IVUS image guidance',
+      // 'Coronary Physiology Testing: FFR/iFR/RFR',
+      // 'Image Guided: Precision Angioplasty with OCT/IVUS image guidance',
       'Complex Angioplasty',
       'Left Main Angioplasty',
       'CTO Revascularization',
@@ -31,7 +31,7 @@ const treatmentOptions = [
     points: [
       'Pacemaker Insertion',
       'AICD Insertion',
-      'CRTD/CRTP Insertion',
+      // 'CRTD/CRTP Insertion',
       'Mechanical Circulatory Support – IABP, Impella',
     ],
   },
@@ -50,7 +50,7 @@ const treatmentOptions = [
     points: [
       'Pulmonary Balloon Valvotomy',
       'Tricuspid Balloon Valvotomy',
-      'Mitral Valvotomy/PTMC',
+      // 'Mitral Valvotomy/PTMC',
       'Aortic Balloon Valvotomy',
       'Device Closure: ASD, VSD, PDA',
       'Coarctoplasty',
@@ -63,7 +63,7 @@ const treatmentOptions = [
       'ELR',
       'ILR',
       'Tilt Table Testing',
-      'Pacemaker Devices',
+      // 'Pacemaker Devices',
     ],
   },
   {
@@ -72,7 +72,7 @@ const treatmentOptions = [
     points: [
       'EP Study',
       'RF Ablation',
-      'Left Bundle Pacing',
+      // 'Left Bundle Pacing',
       'CRTP',
     ],
   },
@@ -81,8 +81,8 @@ const treatmentOptions = [
     image: images7,
     points: [
       'ICD Therapy',
-      'CRT Therapy',
-      'Anti-Tachycardia Pacing (ATP)',
+      // 'CRT Therapy',
+      // 'Anti-Tachycardia Pacing (ATP)',
       'Genetic Testing',
     ],
   },

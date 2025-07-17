@@ -9,6 +9,8 @@ import structural from '../../Images/structuralicons.png';
 import about from '../../Images/aboutmainprofile.png';
 
 import Education from '../Education/Education';
+import { Helmet } from 'react-helmet';
+
 
 const About = () => {
   const areasOfExpertise = [
@@ -19,6 +21,19 @@ const About = () => {
     { img: prevention, title: 'Heart Disease Prevention & Risk Reduction', alt: 'Heart Disease Prevention' },
     { img: healthcare, title: 'Research & Medical Education', alt: 'Research & Education' },
   ];
+  <Helmet>
+  <title>Dr. Santosh V. Chikkodi | Interventional Cardiologist in Bagalkot</title>
+  <meta name="description" content="Dr. Santosh V. Chikkodi is a leading interventional cardiologist in Bagalkot, Karnataka. Specializing in complex PCI, angioplasty, and preventive cardiology with 10+ years of experience." />
+  <meta name="keywords" content="Dr. Santosh V. Chikkodi, Cardiologist in Bagalkot, Interventional Cardiologist, Angioplasty Expert, Complex PCI, Structural Heart, Cardiac Imaging, Prevention, CHIP Cardiologist, Karnataka Cardiologist" />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta property="og:title" content="Dr. Santosh V. Chikkodi - Cardiologist in Bagalkot" />
+  <meta property="og:description" content="Experienced interventional cardiologist in Bagalkot offering advanced cardiac care, angioplasty, and structural heart procedures." />
+  <meta property="og:image" content="https://your-domain.com/path-to-aboutmainprofile.png" />
+  <meta property="og:url" content="https://your-domain.com/about" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/about" />
+</Helmet>
+
 
   return (
     <div className="px-4 sm:px-6 md:px-12 py-8">

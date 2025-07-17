@@ -20,6 +20,7 @@ import TreatmentPointDetails from "./Components/Treatment/TreatmentPointDetails"
 
 
 
+
 function App() {
  
 
@@ -35,6 +36,8 @@ function App() {
     <Route path="/treatment" element={<Treatment />} />
 
     <Route path="/treatment-point/:slug" element={<TreatmentPointDetails />} />
+  
+    
     <Route path='/news' element={<News/>}/>
     <Route path='/testimonial' element={<Reviews/>}/>
     <Route path='/gallery' element={<Gallery/>}/>

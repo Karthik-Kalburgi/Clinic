@@ -1,6 +1,9 @@
 import React from 'react';
 import { IoCall } from "react-icons/io5";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -14,7 +17,7 @@ const Footer = () => {
           </h1>
           <div className="text-center sm:text-right mt-4 sm:mt-0">
             <p className="hover:text-blue-400">Give us a Call <IoCall className="inline text-xl" /></p>
-            <p className="text-yellow-600">+91-89733 65420</p>
+            <p className="text-white hover:text-yellow-500 cursor-pointer">+918618757141</p>
           </div>
         </div>
 
@@ -42,9 +45,10 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Contact Info</h3>
-            <p className="text-gray-400 hover:text-yellow-500">Phone: +91-89733 61500</p>
-            <p className="text-gray-400 hover:text-yellow-500">Email: sfvbjvbsk@gmail.com</p>
-            <p className="text-gray-400 hover:text-yellow-500">Address: #23 Dummy Nagar, Near Smart Point, Bangalore - 581165</p>
+            <p className="text-gray-400 hover:text-yellow-500 flex  mt-3 "><IoCallSharp size={22}  />: +918618757141</p>
+            <p className="text-gray-400 hover:text-yellow-500 flex mt-3"><MdEmail size={22} />: drchikkodicardio@gmail.com</p>
+            <p className="text-gray-400 hover:text-yellow-500 flex mt-3 "><FaLocationDot size={22} />: Rotary Circle Bagalkot 587101</p>
+           
           </div>
 
           {/* Services */}
@@ -64,16 +68,16 @@ const Footer = () => {
         <div className="mt-12 text-center">
           <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Follow Us</h3>
           <div className="flex justify-center space-x-6 text-3xl">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600">
+            <a href="https://www.facebook.com/share/1BJk6qYP1f/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600">
               <FaFacebookSquare />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-400">
               <FaTwitterSquare />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-blue-700">
+            <a href="https://www.linkedin.com/in/dr-santosh-chikkodi-md-dnb-dm-dnb-fscai-doctor-chikkodi%E2%80%99s-cardiac-center-29b920ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-blue-700">
               <FaLinkedin />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-pink-600">
+            <a href="https://www.instagram.com/dr_santoshchikkodicardiologist?igsh=MXh5bzV1YzBtZjY4MA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-pink-600">
               <FaInstagramSquare />
             </a>
           </div>

@@ -44,15 +44,15 @@ const Contact = () => {
               <img alt="profile" src={profile} className="w-32 h-32 rounded-full mt-4 mx-auto" />
               <p className="text-gray-700 mt-4 flex items-center gap-3">
                 <IoLocationSharp className='text-2xl text-blue-500' />
-                #23 Dummy Nagar, Near Smart Point, Bangalore - 5811653
+               Rotary Circle Bagalkot 587101
               </p>
               <p className="text-gray-700 flex items-center gap-3 mt-2">
                 <FaPhoneVolume className='text-2xl text-blue-500' />
-                Phone: 897463150000
+                Phone: +918618757141
               </p>
               <p className="text-gray-700 flex items-center gap-3 mt-2">
                 <MdEmail className='text-2xl text-blue-500' />
-                Email: sfvbjvbsk@gmail.com
+                 drchikkodicardio@gmail.com
               </p>
             </div>
 

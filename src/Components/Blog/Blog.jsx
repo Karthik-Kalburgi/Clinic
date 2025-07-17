@@ -1,8 +1,25 @@
 import React from 'react';
 import blogImg from '../../Images//Blog/BlogImage.jpg'; // Replace with your actual image path
+import { Helmet } from 'react-helmet';
+
 
 const Blog = () => {
+  <Helmet>
+  <title>Cardiac Care Innovation | Dr. Santosh V. Chikkodi's Blog</title>
+  <meta name="description" content="Explore how Dr. Santosh V. Chikkodi is revolutionizing cardiac care with innovation, advanced imaging, AI integration, and patient-centered treatment." />
+  <meta name="keywords" content="Cardiac Care, Dr. Santosh V. Chikkodi, Cardiologist Blog, Interventional Cardiology, Cardiac Innovations, IVUS, OCT, AI in Cardiology" />
+  <meta name="author" content="Dr. Santosh V. Chikkodi" />
+  <meta property="og:title" content="Revolutionizing Cardiac Care: The Journey of Innovation" />
+  <meta property="og:description" content="Discover Dr. Chikkodi’s journey in transforming interventional cardiology with modern techniques and AI-driven diagnostics." />
+  <meta property="og:image" content="https://your-domain.com/path-to-blog-image.jpg" />
+  <meta property="og:url" content="https://your-domain.com/blog" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/blog" />
+</Helmet>
+
+  
   return (
+    
     <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Blog Header */}
       <div className="mb-8 text-center">
