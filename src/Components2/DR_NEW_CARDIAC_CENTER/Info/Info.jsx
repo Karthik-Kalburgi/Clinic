@@ -30,35 +30,38 @@ const Info = () => {
       <div className="relative w-full h-[80vh] md:h-screen text-white">
         <img
           src={drHeart}
-          alt="Doctor Holding Heart"
-          className="w-full h-full object-cover z-0"
+          alt="Dr. Chikkodi holding a heart model"
+          className="w-full h-full object-cover"
         />
       </div>
 
       {/* Scope Image with Overlaid Content */}
-      <div className="relative w-full h-auto min-h-[100vh] text-white">
+      <div className="relative w-full min-h-[100vh] text-white">
         <img
           src={scope}
-          alt="Stethoscope Background"
+          alt="Stethoscope with heart"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
 
-        {/* Content Layer */}
-        <div className="relative z-20 flex flex-col items-center justify-center text-center p-4 sm:p-6 md:p-10 lg:p-22 max-w-6xl mx-auto">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 sm:p-6 md:p-10 lg:p-20 max-w-6xl mx-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">
             WELCOME TO DR. CHIKKODI'S CARDIAC CENTER
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold mb-6 text-black">Your Heart, Our Priority</p>
-          <p className="text-sm sm:text-base md:text-md mb-6 lg:text-xl text-black">Providing Comprehensive Cardiac Care</p>
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold mb-6 text-black">
+            Your Heart, Our Priority
+          </p>
+          <p className="text-sm sm:text-base md:text-md mb-6 lg:text-xl text-black">
+            Providing Comprehensive Cardiac Care
+          </p>
 
-          <div className="text-start items-center text-black  space-y-4">
-            <p className='text-base sm:text-lg md:text-2xl'>
-              At <strong>Dr. Chikkodi’s Cardiac Center</strong>, we believe every heartbeat tells a story—and we’re here to make sure yours is strong and steady.
+          <div className="text-start items-center text-black space-y-6">
+            <p className="text-base sm:text-lg md:text-2xl">
+              At <strong>Dr. Chikkodi’s Cardiac Center</strong>, we believe every heartbeat tells a story — and we’re here to ensure yours is strong and steady.
               Led by <strong>Dr. Santosh Chikkodi</strong>, a highly experienced cardiologist with over a decade of clinical excellence, our center offers compassionate,
-              evidence-based care tailored just for you.
+              evidence-based care tailored to you.
             </p>
 
-            <div className="mt-4">
+            <div>
               <p className="font-semibold text-lg md:text-2xl">Our specialties include advanced cardiac treatments such as:</p>
               <ul className="list-disc ml-6 mt-2 font-medium text-base lg:text-2xl sm:text-lg">
                 <li>Complex coronary angioplasty</li>
@@ -68,13 +71,13 @@ const Info = () => {
               </ul>
             </div>
 
-            <p className="mt-4 text-base sm:text-lg lg:text-2xl md:text-lg">
+            <p className="text-base sm:text-lg md:text-2xl">
               With a patient-first approach, we focus on early diagnosis, personalized treatment planning, and continuous care throughout your recovery and beyond.
               Whether it’s a routine check-up or a high-risk intervention, we ensure precision, comfort, and compassion every step of the way.
             </p>
 
-            <p className="font-semibold mt-4 text-lg md:text-xl">
-              At Dr. Chikkodi’s Cardiac Center, your heart is more than a muscle—it’s our mission.
+            <p className="font-semibold text-lg md:text-xl">
+              At Dr. Chikkodi’s Cardiac Center, your heart is more than a muscle — it’s our mission.
             </p>
           </div>
         </div>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import { PacmanLoader } from 'react-spinners';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -10,6 +11,13 @@ import news3 from '../../Images/News/NewsHeart3.jpg';
 import news4 from '../../Images/News/NewsHeart4.jpg';
 
 const News = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 2000); // 2 seconds
+    return () => clearTimeout(timeout);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -34,10 +42,17 @@ const News = () => {
     ],
   };
 
-  // Fallback image handler
   const handleImageError = (event) => {
-    event.target.src = 'path/to/fallback-image.jpg'; // Provide fallback image path here
+    event.target.src = 'path/to/fallback-image.jpg'; // optional fallback
   };
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <PacmanLoader color="#36d7b7" size={40} />
+      </div>
+    );
+  }
 
   return (
     <div className="news-container px-4 sm:px-6 lg:px-12 py-12 max-w-7xl mx-auto bg-custom-blue">
@@ -46,129 +61,54 @@ const News = () => {
       </h1>
 
       <Slider {...settings} className="mt-10">
-        {/* News 1 */}
-        <div className="news-slide">
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <a
-              href="https://www.pexels.com/photo/part-of-a-person-with-a-stethoscope-5207102/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={news1}
-                alt="Cardiothoracic Imaging Techniques"
-                className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
-                loading="lazy"
-                onError={handleImageError}
-              />
-            </a>
-            <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
-              <a
-                href="https://www.news-medical.net/health/Cardiothoracic-Imaging-Techniques.aspx"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cardiothoracic Imaging Techniques
-              </a>
-            </h3>
-            <p className="text-sm sm:text-base mt-2 text-center text-gray-700">
-              A detailed look at the latest cardiothoracic imaging techniques and their applications.
-            </p>
-          </div>
-        </div>
+        {[news1, news2, news3, news4].map((img, i) => {
+          const content = [
+            {
+              link: "https://www.pexels.com/photo/part-of-a-person-with-a-stethoscope-5207102/",
+              title: "Cardiothoracic Imaging Techniques",
+              desc: "A detailed look at the latest cardiothoracic imaging techniques and their applications.",
+            },
+            {
+              link: "https://www.medscape.com/viewarticle/colchicine-cv-reduction-splits-cardiologists-after-clear-2025a1000614?form=fpf",
+              title: "Colchicine CV Reduction: Cardiologists Divided",
+              desc: "Cardiologists debate the effectiveness of colchicine for cardiovascular reduction after recent studies.",
+            },
+            {
+              link: "https://www.healio.com/cardiology",
+              title: "Latest News on Cardiology",
+              desc: "Stay up to date with the latest developments in the field of cardiology.",
+            },
+            {
+              link: "https://www.thehindu.com/tag/62861-1120-1073/",
+              title: "The Hindu: Latest Cardiovascular Health News",
+              desc: "Latest cardiovascular health-related articles from The Hindu.",
+            },
+          ];
 
-        {/* News 2 */}
-        <div className="news-slide">
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <a
-              href="https://www.medscape.com/viewarticle/colchicine-cv-reduction-splits-cardiologists-after-clear-2025a1000614?form=fpf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={news2}
-                alt="Colchicine CV Reduction: Cardiologists Divided"
-                className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
-                loading="lazy"
-                onError={handleImageError}
-              />
-            </a>
-            <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
-              <a
-                href="https://www.medscape.com/viewarticle/colchicine-cv-reduction-splits-cardiologists-after-clear-2025a1000614?form=fpf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Colchicine CV Reduction: Cardiologists Divided
-              </a>
-            </h3>
-            <p className="text-sm sm:text-base mt-2 text-center text-gray-700">
-              Cardiologists debate the effectiveness of colchicine for cardiovascular reduction after recent studies.
-            </p>
-          </div>
-        </div>
-
-        {/* News 3 */}
-        <div className="news-slide">
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <a
-              href="https://www.healio.com/cardiology"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={news3}
-                alt="Latest News on Cardiology"
-                className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
-                loading="lazy"
-                onError={handleImageError}
-              />
-            </a>
-            <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
-              <a
-                href="https://www.healio.com/cardiology"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Latest News on Cardiology
-              </a>
-            </h3>
-            <p className="text-sm sm:text-base mt-2 text-center text-gray-700">
-              Stay up to date with the latest developments in the field of cardiology.
-            </p>
-          </div>
-        </div>
-
-        {/* News 4 */}
-        <div className="news-slide">
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
-            <a
-              href="https://www.thehindu.com/tag/62861-1120-1073/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={news4}
-                alt="The Hindu: Latest Cardiovascular Health News"
-                className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
-                loading="lazy"
-                onError={handleImageError}
-              />
-            </a>
-            <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
-              <a
-                href="https://www.thehindu.com/tag/62861-1120-1073/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Hindu: Latest Cardiovascular Health News
-              </a>
-            </h3>
-            <p className="text-sm sm:text-base mt-2 text-center text-gray-700">
-              Latest cardiovascular health-related articles from The Hindu.
-            </p>
-          </div>
-        </div>
+          return (
+            <div key={i} className="news-slide">
+              <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-3xl mx-auto">
+                <a href={content[i].link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={img}
+                    alt={content[i].title}
+                    className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
+                    loading="lazy"
+                    onError={handleImageError}
+                  />
+                </a>
+                <h3 className="text-lg sm:text-xl font-semibold mt-4 text-center">
+                  <a href={content[i].link} target="_blank" rel="noopener noreferrer">
+                    {content[i].title}
+                  </a>
+                </h3>
+                <p className="text-sm sm:text-base mt-2 text-center text-gray-700">
+                  {content[i].desc}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </Slider>
     </div>
   );

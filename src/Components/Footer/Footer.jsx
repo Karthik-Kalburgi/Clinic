@@ -1,52 +1,29 @@
 import React from 'react';
-import { IoCall } from "react-icons/io5";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import { Helmet } from 'react-helmet';
-
 
 const Footer = () => {
-
-
   return (
     <footer className="bg-gray-800 text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24 mt-10">
-    <Helmet>
-  <title>Dr. Santosh V. Chikkodi | Best Cardiologist Near You | Trusted Heart Specialist in Karnataka</title>
-  <meta 
-    name="description" 
-    content="Contact Dr. Santosh V. Chikkodi, a senior interventional cardiologist in Bagalkot. Expert in angioplasty, pacemakers, and heart care services. Call now to book your appointment!" 
-  />
-  <meta 
-    name="keywords" 
-    content="cardiologist near me, heart doctor Bagalkot, Dr. Santosh Chikkodi, Bangalore cardiologist, interventional cardiologist India, top heart specialist Karnataka, pacemaker expert" 
-  />
-  <meta name="author" content="Dr. Santosh V. Chikkodi" />
-  <meta name="robots" content="index, follow" />
-
-  <meta property="og:title" content="Dr. Santosh Chikkodi - Trusted Cardiologist in Karnataka" />
-  <meta property="og:description" content="Consult one of Karnataka’s top heart specialists. Advanced cardiac treatments available at multiple locations. Book now!" />
-  <meta property="og:image" content="https://your-domain.com/footer-og-image.jpg" />
-  <meta property="og:url" content="https://your-domain.com" />
-  <link rel="canonical" href="https://your-domain.com" />
-</Helmet>
-
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-12">
           <h1 className="text-2xl font-semibold hover:text-blue-400">
             Dr. Santosh V. Chikkodi
           </h1>
           <div className="text-center sm:text-right mt-4 sm:mt-0">
-            <p className="hover:text-blue-400">Give us a Call <IoCall className="inline text-xl" /></p>
-            <p className="text-white hover:text-yellow-500 cursor-pointer">+918618757141</p>
+            <p className="hover:text-blue-400 flex items-center justify-center sm:justify-end gap-2">
+              Give us a Call <IoCallSharp className="text-xl" />
+            </p>
+            <p className="text-white hover:text-yellow-500 cursor-pointer">+91 86187 57141</p>
           </div>
         </div>
 
         {/* Grid Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+        <nav aria-label="Footer" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           {/* About */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">About Us</h3>
@@ -69,10 +46,15 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Contact Info</h3>
-            <p className="text-gray-400 hover:text-yellow-500 flex  mt-3 "><IoCallSharp size={22}  />: +918618757141</p>
-            <p className="text-gray-400 hover:text-yellow-500 flex mt-3"><MdEmail size={22} />: drchikkodicardio@gmail.com</p>
-            <p className="text-gray-400 hover:text-yellow-500 flex mt-3 "><FaLocationDot size={22} />: Rotary Circle Bagalkot 587101</p>
-           
+            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
+              <IoCallSharp size={22} /> +91 86187 57141
+            </p>
+            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
+              <MdEmail size={22} /> drchikkodicardio@gmail.com
+            </p>
+            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
+              <FaLocationDot size={22} /> Rotary Circle Bagalkot 587101
+            </p>
           </div>
 
           {/* Services */}
@@ -86,7 +68,7 @@ const Footer = () => {
               <li className="hover:text-yellow-500">Arrhythmia Treatments</li>
             </ul>
           </div>
-        </div>
+        </nav>
 
         {/* Social Media */}
         <div className="mt-12 text-center">
@@ -119,12 +101,21 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-8 border-t pt-4 text-center text-gray-400">
-          <p className="p-2 hover:text-yellow-500">&copy; 2025 Designed And Developed by Sohail L and Karthik Kalburgi . All rights reserved.</p>
+          <p className="p-2 hover:text-yellow-500">&copy; 2025 Designed And Developed by Sohail L and Karthik Kalburgi. All rights reserved.</p>
         </div>
+
+        {/* Scroll To Top Button */}
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-8 right-8 bg-yellow-500 text-white p-3 rounded-full shadow-lg hover:bg-yellow-600 z-50"
+          aria-label="Scroll to Top"
+        >
+          ↑
+        </button>
+
       </div>
     </footer>
   );
 };
 
 export default Footer;
-

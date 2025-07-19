@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import complex from '../../Images/Complexicons.png';
 import cardiac from '../../Images/cardiacimagingicons.png';
@@ -10,9 +10,11 @@ import about from '../../Images/aboutmainprofile.png';
 
 import Education from '../Education/Education';
 import { Helmet } from 'react-helmet';
-
+import PacmanLoader from 'react-spinners/PacmanLoader';
 
 const About = () => {
+  const [loading, setLoading] = useState(true);
+
   const areasOfExpertise = [
     { img: complex, title: 'Complex & High-Risk PCI (CHIP)', alt: 'Complex PCI' },
     { img: conoary, title: 'Coronary & Peripheral Angioplasty', alt: 'Coronary Angioplasty' },
@@ -21,30 +23,42 @@ const About = () => {
     { img: prevention, title: 'Heart Disease Prevention & Risk Reduction', alt: 'Heart Disease Prevention' },
     { img: healthcare, title: 'Research & Medical Education', alt: 'Research & Education' },
   ];
-  <Helmet>
-  <title>Dr. Santosh V. Chikkodi | Interventional Cardiologist in Bagalkot</title>
-  <meta name="description" content="Dr. Santosh V. Chikkodi is a leading interventional cardiologist in Bagalkot, Karnataka. Specializing in complex PCI, angioplasty, and preventive cardiology with 10+ years of experience." />
-  <meta name="keywords" content="Dr. Santosh V. Chikkodi, Cardiologist in Bagalkot, Interventional Cardiologist, Angioplasty Expert, Complex PCI, Structural Heart, Cardiac Imaging, Prevention, CHIP Cardiologist, Karnataka Cardiologist" />
-  <meta name="author" content="Dr. Santosh V. Chikkodi" />
-  <meta property="og:title" content="Dr. Santosh V. Chikkodi - Cardiologist in Bagalkot" />
-  <meta property="og:description" content="Experienced interventional cardiologist in Bagalkot offering advanced cardiac care, angioplasty, and structural heart procedures." />
-  <meta property="og:image" content="https://your-domain.com/path-to-aboutmainprofile.png" />
-  <meta property="og:url" content="https://your-domain.com/about" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://your-domain.com/about" />
-</Helmet>
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Show loader for 2 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <PacmanLoader color="#36d7b7" size={40} />
+      </div>
+    );
+  }
 
   return (
     <div className="px-4 sm:px-6 md:px-12 py-8">
+      <Helmet>
+        <title>Dr. Santosh V. Chikkodi | Interventional Cardiologist in Bagalkot</title>
+        <meta name="description" content="Dr. Santosh V. Chikkodi is a leading interventional cardiologist in Bagalkot, Karnataka. Specializing in complex PCI, angioplasty, and preventive cardiology with 10+ years of experience." />
+        <meta name="keywords" content="Dr. Santosh V. Chikkodi, Cardiologist in Bagalkot, Interventional Cardiologist, Angioplasty Expert, Complex PCI, Structural Heart, Cardiac Imaging, Prevention, CHIP Cardiologist, Karnataka Cardiologist" />
+        <meta name="author" content="Dr. Santosh V. Chikkodi" />
+        <meta property="og:title" content="Dr. Santosh V. Chikkodi - Cardiologist in Bagalkot" />
+        <meta property="og:description" content="Experienced interventional cardiologist in Bagalkot offering advanced cardiac care, angioplasty, and structural heart procedures." />
+        <meta property="og:image" content="https://your-domain.com/path-to-aboutmainprofile.png" />
+        <meta property="og:url" content="https://your-domain.com/about" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://your-domain.com/about" />
+      </Helmet>
+
       {/* Top Image Section */}
-      <div className="relative">
-        {/* Optional header image here */}
-      </div>
+      <div className="relative"></div>
 
       {/* Main Content Section */}
       <div className="mt-12 flex flex-col sm:flex-row-reverse gap-8 sm:gap-12 justify-center">
-        {/* Doctor's Profile Picture */}
         <div className="flex-1">
           <LazyLoadImage 
             src={about} 
@@ -53,7 +67,6 @@ const About = () => {
           />
         </div>
 
-        {/* Doctor's Information */}
         <div className="flex-1 space-y-6">
           <h1 className="text-4xl font-bold mt-8 font-poppins text-cyan-500 hover:text-blue-800 transition duration-300 text-center sm:text-left">
             Dr. Santosh V. Chikkodi
@@ -62,12 +75,10 @@ const About = () => {
             10 years experience | MBBS, MD (Med), DNB(Med), DM(Cardio), DNB (Cardio)
           </h2>
 
-          {/* Info Box */}
           <div className="border-4 border-cyan-500 p-4 sm:p-6 mt-6 bg-gray-100 text-cyan-500 font-semibold text-xl text-center shadow-md rounded-xl ">
             <p className="text-2xl font-poppins font-semibold">Senior Consultant Interventional Cardiologist</p>
           </div>
 
-          {/* Description Paragraphs */}
           <div className="text-gray-700 font-poppins space-y-4 text-lg sm:text-xl">
             <p>
               As an Interventional Cardiologist, I specialize in minimally invasive procedures to diagnose and treat complex cardiovascular conditions.

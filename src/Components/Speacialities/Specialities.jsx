@@ -75,4 +75,4 @@ const Specialities = () => {
   );
 }
 
-export default Specialities;
+export default Specialities; 
