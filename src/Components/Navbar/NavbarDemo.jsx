@@ -23,7 +23,7 @@
             {/* Using Link instead of window.location.href */}
             <Link to='/info'>
   <button className='bg-custom-cyan rounded-lg mr-8 font-semibold font-poppins text-white p-2'>
-    Dr Chikkodi Cardiac Center
+    Doctor Chikkodi Cardiac Center
   </button>
 </Link>
           </div>

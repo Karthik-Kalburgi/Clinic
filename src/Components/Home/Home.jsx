@@ -33,20 +33,20 @@ const Home = () => {
   <link rel="canonical" href="https://your-domain.com" />
 </Helmet>
       {/* Hero Section */}
-      <div className="relative flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 pt-10 pb-16 gap-10">
+      <div className="relative flex flex-col lg:flex-row items-center  justify-between px-4 sm:px-8 lg:px-16 pt-10 pb-16 gap-10">
         {/* Doctor Info */}
-        <div className="w-full lg:w-1/2 text-start font-poppins">
-          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-custom-cyan">
+        <div className="w-full lg:w-1/2 text-start font-poppins   ">
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:ml-20 text-custom-cyan">
             Dr. Santosh V. Chikkodi
           </h1>
-          <p className="text-lg sm:text-xl text-custom-cyan font-bold mt-4">
+          <p className="text-lg sm:text-xl text-custom-cyan lg:ml-20 font-bold mt-4">
             Senior Interventional Cardiologist
           </p>
-          <p className="text-lg sm:text-xl text-custom-cyan font-bold mt-1">
+          <p className="text-lg sm:text-xl text-custom-cyan lg:ml-20 font-bold mt-1">
             Bagalkot, Karnataka, India
           </p>
 
-          <button className="mt-6 sm:mt-8 text-white font-bold text-lg sm:text-xl px-14 py-5 rounded-3xl bg-gradient-to-r from-teal-500 to-cyan-400 hover:from-cyan-400 hover:to-teal-500">
+          <button className="mt-6 sm:mt-8 lg:ml-20 text-white font-bold text-lg sm:text-xl px-14 py-5 rounded-3xl bg-gradient-to-r from-teal-500 to-cyan-400 hover:from-cyan-400 hover:to-teal-500">
             Book an appointment
           </button>
         </div>
@@ -56,13 +56,13 @@ const Home = () => {
           <img
             src={doctors}
             alt="Doctor"
-            className="w-[85%]  sm:w-[70%] md:w-[65%] lg:w-[90%] lg:mr-32 xl:w-[80%] h-auto rounded-md object-contain"
+            className="w-[85%]   sm:w-[80%]  md:w-[65%] lg:w-[90%] lg:mr-32 xl:w-[80%] h-auto rounded-md object-contain"
           />
         </div>
       </div>
 
       {/* Stats Section */}
-      <div className="w-full px-4 sm:px-8 lg:px-14 flex flex-wrap justify-center gap-6 lg:-mt-16   -mt-12 z-10 relative">
+      <div className="w-full px-4 sm:px-10 lg:px-12 flex flex-wrap justify-center gap-6 lg:-mt-16   -mt-12 z-10 relative">
         {[{
           label: "Angiograms",
           end: 5000

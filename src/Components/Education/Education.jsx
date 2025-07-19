@@ -62,10 +62,7 @@ const Education = () => {
           <p className="mt-4 text-lg md:text-xl font-medium text-center font-poppins leading-relaxed text-black">
             Currently working as a senior consultant Interventional cardiologist in Bagalkot, Karnataka since June 2021.
           </p>
-          <p className="mt-4 text-lg md:text-xl font-medium text-center leading-relaxed text-black">
-            Another paper on <strong>PRIMARY ANGIOPLASTY AND STENTING EXPERIENCE</strong>, presented at the Indian
-            College of Cardiology, 2003, Mumbai, earned him the second-best paper award at the National level.
-          </p>
+         
           <p className="mt-4 text-lg md:text-xl font-medium text-center font-poppins leading-relaxed text-black">
             MBBS – KIMS, Hubli, 2012<br />
             MD – Internal Medicine, PGIMER, Chandigarh, 2015<br />
