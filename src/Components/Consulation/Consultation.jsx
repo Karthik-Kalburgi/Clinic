@@ -56,7 +56,7 @@ const Consultation = () => {
               {/* Card 1 */}
               <div className="border p-16 rounded-3xl shadow-lg transition-all hover:shadow-2xl bg-sky-50 hover:bg-blue-100">
                 <div className="text-xl font-semibold text-black flex items-center gap-4">
-                  <img src={hospitalicon} alt='Kerudi Heart Center' className='w-[6%]' />
+                  <img src={hospitalicon} alt='Kerudi Heart Center' className='w-[6%]   ' />
                   <h2 className='text-cyan-500 font-semibold text-2xl'>Kerudi Heart Center</h2>
                 </div>
                 <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">

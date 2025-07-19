@@ -62,11 +62,11 @@ const NavbarDemo = () => {
 
       {/* Mobile Navbar */}
       <div className="md:hidden flex justify-between items-center px-4">
-        <img src={logo} alt="Clinic Logo" className="w-[90px] h-[40px] rounded-full" />
+        <img src={logo} alt="Clinic Logo" className="w-[90px] h-[40px]  rounded-full" />
 
         <button
           onClick={toggleMenu}
-          className="text-4xl text-black mt-6"
+          className="text-4xl text-black mt-16"
           aria-label="Toggle menu"
         >
           &#8801;
