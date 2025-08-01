@@ -32,7 +32,7 @@ const NavbarDemo = () => {
       <div className="absolute top-4 right-4">
         <Link to="/info">
           <button className="bg-custom-cyan text-white font-poppins font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-cyan-600 transition">
-            Doctor Chikkodi Cardiac Center
+            Doctor Chikkodi's Cardiac Center
           </button>
         </Link>
       </div>

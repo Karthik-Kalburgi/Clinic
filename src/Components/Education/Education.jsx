@@ -53,7 +53,8 @@ const Education = () => {
             MD – Internal Medicine, PGIMER, Chandigarh, 2015<br />
             DNB – Medicine, NBE Delhi, 2018<br />
             DM – Cardiology, Sri Jayadeva Institute of Cardiovascular Sciences, Bangalore, 2019<br />
-            DNB – Cardiology, NBE Delhi, 2021
+            DNB – Cardiology, NBE Delhi, 2021 <br />
+            FSCA (USA)
           </p>
         </div>
       </div>

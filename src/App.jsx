@@ -43,6 +43,32 @@ function App() {
           <Route path="*" element={<div className="text-center p-20 text-2xl font-bold">404 - Page Not Found</div>} />
         </Routes>
       </Suspense>
+      <div className="fixed bottom-28 right-4 z-50 group ">
+  <a
+    href="https://wa.me/8618757141?text=Hello%20How%20Can%20I%20Help%20You?"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative inline-block"
+  >
+    {/* Tooltip */}
+    <span className="absolute -top-16 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform bg-green-600 text-white text-xs px-3 py-1 rounded shadow-lg">
+      Chat with us!
+    </span>
+
+  
+   
+
+    {/* Icon */}
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+      alt="Chat on WhatsApp"
+      width="60"
+      className="relative z-10 transition-transform transform hover:scale-110"
+    />
+  </a>
+</div>
+
+
       <Footer />
     </Router>
   );
