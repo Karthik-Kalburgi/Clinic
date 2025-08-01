@@ -27,7 +27,7 @@ const About = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Show loader for 2 seconds
+    }, 800); // Show loader for 2 seconds
     return () => clearTimeout(timer);
   }, []);
 

@@ -14,7 +14,7 @@ const News = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 2000); // 2 seconds
+    const timeout = setTimeout(() => setLoading(false), 800); // 2 seconds
     return () => clearTimeout(timeout);
   }, []);
 

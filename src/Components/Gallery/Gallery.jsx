@@ -28,7 +28,7 @@ const Gallery = () => {
     setTimeout(() => {
       setIsImageGallery(showImageGallery);
       setLoading(false);
-    }, 2000); // 2 seconds spinner
+    }, 800); // 2 seconds spinner
   };
 
   return (

@@ -90,7 +90,7 @@ const Treatment = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 2000); // Show spinner for 2 seconds
+    const timeout = setTimeout(() => setLoading(false), 800); // Show spinner for 2 seconds
     return () => clearTimeout(timeout);
   }, []);
 

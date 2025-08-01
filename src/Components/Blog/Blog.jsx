@@ -7,7 +7,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000); // simulate 1 second load
+    const timer = setTimeout(() => setLoading(false), 800); // simulate 1 second load
     return () => clearTimeout(timer);
   }, []);
 
