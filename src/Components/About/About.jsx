@@ -72,7 +72,7 @@ const About = () => {
             Dr. Santosh V. Chikkodi
           </h1>
           <h2 className="mt-2 text-2xl font-poppins font-medium text-center sm:text-left">
-            10 years experience | MBBS, MD (Med), DNB(Med), DM(Cardio), DNB (Cardio)
+            10 years experience | MBBS, MD (Med), DNB(Med), DM(Cardio), DNB (Cardio) FSCAI (USA)
           </h2>
 
           <div className="border-4 border-cyan-500 p-4 sm:p-6 mt-6 bg-gray-100 text-cyan-500 font-semibold text-xl text-center shadow-md rounded-xl ">

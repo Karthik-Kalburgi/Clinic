@@ -54,7 +54,7 @@ const Education = () => {
             DNB – Medicine, NBE Delhi, 2018<br />
             DM – Cardiology, Sri Jayadeva Institute of Cardiovascular Sciences, Bangalore, 2019<br />
             DNB – Cardiology, NBE Delhi, 2021 <br />
-            FSCA (USA)
+            FSCAI (USA)
           </p>
         </div>
       </div>

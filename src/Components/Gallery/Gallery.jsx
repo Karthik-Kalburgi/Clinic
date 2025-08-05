@@ -11,14 +11,18 @@ import gal7 from '../../Images/gallery7.jpg';
 import gal8 from '../../Images/gallery8.jpg';
 import gal9 from '../../Images/gallery9.jpg';
 import gal10 from '../../Images/gallery10.jpg';
+import gal11 from '../../Images/Gal11.jpg';
+import gal12 from '../../Images/Gal12.jpg';
+import gal13 from '../../Images/Gal13.jpg';
 
 const Gallery = () => {
   const [isImageGallery, setIsImageGallery] = useState(true);
   const [loading, setLoading] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null); // 🆕 added for pop-up
 
-  const images = [gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10];
+  const images = [gal11, gal12, gal13, gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10];
   const videos = [
-    "https://www.youtube.com/embed/O_gORx4L_Oc",
+    "https://www.youtube.com/embed/gyBPtLrKfk4",
     "https://www.youtube.com/embed/xGUfA5wyNXk",
     "https://www.youtube.com/embed/5ECQtxnFESk"
   ];
@@ -28,17 +32,23 @@ const Gallery = () => {
     setTimeout(() => {
       setIsImageGallery(showImageGallery);
       setLoading(false);
-    }, 800); // 2 seconds spinner
+    }, 800); // spinner delay
+  };
+
+  const openImage = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
   };
 
   return (
     <div className="px-4 sm:px-6 md:px-12 py-8">
-      {/* Header */}
       <h1 className='text-center text-5xl font-poppins md:text-4xl font-extrabold mt-20 text-black bg-custom-blue py-8'>
         About the Doctor
       </h1>
 
-      {/* Toggle Buttons */}
       <div className="flex justify-center gap-6 mb-14 mt-8">
         <button
           className="bg-yellow-500 rounded-2xl px-6 py-2 text-lg sm:text-xl text-black font-semibold transition-all duration-300 hover:bg-yellow-600"
@@ -54,7 +64,6 @@ const Gallery = () => {
         </button>
       </div>
 
-      {/* Loader */}
       {loading ? (
         <div className="flex justify-center items-center min-h-[300px]">
           <PacmanLoader color="#36d7b7" size={40} />
@@ -68,7 +77,8 @@ const Gallery = () => {
                   key={index}
                   src={image}
                   alt={`Gallery ${index + 1}`}
-                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg"
+                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[490px] object-cover rounded-lg cursor-pointer"
+                  onClick={() => openImage(image)} // 🆕 open on click
                 />
               ))
             ) : (
@@ -87,6 +97,24 @@ const Gallery = () => {
                 </div>
               ))
             )}
+          </div>
+        </div>
+      )}
+
+      {/* 🆕 Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          onClick={closeImage}
+        >
+          <div className="relative max-w-3xl w-full px-4">
+            <img src={selectedImage} alt="Popup" className="w-full h-auto rounded-lg" />
+            <button
+              onClick={closeImage}
+              className="absolute top-4 right-4 text-white text-2xl font-bold"
+            >
+              &times;
+            </button>
           </div>
         </div>
       )}

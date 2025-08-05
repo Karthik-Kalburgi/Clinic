@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="hover:text-blue-400 flex items-center justify-center sm:justify-end gap-2">
               Give us a Call <IoCallSharp className="text-xl" />
             </p>
-            <p className="text-white hover:text-yellow-500 cursor-pointer">+91 86187 57141</p>
+            <p className="text-white hover:text-yellow-500 cursor-pointer">+91 8618757141</p>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Contact Info</h3>
             <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <IoCallSharp size={22} /> +91 86187 57141
+              <IoCallSharp size={22} /> +91 8618757141
             </p>
             <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
               <MdEmail size={22} /> drchikkodicardio@gmail.com
