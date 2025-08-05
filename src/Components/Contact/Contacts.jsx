@@ -34,7 +34,7 @@ const Contacts = () => {
     }
 
     emailjs
-      .sendForm('service_k8h3jh3', 'template_odtrfvk', form.current, 'KlO73PmloElJU-C1p')
+      .sendForm('service_ggyx0ni', 'template_nzrq9lk', form.current, 'tlSzuWABv9bTwe-Xt')
       .then(() => {
         toast.success("Your response has been submitted successfully!");
         setFormData({ user_name: '', user_email: '', message: '' });
