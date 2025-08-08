@@ -20,10 +20,10 @@ const Blog = () => {
         <meta name="author" content="Dr. Santosh V. Chikkodi" />
         <meta property="og:title" content="Revolutionizing Cardiac Care: The Journey of Innovation" />
         <meta property="og:description" content="Discover Dr. Chikkodi’s journey in transforming interventional cardiology with modern techniques and AI-driven diagnostics." />
-        <meta property="og:image" content="https://your-domain.com/path-to-blog-image.jpg" />
-        <meta property="og:url" content="https://your-domain.com/blog" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to-blog-image.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/blog" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://your-domain.com/blog" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/blog" />
       </Helmet>
 
       {loading ? (

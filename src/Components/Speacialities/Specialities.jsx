@@ -20,9 +20,9 @@ const Specialities = () => {
 
   <meta property="og:title" content="Dr. Santosh Chikkodi's Cardiology Treatments and Specialities" />
   <meta property="og:description" content="Get expert heart care in Bagalkot. View the complete list of procedures like Micra insertion, CRT, angioplasty, device closures, and more." />
-  <meta property="og:image" content="https://your-domain.com/assets/specialities-og.jpg" />
-  <meta property="og:url" content="https://your-domain.com/specialities" />
-  <link rel="canonical" href="https://your-domain.com/specialities" />
+  <meta property="og:image" content="https://drsantoshchikkodi.com/assets/specialities-og.jpg" />
+  <meta property="og:url" content="https://drsantoshchikkodi.com/specialities" />
+  <link rel="canonical" href="https://drsantoshchikkodi.com/specialities" />
 </Helmet>
 
       <h1 className="text-center text-5xl font-bold text-gray-800 mb-12 mt-22">

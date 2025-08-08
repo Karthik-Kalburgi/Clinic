@@ -58,10 +58,10 @@ const Contacts = () => {
         <meta name="author" content="Dr. Santosh V. Chikkodi" />
         <meta property="og:title" content="Contact | Dr. Santosh V. Chikkodi - Cardiologist" />
         <meta property="og:description" content="Contact Dr. Santosh V. Chikkodi for cardiology consultation. Reach out via phone or email to book an appointment in Bagalkot or Ramdurg." />
-        <meta property="og:image" content="https://your-domain.com/path-to/contact-page-image.jpg" />
-        <meta property="og:url" content="https://your-domain.com/contact" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to/contact-page-image.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/contact" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://your-domain.com/contact" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/contact" />
       </Helmet>
 
       {loading ? (

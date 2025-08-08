@@ -19,9 +19,9 @@ const Reviews = () => {
         <meta name="author" content="Dr. Santosh V. Chikkodi" />
         <meta property="og:title" content="Patient Reviews - Dr. Santosh V. Chikkodi" />
         <meta property="og:description" content="Discover how patients have benefited from expert cardiac care by Dr. Chikkodi. Read genuine testimonials now." />
-        <meta property="og:image" content="https://your-domain.com/assets/testimonial-og.jpg" />
-        <meta property="og:url" content="https://your-domain.com/reviews" />
-        <link rel="canonical" href="https://your-domain.com/reviews" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/assets/testimonial-og.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/reviews" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/reviews" />
       </Helmet>
 
       <Testimonial />

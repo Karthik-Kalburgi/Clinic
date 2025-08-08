@@ -35,10 +35,10 @@ const Consultation = () => {
           property="og:description"
           content="Dr. Santosh V. Chikkodi is available at Kerudi Heart Center in Bagalkot and Dr Chikkodi’s Cardiac Center in Ramdurg. Find addresses, timings, and more."
         />
-        <meta property="og:image" content="https://your-domain.com/path-to/location-map-or-hospital-image.jpg" />
-        <meta property="og:url" content="https://your-domain.com/consultation" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to/location-map-or-hospital-image.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/consultation" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://your-domain.com/consultation" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/consultation" />
       </Helmet>
 
       {loading ? (

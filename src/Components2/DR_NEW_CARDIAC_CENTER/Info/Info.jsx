@@ -21,9 +21,9 @@ const Info = () => {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Dr. Chikkodi’s Cardiac Center – Trusted Cardiac Specialist in Bagalkot" />
         <meta property="og:description" content="Get specialized and compassionate cardiac care from Dr. Santosh Chikkodi. Our center offers the latest treatments for heart conditions in Karnataka." />
-        <meta property="og:image" content="https://yourdomain.com/assets/dr-holding-heart.jpg" />
-        <meta property="og:url" content="https://yourdomain.com/info" />
-        <link rel="canonical" href="https://yourdomain.com/info" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/assets/dr-holding-heart.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/info" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/info" />
       </Helmet>
 
       {/* Doctor Holding Heart Section */}

@@ -48,10 +48,10 @@ const About = () => {
         <meta name="author" content="Dr. Santosh V. Chikkodi" />
         <meta property="og:title" content="Dr. Santosh V. Chikkodi - Cardiologist in Bagalkot" />
         <meta property="og:description" content="Experienced interventional cardiologist in Bagalkot offering advanced cardiac care, angioplasty, and structural heart procedures." />
-        <meta property="og:image" content="https://your-domain.com/path-to-aboutmainprofile.png" />
-        <meta property="og:url" content="https://your-domain.com/about" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to-aboutmainprofile.png" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/about" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://your-domain.com/about" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/about" />
       </Helmet>
 
       {/* Top Image Section */}

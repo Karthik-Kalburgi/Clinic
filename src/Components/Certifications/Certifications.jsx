@@ -29,10 +29,10 @@ const Certifications = () => {
           property="og:description"
           content="View Dr.  Santosh Chikkodi contributions to cardiology, featuring award-winning papers and collaborative journal publications."
         />
-        <meta property="og:image" content="https://your-domain.com/path-to/medicine.jpg" />
-        <meta property="og:url" content="https://your-domain.com/certifications" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to/medicine.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/certifications" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://your-domain.com/certifications" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/certifications" />
       </Helmet>
 
       {loading ? (

@@ -20,10 +20,10 @@ const Education = () => {
           property="og:description"
           content="Learn about Dr. Chikkodi’s qualifications: MBBS, MD, DNB, DM in Cardiology from top institutions like PGIMER and Jayadeva Institute."
         />
-        <meta property="og:image" content="https://your-domain.com/path-to/education-image.jpg" />
-        <meta property="og:url" content="https://your-domain.com/education" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to/education-image.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/education" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://your-domain.com/education" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/education" />
       </Helmet>
 
       <div className="text-center mb-12">

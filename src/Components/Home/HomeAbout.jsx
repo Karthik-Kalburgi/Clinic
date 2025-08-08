@@ -24,9 +24,9 @@ const HomeAbout = () => {
 
   <meta property="og:title" content="Dr. Santosh V. Chikkodi - Cardiologist Background & Achievements" />
   <meta property="og:description" content="Meet Dr. Santosh Chikkodi, an experienced interventional cardiologist in Karnataka with thousands of successful procedures and a strong educational background." />
-  <meta property="og:image" content="https://your-domain.com/assets/aboutmainprofile-og.jpg" />
-  <meta property="og:url" content="https://your-domain.com/about" />
-  <link rel="canonical" href="https://your-domain.com/about" />
+  <meta property="og:image" content="https://drsantoshchikkodi.com/assets/aboutmainprofile-og.jpg" />
+  <meta property="og:url" content="https://drsantoshchikkodi.com/about" />
+  <link rel="canonical" href="https://drsantoshchikkodi.com/about" />
 </Helmet>
 
       

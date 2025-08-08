@@ -118,9 +118,9 @@ const Treatment = () => {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Treatment Options | Dr. Santosh V. Chikkodi - Cardiac Specialist" />
         <meta property="og:description" content="Browse life-saving treatment options including heart attack, heart failure, arrhythmia, and structural heart disease therapies by Dr. Chikkodi." />
-        <meta property="og:image" content="https://your-domain.com/assets/treatment-banner.jpg" />
-        <meta property="og:url" content="https://your-domain.com/treatment" />
-        <link rel="canonical" href="https://your-domain.com/treatment" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/assets/treatment-banner.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com/treatment" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com/treatment" />
       </Helmet>
 
       <h1 className="text-3xl md:text-4xl font-extrabold text-center text-black font-poppins">

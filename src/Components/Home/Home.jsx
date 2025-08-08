@@ -26,9 +26,9 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Dr. Santosh V. Chikkodi - Trusted Cardiologist in Karnataka" />
         <meta property="og:description" content="Get expert cardiac care from one of Karnataka's top heart specialists. Over 5000 angiograms and 2500 angioplasties performed." />
-        <meta property="og:image" content="https://your-domain.com/assets/doctor-home-og.jpg" />
-        <meta property="og:url" content="https://your-domain.com" />
-        <link rel="canonical" href="https://your-domain.com" />
+        <meta property="og:image" content="https://drsantoshchikkodi.com/assets/doctor-home-og.jpg" />
+        <meta property="og:url" content="https://drsantoshchikkodi.com" />
+        <link rel="canonical" href="https://drsantoshchikkodi.com" />
       </Helmet>
 
       {/* Hero Section */}
@@ -44,7 +44,7 @@ const Home = () => {
           <p className="text-lg sm:text-xl text-custom-cyan lg:ml-20 font-bold mt-1">
             Bagalkot, Karnataka, India
           </p>
-          <button className="mt-6 sm:mt-8 lg:ml-20 text-white font-bold text-lg sm:text-xl px-14 py-5 rounded-3xl bg-gradient-to-r from-teal-500 to-cyan-400 hover:from-cyan-400 hover:to-teal-500">
+          <button className="mt-6 sm:mt-8 lg:ml-20 text-white font-bold text-lg sm:text-xl px-14 py-5 rounded-3xl bg-gradient-to-r from-teal-500 to-cyan-400 hover:from-cyan-400 hover:to-teal-500"  onClick={() => window.open('https://kivihealth.com/', '_blank')} >
             Book an Appointment
           </button>
         </div>
