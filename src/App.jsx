@@ -45,7 +45,7 @@ function App() {
       </Suspense>
       <div className="fixed bottom-28 right-4 z-50 group ">
   <a
-    href="https://wa.me/8618757141?text=Hello%20How%20Can%20I%20Help%20You?"
+    href="https://wa.me/8618757141?text=Hello%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20services%20you%20offer.%20Can%20you%20please%20provide%20more%20details%3F"
     target="_blank"
     rel="noopener noreferrer"
     className="relative inline-block"

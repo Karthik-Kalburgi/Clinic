@@ -62,7 +62,7 @@ Bagalkot, Karnataka, India
         
 
           {/* Description Paragraphs */}
-          <div className="text-gray-700  font-poppins text-justify space-y-4 text-lg sm:text-xl">
+          <div className="text-gray-700  font-poppins justify-start space-y-4 text-lg sm:text-xl">
             <p>
             With more than  <span className='font-bold '> 5000 </span>angiograms through Femoral, Ulnar and Radial approach and more than <span className='font-bold '> 2500 </span> coronary angioplasty,  & <span className='font-bold '> 100+ </span> 
             Pacemaker devices. Dr. Santosh V. Chikkodi is one of the one senior cardiologists based at Bagalkot.

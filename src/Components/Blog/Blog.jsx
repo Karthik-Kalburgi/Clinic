@@ -7,7 +7,8 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 800); // simulate 1 second load
+    window.scrollTo(0, 0); // scroll to top on mount
+    const timer = setTimeout(() => setLoading(false), 800); // simulate loading
     return () => clearTimeout(timer);
   }, []);
 
@@ -15,12 +16,27 @@ const Blog = () => {
     <>
       <Helmet>
         <title>Cardiac Care Innovation | Dr. Santosh V. Chikkodi's Blog</title>
-        <meta name="description" content="Explore how Dr. Santosh V. Chikkodi is revolutionizing cardiac care with innovation, advanced imaging, AI integration, and patient-centered treatment." />
-        <meta name="keywords" content="Cardiac Care, Dr. Santosh V. Chikkodi, Cardiologist Blog, Interventional Cardiology, Cardiac Innovations, IVUS, OCT, AI in Cardiology" />
+        <meta
+          name="description"
+          content="Explore how Dr. Santosh V. Chikkodi is revolutionizing cardiac care with innovation, advanced imaging, AI integration, and patient-centered treatment."
+        />
+        <meta
+          name="keywords"
+          content="Cardiac Care, Dr. Santosh V. Chikkodi, Cardiologist Blog, Interventional Cardiology, Cardiac Innovations, IVUS, OCT, AI in Cardiology"
+        />
         <meta name="author" content="Dr. Santosh V. Chikkodi" />
-        <meta property="og:title" content="Revolutionizing Cardiac Care: The Journey of Innovation" />
-        <meta property="og:description" content="Discover Dr. Chikkodi’s journey in transforming interventional cardiology with modern techniques and AI-driven diagnostics." />
-        <meta property="og:image" content="https://drsantoshchikkodi.com/path-to-blog-image.jpg" />
+        <meta
+          property="og:title"
+          content="Revolutionizing Cardiac Care: The Journey of Innovation"
+        />
+        <meta
+          property="og:description"
+          content="Discover Dr. Chikkodi’s journey in transforming interventional cardiology with modern techniques and AI-driven diagnostics."
+        />
+        <meta
+          property="og:image"
+          content="https://drsantoshchikkodi.com/assets/blog/BlogImage.jpg"
+        />
         <meta property="og:url" content="https://drsantoshchikkodi.com/blog" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://drsantoshchikkodi.com/blog" />
@@ -32,7 +48,7 @@ const Blog = () => {
         </div>
       ) : (
         <div className="max-w-5xl mx-auto px-4 py-12">
-          {/* Blog Header */}
+          {/* Header */}
           <div className="mb-8 text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
               Revolutionizing Cardiac Care: The Journey of Innovation
@@ -42,7 +58,7 @@ const Blog = () => {
             </p>
           </div>
 
-          {/* Blog Image */}
+          {/* Image */}
           <div className="rounded-xl overflow-hidden shadow-lg mb-10">
             <img
               src={blogImg}
@@ -52,25 +68,33 @@ const Blog = () => {
             />
           </div>
 
-          {/* Blog Content */}
+          {/* Content */}
           <div className="text-gray-700 text-base sm:text-lg leading-relaxed">
             <p className="mb-6">
-              Cardiovascular diseases have long been a major challenge in global healthcare. Over the years, medical science has made tremendous strides in early diagnosis, advanced procedures, and post-treatment rehabilitation.
+              Cardiovascular diseases have long been a major challenge in global healthcare.
+              Over the years, medical science has made tremendous strides in early diagnosis,
+              advanced procedures, and post-treatment rehabilitation.
             </p>
             <p className="mb-6">
-              At the forefront of this evolution stands Dr. Santosh V. Chikkodi, whose contributions to interventional cardiology have helped save thousands of lives...
+              At the forefront of this evolution stands Dr. Santosh V. Chikkodi, whose
+              contributions to interventional cardiology have helped save thousands of lives...
             </p>
             <p className="mb-6">
-              One of his key achievements includes successful adoption of advanced imaging techniques such as Intravascular Ultrasound (IVUS) and Optical Coherence Tomography (OCT)...
+              One of his key achievements includes successful adoption of advanced imaging
+              techniques such as Intravascular Ultrasound (IVUS) and Optical Coherence
+              Tomography (OCT)...
             </p>
             <p className="mb-6">
-              Beyond procedures, patient education and awareness campaigns have been instrumental in encouraging lifestyle changes...
+              Beyond procedures, patient education and awareness campaigns have been instrumental
+              in encouraging lifestyle changes...
             </p>
             <p className="mb-6">
-              In 2025 and beyond, the integration of AI into cardiology — from predictive diagnostics to robotic-assisted surgeries — will further transform this space...
+              In 2025 and beyond, the integration of AI into cardiology — from predictive
+              diagnostics to robotic-assisted surgeries — will further transform this space...
             </p>
             <p className="mb-6 font-semibold italic">
-              “The heart is not just a muscle — it's a story of resilience, rhythm, and recovery,” says Dr. Chikkodi.
+              “The heart is not just a muscle — it's a story of resilience, rhythm, and recovery,”
+              says Dr. Chikkodi.
             </p>
           </div>
 

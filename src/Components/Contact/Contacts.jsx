@@ -74,23 +74,23 @@ const Contacts = () => {
             <h1 className="text-4xl font-extrabold text-yellow-700 font-poppins">Have A Question? Get In Touch</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Left Section */}
-            <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Left Section - General Information (Reduced Width) */}
+            <div className="space-y-8 md:col-span-1">
               <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <h2 className="text-2xl font-semibold text-gray-800">General Information</h2>
                 <img alt="profile" src={profile} className="w-32 h-32 rounded-full mt-4 mx-auto" />
                 <p className="text-gray-700 mt-4 flex items-center gap-3">
                   <IoLocationSharp className='text-2xl text-blue-500' />
-                  Rotary Circle Bagalkot 587101
+                  <a href="https://www.google.com/maps/search/Rotary+Circle+Bagalkot+587101" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">Rotary Circle Bagalkot 587101</a>
                 </p>
                 <p className="text-gray-700 flex items-center gap-3 mt-2">
                   <FaPhoneVolume className='text-2xl text-blue-500' />
-                  +918618757141
+                  <a href="tel:+918618757141" className="hover:text-yellow-500">+91 8618757141</a>
                 </p>
                 <p className="text-gray-700 flex items-center gap-3 mt-2">
                   <MdEmail className='text-2xl text-blue-500' />
-                  drchikkodicardio@gmail.com
+                  <a href="mailto:drchikkodicardio@gmail.com" className="hover:text-yellow-500">drchikkodicardio@gmail.com</a>
                 </p>
               </div>
 
@@ -105,8 +105,8 @@ const Contacts = () => {
               </div>
             </div>
 
-            {/* Right Section - Contact Form */}
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            {/* Right Section - Contact Form (Bigger) */}
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 md:col-span-2">
               <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">Contact Form</h2>
               <form ref={form} onSubmit={sendEmail} className="space-y-6">
                 <div>
@@ -114,6 +114,7 @@ const Contacts = () => {
                   <input
                     type="text"
                     name="user_name"
+                    placeholder='Enter Your Name...'
                     value={formData.user_name}
                     onChange={handleInputChange}
                     className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"
@@ -126,6 +127,7 @@ const Contacts = () => {
                   <input
                     type="email"
                     name="user_email"
+                    placeholder='Enter Your Email...'
                     value={formData.user_email}
                     onChange={handleInputChange}
                     className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-yellow-500"

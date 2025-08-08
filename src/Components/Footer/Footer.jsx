@@ -18,7 +18,9 @@ const Footer = () => {
             <p className="hover:text-blue-400 flex items-center justify-center sm:justify-end gap-2">
               Give us a Call <IoCallSharp className="text-xl" />
             </p>
-            <p className="text-white hover:text-yellow-500 cursor-pointer">+91 8618757141</p>
+            <p className="text-white hover:text-yellow-500 cursor-pointer">
+              <a href="tel:+918618757141">+91 8618757141</a>
+            </p>
           </div>
         </div>
 
@@ -47,13 +49,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Contact Info</h3>
             <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <IoCallSharp size={22} /> +91 8618757141
+              <IoCallSharp size={22} /> 
+              <a href="tel:+918618757141">+91 8618757141</a>
             </p>
             <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <MdEmail size={22} /> drchikkodicardio@gmail.com
+              <MdEmail size={22} /> 
+              <a href="mailto:drchikkodicardio@gmail.com">drchikkodicardio@gmail.com</a>
             </p>
             <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <FaLocationDot size={22} /> Rotary Circle Bagalkot 587101
+              <FaLocationDot size={22} /> 
+              <a href="https://www.google.com/maps/search/Rotary+Circle+Bagalkot+587101" target="_blank" rel="noopener noreferrer">
+                Rotary Circle Bagalkot 587101
+              </a>
             </p>
           </div>
 

@@ -18,7 +18,7 @@ import gal13 from '../../Images/Gal13.jpg';
 const Gallery = () => {
   const [isImageGallery, setIsImageGallery] = useState(true);
   const [loading, setLoading] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null); // 🆕 added for pop-up
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [gal11, gal12, gal13, gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10];
   const videos = [
@@ -32,7 +32,7 @@ const Gallery = () => {
     setTimeout(() => {
       setIsImageGallery(showImageGallery);
       setLoading(false);
-    }, 800); // spinner delay
+    }, 800);
   };
 
   const openImage = (image) => {
@@ -45,7 +45,7 @@ const Gallery = () => {
 
   return (
     <div className="px-4 sm:px-6 md:px-12 py-8">
-      <h1 className='text-center text-5xl font-poppins md:text-4xl font-extrabold mt-20 text-black bg-custom-blue py-8'>
+      <h1 className="text-center text-5xl font-poppins md:text-4xl font-extrabold mt-20 text-black bg-custom-blue py-8">
         About the Doctor
       </h1>
 
@@ -77,14 +77,16 @@ const Gallery = () => {
                   key={index}
                   src={image}
                   alt={`Gallery ${index + 1}`}
+                  loading="lazy"
                   className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[490px] object-cover rounded-lg cursor-pointer"
-                  onClick={() => openImage(image)} // 🆕 open on click
+                  onClick={() => openImage(image)}
                 />
               ))
             ) : (
               videos.map((video, index) => (
                 <div key={index} className="w-full h-full mb-6">
                   <iframe
+                    loading="lazy"
                     width="100%"
                     height="auto"
                     src={video}
@@ -92,7 +94,7 @@ const Gallery = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className='w-[450px] h-[350px]'
+                    className="w-[450px] h-[350px]"
                   ></iframe>
                 </div>
               ))
@@ -101,14 +103,19 @@ const Gallery = () => {
         </div>
       )}
 
-      {/* 🆕 Modal */}
+      {/* Modal for enlarged image */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           onClick={closeImage}
         >
           <div className="relative max-w-3xl w-full px-4">
-            <img src={selectedImage} alt="Popup" className="w-full h-auto rounded-lg" />
+            <img
+              src={selectedImage}
+              alt="Popup"
+              className="w-full h-auto rounded-lg"
+              loading="lazy"
+            />
             <button
               onClick={closeImage}
               className="absolute top-4 right-4 text-white text-2xl font-bold"
