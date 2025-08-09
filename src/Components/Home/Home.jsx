@@ -1,21 +1,44 @@
-import React, { Suspense, lazy } from "react";
-import doctors from "../Home/Doctor_Main_Page.webp"; 
+import React, { Suspense, lazy, useState, useEffect } from "react";
+import doctors from "../Home/Doctor_Main_Page.webp";
 import { PacmanLoader } from "react-spinners";
 
 // Lazy loaded components
 const CountUp = lazy(() => import("react-countup"));
-const Helmet = lazy(() => import("react-helmet").then(m => ({ default: m.Helmet })));
-const Consultation = lazy(() => import("../../Components/Consulation/Consultation"));
+const Helmet = lazy(() =>
+  import("react-helmet").then((m) => ({ default: m.Helmet }))
+);
+const Consultation = lazy(() =>
+  import("../../Components/Consulation/Consultation")
+);
 const Specialities = lazy(() => import("../Speacialities/Specialities"));
 const HomeAbout = lazy(() => import("./HomeAbout"));
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+
+  // Show PacmanLoader for 2 seconds before rendering content
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <PacmanLoader color="#06b6d4" size={40} />
+      </div>
+    );
+  }
+
   return (
     <div className="bg-sky-50 w-full overflow-x-hidden">
       {/* Helmet SEO */}
       <Suspense fallback={null}>
         <Helmet>
-          <title>Dr. Santosh V. Chikkodi | Top Cardiologist in Bagalkot | Angioplasty & Heart Care</title>
+          <title>
+            Dr. Santosh V. Chikkodi | Top Cardiologist in Bagalkot | Angioplasty
+            & Heart Care
+          </title>
           <meta
             name="description"
             content="Consult Dr. Santosh V. Chikkodi, senior interventional cardiologist in Bagalkot, Karnataka. Book appointments for angiograms, angioplasty, and pacemaker implants."
@@ -26,13 +49,22 @@ const Home = () => {
           />
           <meta name="author" content="Dr. Santosh V. Chikkodi" />
           <meta name="robots" content="index, follow" />
-          <meta property="og:title" content="Dr. Santosh V. Chikkodi - Trusted Cardiologist in Karnataka" />
+          <meta
+            property="og:title"
+            content="Dr. Santosh V. Chikkodi - Trusted Cardiologist in Karnataka"
+          />
           <meta
             property="og:description"
             content="Get expert cardiac care from one of Karnataka's top heart specialists. Over 5000 angiograms and 2500 angioplasties performed."
           />
-          <meta property="og:image" content="https://drsantoshchikkodi.com/assets/doctor-home-og.jpg" />
-          <meta property="og:url" content="https://drsantoshchikkodi.com" />
+          <meta
+            property="og:image"
+            content="https://drsantoshchikkodi.com/assets/doctor-home-og.jpg"
+          />
+          <meta
+            property="og:url"
+            content="https://drsantoshchikkodi.com"
+          />
           <link rel="canonical" href="https://drsantoshchikkodi.com" />
         </Helmet>
       </Suspense>
@@ -94,7 +126,9 @@ const Home = () => {
               <p className="text-custom-cyan font-bold text-3xl font-poppins">
                 <CountUp end={item.end} duration={2.5} />
               </p>
-              <p className="mt-2 font-semibold text-black text-xl">{item.label}</p>
+              <p className="mt-2 font-semibold text-black text-xl">
+                {item.label}
+              </p>
             </div>
           ))}
         </Suspense>
