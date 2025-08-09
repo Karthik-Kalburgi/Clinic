@@ -48,13 +48,13 @@ const Consultation = () => {
       ) : (
         <div className='bg-white'>
           <div className="container mx-auto px-4 p-8">
-            <h1 className="text-cyan-950 text-5xl font-bold text-center mt-28">
+            <h1 className="text-cyan-950 text-5xl font-bold text-center mt-6">
               Consultation Locations
             </h1>
 
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mt-20">
               {/* Card 1 */}
-              <div className="border p-16 rounded-3xl shadow-lg transition-all hover:shadow-2xl bg-sky-50 hover:bg-blue-100">
+              <div className="border p-16 rounded-3xl  shadow-lg transition-all hover:shadow-2xl bg-sky-50 hover:bg-blue-100">
                 <div className="text-xl font-semibold text-black flex items-center gap-4">
                   <img src={hospitalicon} alt='Kerudi Heart Center' className='w-[6%]   ' />
                   <h2 className='text-cyan-500 font-semibold text-2xl'>Kerudi Heart Center</h2>

@@ -68,11 +68,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-yellow-500">Implantable Cardioverter Defibrillator</li>
-              <li className="hover:text-yellow-500">Transesophageal Echocardiogram</li>
-              <li className="hover:text-yellow-500">Permanent Pacemaker</li>
-              <li className="hover:text-yellow-500">Balloon Mitral Valvotomy</li>
-              <li className="hover:text-yellow-500">Arrhythmia Treatments</li>
+              <li className="hover:text-yellow-500">24x7 Emergency care </li>
+              <li className="hover:text-yellow-500">Primary angioplasty </li>
+              <li className="hover:text-yellow-500">Complex angioplasty </li>
+              <li className="hover:text-yellow-500">Coronary and peripheral angiogram</li>
+              <li className="hover:text-yellow-500">Temporary pacemaker</li>
+              <li className="hover:text-yellow-500">Heart failure treatment </li>
+              <li className="hover:text-yellow-500">OCT and IVUS imaging</li>
+              <li className="hover:text-yellow-500">Rotational atherectomy, Orbital Atherectomy</li>
+              <li className="hover:text-yellow-500">Intravascular lithotripsy </li>
+              <li className="hover:text-yellow-500">2D Echo, strain imaging</li>
+              <li className="hover:text-yellow-500">Stress tests</li>
+             
             </ul>
           </div>
         </nav>

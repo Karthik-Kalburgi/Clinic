@@ -65,7 +65,7 @@ Bagalkot, Karnataka, India
           <div className="text-gray-700  font-poppins justify-start space-y-4 text-lg sm:text-xl">
             <p>
             With more than  <span className='font-bold '> 5000 </span>angiograms through Femoral, Ulnar and Radial approach and more than <span className='font-bold '> 2500 </span> coronary angioplasty,  & <span className='font-bold '> 100+ </span> 
-            Pacemaker devices. Dr. Santosh V. Chikkodi is one of the one senior cardiologists based at Bagalkot.
+            Pacemaker devices. Dr. Santosh V. Chikkodi is one of the senior cardiologists based at Bagalkot.
             </p>
             <p>
             In 2012, He obtained his MBBS degree from Karnataka Institute of Medical Sciences, Hubli. In 2015, he completed his MD in Internal Medicine, from India’s topmost medical college that is Postgraduate Institute of Medical Education and Research, Chandigarh.
