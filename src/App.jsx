@@ -6,7 +6,7 @@ const Home = lazy(() => import("./Components/Home/Home"));
 const About = lazy(() => import("./Components/About/About"));
 const Treatment = lazy(() => import("./Components/Treatment/Treatment"));
 const News = lazy(() => import("./Components/News/News"));
-const Services = lazy(() => import("./Components/Services/services"));
+const Services = lazy(() => import("./Components/Services/Services"));
 const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
 const Blog = lazy(() => import("./Components/Blog/Blog"));
 const Contacts = lazy(() => import("./Components/Contact/Contacts"));
