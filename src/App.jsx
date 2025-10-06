@@ -6,6 +6,7 @@ const Home = lazy(() => import("./Components/Home/Home"));
 const About = lazy(() => import("./Components/About/About"));
 const Treatment = lazy(() => import("./Components/Treatment/Treatment"));
 const News = lazy(() => import("./Components/News/News"));
+const Services = lazy(() => import("./Components/Services/services"));
 const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
 const Blog = lazy(() => import("./Components/Blog/Blog"));
 const Contacts = lazy(() => import("./Components/Contact/Contacts"));
@@ -35,6 +36,7 @@ function App() {
           <Route path="/treatment" element={<Treatment />} />
           <Route path="/treatment-point/:slug" element={<TreatmentPointDetails />} />
           <Route path="/news" element={<News />} />
+          <Route path="/services/*" element={<Services />} />
           <Route path="/testimonial" element={<Reviews />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />

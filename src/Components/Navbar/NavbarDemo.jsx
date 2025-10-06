@@ -19,11 +19,12 @@ const NavbarDemo = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/treatment', label: 'Treatment' },
+    { path: '/services', label: 'Services' },
     { path: '/news', label: 'News' },
     { path: '/testimonial', label: 'Testimonials' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/blog', label: 'Blog' },
-    { path: '/contact', label: 'Contact' }
+    { path: '/contact', label: 'Contact' },
   ];
 
   return (
