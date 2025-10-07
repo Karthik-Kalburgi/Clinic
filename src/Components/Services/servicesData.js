@@ -3,7 +3,7 @@ export const servicesData = [
   {
     id: "ecg",
     title: "ECG (Electrocardiogram)",
-    image: "/Services/ECG.jpg",
+    image: "/Services/ecg.jpeg",
     what: "An Electrocardiogram (ECG) is a simple, quick, and painless test that records the electrical activity of your heart. It helps in detecting heart rhythm abnormalities, heart attacks, and other cardiac conditions.",
     why: `
     ✔️ Chest pain or discomfort.
@@ -26,7 +26,7 @@ export const servicesData = [
   {
     id: "echo",
     title: "Echocardiography (ECHO)",
-    image: "/Services/ECHO.jpg",
+    image: "/Services/echo.jpeg",
     what: "2D Echocardiography (2D Echo) is a non-invasive imaging test that uses ultrasound waves to create real-time images of the heart. It helps in assessing heart function, detecting structural abnormalities, and diagnosing various heart conditions.",
     why: `Your doctor may recommend a 2D Echo if you have:
 ✔️ Shortness of breath or unexplained fatigue
