@@ -106,10 +106,10 @@ const Footer = () => {
         {/* Tags Section */}
         <div className="mt-12 border-t pt-6 text-center text-white space-y-2">
           <p className="hover:text-yellow-500">
-            | Best Interventional Cardiologist | Best Cardiologist in Bangalore | Best Cardio Doctor |
+            | Best Interventional Cardiologist | Best Cardiologist in Bagalkot | Best Cardio Doctor |
           </p>
           <p className="hover:text-yellow-500">
-            | Cardiologist Near Me | Heart Specialist in Bangalore | Cardiologist in Bangalore |
+            | Cardiologist Near Me | Heart Specialist in Bagalkot | Cardiologist in Bagalkot |
           </p>
         </div>
 
