@@ -94,7 +94,7 @@ const Footer = () => {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-400">
               <FaTwitterSquare />
             </a>
-            <a href="https://www.linkedin.com/in/dr-santosh-chikkodi-md-dnb-dm-dnb-fscai-doctor-chikkodi%E2%80%99s-cardiac-center-29b920ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-blue-700">
+            <a href="https://www.linkedin.com/in/dr-santosh-chikkodi-md-dnb-dm-dnb-fscai-ficc-doctor-chikkodi%E2%80%99s-cardiac-center-29b920ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-blue-700">
               <FaLinkedin />
             </a>
             <a href="https://www.instagram.com/dr_santoshchikkodicardiologist?igsh=MXh5bzV1YzBtZjY4MA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-pink-600">

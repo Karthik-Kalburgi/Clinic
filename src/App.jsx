@@ -71,7 +71,7 @@ function App() {
 
   {/* LinkedIn */}
   <a
-    href="https://www.linkedin.com/in/dr-santosh-chikkodi-md-dnb-dm-dnb-fscai-doctor-chikkodi%E2%80%99s-cardiac-center-29b920ab"
+    href="https://www.linkedin.com/in/dr-santosh-chikkodi-md-dnb-dm-dnb-fscai-ficc-doctor-chikkodi%E2%80%99s-cardiac-center-29b920ab/"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-blue-700 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform text-2xl"
