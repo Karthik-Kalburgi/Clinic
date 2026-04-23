@@ -18,6 +18,7 @@ const TreatmentPointDetails = lazy(() => import("./Components/Treatment/Treatmen
 // Shared Layout Components
 import NavbarDemo from "./Components/Navbar/NavbarDemo";
 import Footer from "./Components/Footer/Footer";
+import BagalkotHome from "./Components/Bagalkot Heart Center/New Bagalkot Heart Center/Home/BagalkotHome";
 
 // Simple Spinner Component
 const Spinner = () => (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contacts />} />
           <Route path="/info" element={<Info />} />
+          <Route path="/bagalkot" element={<BagalkotHome />} />
           <Route path="*" element={<div className="text-center p-20 text-2xl font-bold">404 - Page Not Found</div>} />
         </Routes>
       </Suspense>

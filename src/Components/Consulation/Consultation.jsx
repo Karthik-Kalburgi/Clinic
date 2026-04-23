@@ -56,18 +56,45 @@ const Consultation = () => {
               {/* Card 1 */}
               <div className="border p-16 rounded-3xl  shadow-lg transition-all hover:shadow-2xl bg-sky-50 hover:bg-blue-100">
                 <div className="text-xl font-semibold text-black flex items-center gap-4">
-                  <img src={hospitalicon} alt='Kerudi Heart Center' className='w-[6%]   ' />
-                  <h2 className='text-cyan-500 font-semibold text-2xl'>Kerudi Heart Center</h2>
+                  <img src={hospitalicon} alt='Bagalkot Heart Centre' className='w-[6%]   ' />
+                  <h2 className='text-cyan-500 font-semibold text-2xl'>Bagalkot Heart Centre</h2>
                 </div>
                 <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">
                   <img src={locationicon} alt='location' className='w-[6%] mt-2' />
-                  <span className='text-xl mt-2'>Rotary Circle, Navanagar, Bagalkot Karnataka 587101</span>
+                  <span className='text-xl mt-2'>Daddenavar Hospital & Research Centre Campus
+Laxmi Nagar, Near Rural Police Station   Bagalkot – 587101</span>
                 </p>
                 <p className="text-base mt-4 flex items-center gap-4 text-cyan-500 font-semibold">
                   <img src={timeicon} alt='time' className='w-[6%] mt-2' />
-                  <span className='text-xl'>Mon - Sat : 10AM - 4PM</span>
+                  <span className='text-xl'> 24 x 7 Cardiac Care & Support </span>
+                </p>
+                <br/>
+                <br/>
+
+                
+            
+             
+                
+              {/* Card 1 kannada  */}
+              <div>
+                <div className="text-xl font-semibold text-black flex items-center gap-4">
+                  <img src={hospitalicon} alt='ಬಾಗಲಕೋಟೆ ಹಾರ್ಟ್ ಸೆಂಟರ್' className='w-[6%]   ' />
+                  <h2 className='text-cyan-500 font-semibold text-2xl'>ಬಾಗಲಕೋಟೆ ಹಾರ್ಟ್ ಸೆಂಟರ್</h2>
+                </div>
+                <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">
+                  <img src={locationicon} alt='location' className='w-[6%] mt-2' />
+                  <span className='text-xl mt-2'>ದಡ್ಡೇನವರ್ ಆಸ್ಪತ್ರೆ ಮತ್ತು ಸಂಶೋಧನಾ ಕೇಂದ್ರ ಆವರಣ
+ಲಕ್ಷ್ಮೀ ನಗರ, ಗ್ರಾಮೀಣ ಪೊಲೀಸ್ ಠಾಣೆ ಹತ್ತಿರ
+ಬಾಗಲಕೋಟೆ – 587101
+</span>
+                </p>
+                <p className="text-base mt-4 flex items-center gap-4 text-cyan-500 font-semibold">
+                  <img src={timeicon} alt='time' className='w-[6%] mt-2' />
+                  <span className='text-xl'> 24×7 ಹೃದಯ ಆರೈಕೆ ಮತ್ತು ಬೆಂಬಲ</span>
                 </p>
               </div>
+              </div>
+              
 
               {/* Card 2 */}
               <div className="border p-16 rounded-3xl shadow-lg transition-all hover:shadow-2xl bg-sky-50 hover:bg-blue-100">
@@ -83,6 +110,23 @@ const Consultation = () => {
                   <img src={timeicon} alt='time' className='w-[6%] mt-2' />
                   <span className='text-xl'>Wednesday : 4PM - 8PM</span>
                 </p>
+                <br/>
+                <br/>
+                {/* Card 2 kannada  */}
+                <div>
+                  <div className="text-xl font-semibold text-black flex items-center gap-4">
+                  <img src={hospitalicon} alt='ಡಾ. ಚಿಕ್ಕೋಡಿ ಹೃದಯ ಕೇಂದ್ರ' className='w-[6%]' />
+                  <h2 className='text-cyan-500 font-semibold text-2xl'>ಡಾ. ಚಿಕ್ಕೋಡಿ ಹೃದಯ ಕೇಂದ್ರ</h2>
+                </div>
+                <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">
+                  <img src={locationicon} alt='location' className='w-[6%] mt-2' />
+                  <span className='text-xl'>ಆರ್. ಎಸ್. ಪಾಟೀಲ್ ಬಿಲ್ಡಿಂಗ್, ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ ಎದುರು, ಬೆಳಗಾವಿ ರಸ್ತೆ, ರಾಮದುರ್ಗ, ಬೆಳಗಾವಿ, ಕರ್ನಾಟಕ – 591123</span>
+                </p>
+                <p className="text-base mt-4 flex items-center gap-4 text-cyan-500 font-semibold">
+                  <img src={timeicon} alt='time' className='w-[6%] mt-2' />
+                  <span className='text-xl'>ಬುಧವಾರ: ಸಂಜೆ 4 ಗಂಟೆ - 8 ಗಂಟೆ</span>
+                </p>
+                </div>
               </div>
             </div>
           </div>
