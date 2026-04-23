@@ -29,20 +29,17 @@ const NavbarDemo = () => {
 
   return (
     <>
-      {/* Fixed Navbar */}
       <nav className="bg-sky-50/95 backdrop-blur-md p-7 fixed top-0 left-0 w-full shadow-md z-50">
 
-        {/* Top Right Buttons */}
-        <div className="absolute top-4 right-4 flex gap-3">
+        {/* Top Right Buttons (desktop only) */}
+        <div className="hidden md:flex absolute top-4 right-4 gap-3">
 
-          {/* Cardiac Center Button */}
           <Link to="/info">
             <button className="bg-custom-cyan text-white font-poppins font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-cyan-600 transition">
               Doctor Chikkodi's Cardiac Center
             </button>
           </Link>
 
-          {/* Bagalkot Heart Centre Button */}
           <Link to="/bagalkot">
             <button className="bg-blue-600 text-white font-poppins font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
               Bagalkot Heart Centre
@@ -54,12 +51,10 @@ const NavbarDemo = () => {
         {/* Desktop Navbar */}
         <div className="hidden md:flex justify-between items-center mt-12 px-6">
 
-          {/* Logo */}
           <div className="flex items-center gap-4">
             <img src={logo} alt="Clinic Logo" className="w-[150px] rounded-lg" />
           </div>
 
-          {/* Navigation Links */}
           <ul className="flex gap-10 text-xl font-poppins font-bold tracking-wide text-zinc-600">
             {links.map(({ path, label }) => (
               <li
@@ -91,6 +86,23 @@ const NavbarDemo = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-blue-400 text-white px-4 py-4 rounded-lg mt-2">
+
+            {/* ✅ Buttons added here */}
+            <div className="flex flex-col gap-3 mb-4">
+              <Link to="/info" onClick={() => setIsMenuOpen(false)}>
+                <button className="w-full bg-cyan-600 py-2 rounded-lg font-semibold">
+                  Doctor Chikkodi's Cardiac Center
+                </button>
+              </Link>
+
+              <Link to="/bagalkot" onClick={() => setIsMenuOpen(false)}>
+                <button className="w-full bg-blue-700 py-2 rounded-lg font-semibold">
+                  Bagalkot Heart Centre
+                </button>
+              </Link>
+            </div>
+
+            {/* Links */}
             <ul className="flex flex-col items-center space-y-4 font-poppins font-medium">
               {links.map(({ path, label }) => (
                 <li

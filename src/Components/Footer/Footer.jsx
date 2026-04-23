@@ -6,121 +6,135 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24 mt-10">
+    <footer className="bg-gray-900 text-white pt-14 pb-8 px-4 sm:px-8 md:px-16 lg:px-24 mt-16">
       <div className="max-w-7xl mx-auto">
 
-        {/* HEADER SECTION - UPDATED */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+        {/* TOP CALL SECTION */}
+        <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-8 mb-16 shadow-xl">
 
-          {/* Left - Cardiac Center */}
+          {/* Left */}
           <div className="text-center md:text-left">
-            <p className="flex items-center justify-center md:justify-start gap-2 hover:text-blue-400">
-              Give us a Call for Cardiac Center <IoCallSharp className="text-xl" />
+            <p className="text-gray-300 text-sm tracking-wide">
+              Cardiac Care – Ramdurg
             </p>
-            <p className="text-white hover:text-yellow-500 cursor-pointer">
-              <a href="tel:+918618757141">+91 8618757141</a>
+            <p className="text-xl font-semibold flex items-center justify-center md:justify-start gap-2 text-blue-400 mt-1">
+              <IoCallSharp />
+              <a href="tel:+918618757141" className="hover:underline">
+                +91 8618757141
+              </a>
             </p>
           </div>
 
-          {/* Center Name */}
-          <h1 className="text-2xl font-semibold hover:text-blue-400 text-center">
+          {/* Center */}
+          <h1 className="text-3xl md:text-4xl font-bold text-center tracking-wide">
             Dr. Santosh V. Chikkodi
           </h1>
 
-          {/* Right - Bagalkot Center */}
+          {/* Right */}
           <div className="text-center md:text-right">
-            <p className="flex items-center justify-center md:justify-end gap-2 hover:text-blue-400">
-              <IoCallSharp className="text-xl" />
-              For Bagalkot Center call
+            <p className="text-gray-300 text-sm tracking-wide">
+              Heart Center – Bagalkot
             </p>
-            <p className="text-white hover:text-yellow-500 cursor-pointer">
-              <a href="tel:+919113689250">+91 9113689250</a>
+            <p className="text-xl font-semibold flex items-center justify-center md:justify-end gap-2 text-blue-400 mt-1">
+              <IoCallSharp />
+              <a href="tel:+919113689250" className="hover:underline">
+                +91 9113689250 
+              </a>
             </p>
           </div>
 
         </div>
 
-        {/* GRID CONTENT */}
-        <nav aria-label="Footer" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+        {/* MAIN GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 border-t border-gray-700 pt-12">
 
           {/* About */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">About Us</h3>
-            <p className="text-gray-400 hover:text-yellow-500">
-              We are dedicated to providing the best healthcare and treatment. Contact us for any inquiries or assistance.
+            <h3 className="text-xl font-semibold mb-5 text-white border-b border-gray-600 pb-2 tracking-wide">
+              About Us
+            </h3>
+            <p className="text-gray-400 text-base leading-relaxed">
+              We provide trusted cardiac care with advanced treatments and patient-focused services. Reach out to us for consultations and emergency support.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Quick Links</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="/" className="hover:text-yellow-500">Home</a></li>
-              <li><a href="/about" className="hover:text-yellow-500">About Us</a></li>
-              <li><a href="/services" className="hover:text-yellow-500">Services</a></li>
-              <li><a href="/contact" className="hover:text-yellow-500">Contact</a></li>
+            <h3 className="text-xl font-semibold mb-5 text-white border-b border-gray-600 pb-2 tracking-wide">
+              Quick Links
+            </h3>
+            <ul className="space-y-3 text-gray-400 text-base">
+              <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
+              <li><a href="/about" className="hover:text-blue-400 transition">About Us</a></li>
+              <li><a href="/services" className="hover:text-blue-400 transition">Services</a></li>
+              <li><a href="/contact" className="hover:text-blue-400 transition">Contact</a></li>
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Contact Info</h3>
+            <h3 className="text-xl font-semibold mb-5 text-white border-b border-gray-600 pb-2 tracking-wide">
+              Contact
+            </h3>
 
-            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <IoCallSharp size={22} />
-              <a href="tel:+918618757141">Cardiac Center: +91 8618757141</a>
-            </p>
+            <div className="space-y-4 text-gray-400 text-base">
 
-            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <IoCallSharp size={22} />
-              <a href="tel:+919113689250">Bagalkot Center: +91 9113689250</a>
-            </p>
+              <p className="flex items-center gap-3 hover:text-blue-400 transition">
+                <IoCallSharp size={20} />
+                <a href="tel:+918618757141">+91 8618757141  -Ramdurg </a>
+              </p>
 
-            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <MdEmail size={22} />
-              <a href="mailto:drchikkodicardio@gmail.com">drchikkodicardio@gmail.com</a>
-            </p>
+              <p className="flex items-center gap-3 hover:text-blue-400 transition">
+                <IoCallSharp size={20} />
+                <a href="tel:+919113689250">+91 9113689250 -Bagalkot</a>
+              </p>
 
-            <p className="text-gray-400 hover:text-yellow-500 flex items-center gap-2 mt-3">
-              <FaLocationDot size={22} />
-              <a href="https://www.google.com/maps/place/Daddenavar+Hospital">
-                Daddenavar Hospital Bagalkot
-              </a>
-            </p>
+              <p className="flex items-center gap-3 hover:text-blue-400 transition">
+                <MdEmail size={20} />
+                <a href="mailto:drchikkodicardio@gmail.com">drchikkodicardio@gmail.com</a>
+              </p>
+
+              <p className="flex items-center gap-3 hover:text-blue-400 transition">
+                <FaLocationDot size={20} />
+                <a href="https://www.google.com/maps/place/Daddenavar+Hospital">
+                  Bagalkot Location
+                </a>
+              </p>
+
+            </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">Services</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-yellow-500">24x7 Emergency care</li>
-              <li className="hover:text-yellow-500">Primary angioplasty</li>
-              <li className="hover:text-yellow-500">Complex angioplasty</li>
-              <li className="hover:text-yellow-500">Coronary angiogram</li>
-              <li className="hover:text-yellow-500">Temporary pacemaker</li>
-              <li className="hover:text-yellow-500">Heart failure treatment</li>
-              <li className="hover:text-yellow-500">OCT & IVUS imaging</li>
-              <li className="hover:text-yellow-500">Stress tests</li>
+            <h3 className="text-xl font-semibold mb-5 text-white border-b border-gray-600 pb-2 tracking-wide">
+              Services
+            </h3>
+            <ul className="space-y-3 text-gray-400 text-base">
+              <li className="hover:text-blue-400 transition">24x7 Emergency Care</li>
+              <li className="hover:text-blue-400 transition">Primary Angioplasty</li>
+              <li className="hover:text-blue-400 transition">Complex Angioplasty</li>
+              <li className="hover:text-blue-400 transition">Coronary Angiogram</li>
+              <li className="hover:text-blue-400 transition">Pacemaker Support</li>
+              <li className="hover:text-blue-400 transition">Heart Failure Treatment</li>
             </ul>
           </div>
-        </nav>
 
-        {/* Social Media */}
-        <div className="mt-12 text-center">
-          <h3 className="text-xl font-semibold mb-4 text-gray-300 hover:text-blue-400">
-            Follow Us
-          </h3>
-          <div className="flex justify-center space-x-6 text-3xl">
-            <a href="#" className="hover:text-blue-600"><FaFacebookSquare /></a>
-            <a href="#" className="hover:text-blue-400"><FaTwitterSquare /></a>
-            <a href="#" className="hover:text-blue-700"><FaLinkedin /></a>
-            <a href="#" className="hover:text-pink-600"><FaInstagramSquare /></a>
+        </div>
+
+        {/* SOCIAL */}
+        <div className="mt-12 flex flex-col items-center gap-5">
+          <h3 className="text-lg text-gray-300 tracking-wide">Follow Us</h3>
+          <div className="flex gap-6 text-3xl text-gray-400">
+            <a href="#" className="hover:text-blue-500 transition"><FaFacebookSquare /></a>
+            <a href="#" className="hover:text-sky-400 transition"><FaTwitterSquare /></a>
+            <a href="#" className="hover:text-blue-600 transition"><FaLinkedin /></a>
+            <a href="#" className="hover:text-pink-500 transition"><FaInstagramSquare /></a>
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="mt-8 border-t pt-4 text-center text-gray-400">
-          <p>&copy; 2025 Designed And Developed by Sohail L and Karthik Kalburgi. All rights reserved.</p>
+        {/* BOTTOM */}
+        <div className="mt-10 border-t border-gray-700 pt-5 text-center text-gray-500 text-sm">
+          <p>&copy; 2025 Designed & Developed by Sohail L and Karthik Kalburgi. All rights reserved.</p>
         </div>
 
       </div>

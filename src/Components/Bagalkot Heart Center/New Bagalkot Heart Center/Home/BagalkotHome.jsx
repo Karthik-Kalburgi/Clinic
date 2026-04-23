@@ -1,83 +1,188 @@
 import React from "react";
-import Logo from '/Bagalkot Center/Bagalkot_Heart_Center.jpeg' ; // replace with your image
 
-const BagalkotHome = () => {
+export default function BagalkotHome() {
+  const doctorImage = "/Bagalkot Center/profile.jpg";
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-blue-50 flex items-center justify-center px-4 py-10">
-
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
-
-        {/* LEFT CONTENT */}
-        <div className="text-center md:text-left">
-
-          {/* Badge */}
-          <span className="inline-block bg-red-100 text-red-600 px-4 py-1 rounded-full font-semibold text-sm mb-4 animate-pulse">
-            Coming Soon
-          </span>
-
-          {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-cyan-900 leading-tight">
-            Bagalkot Heart Centre
-          </h1>
-
-          {/* Subtitle */}
-          <p className="mt-4 text-gray-600 text-lg md:text-xl">
-            A new advanced cardiac care facility is coming soon to serve patients in Bagalkot with modern heart treatment and emergency care.
-          </p>
-
-          {/* Status Box */}
-          <div className="mt-6 bg-white shadow-md rounded-xl p-5 border-l-4 border-cyan-500">
-            <p className="text-cyan-700 font-semibold text-lg">
-              🚧 Opening Soon
+    <div className="font-sans text-gray-800">
+      {/* HERO */}
+      <section className="bg-blue-900 text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+          <div className="text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              Bagalkot Heart Centre
+            </h1>
+            <p className="text-base sm:text-lg mb-2">
+              Personal Attention • Expert Care
             </p>
-            <p className="text-gray-500 mt-1">
-              Advanced Cardiac Care • Emergency Services • 24×7 Support
+            <p className="mb-6 text-sm sm:text-base">
+              Advanced Cardiac Care at Your Doorstep, Affordable for All
             </p>
-          </div>
-
-          {/* Button */}
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-
-            <a
-              href="tel:+919113689250"
-              className="bg-cyan-600 text-white px-6 py-3 rounded-lg shadow hover:bg-cyan-700 transition font-semibold"
-            >
-              📞 Contact Center
-            </a>
-
-            <a
-              href="/"
-              className="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition font-semibold"
-            >
-              Back to Home
-            </a>
-
-          </div>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="flex justify-center">
-          <div className="relative">
-
-            <img
-              src={Logo}
-              alt="Bagalkot Heart Centre"
-              className="rounded-2xl shadow-2xl w-full max-w-md md:max-w-lg object-cover"
-            />
-
-            {/* Overlay Badge */}
-            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg shadow">
-              <p className="text-sm font-semibold text-cyan-700">
-                Launching Soon
-              </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <button className="bg-white text-blue-900 px-6 py-2 rounded-xl w-full sm:w-auto   "  onClick={() => window.open("https://kivihealth.com/", "_blank")}>
+            Book an Appointment
+            
+              </button>
+              <button className="border border-white px-6 py-2 rounded-xl w-full sm:w-auto">
+                Call Now
+              </button>
             </div>
+          </div>
 
+          <div className="bg-white/10 p-4 rounded-2xl">
+            <img
+              src={doctorImage}
+              alt="Doctors"
+              className="w-full h-auto max-h-[350px] sm:max-h-[400px] md:max-h-[450px] object-contain rounded-xl"
+            />
           </div>
         </div>
+      </section>
 
-      </div>
+      {/* ABOUT */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-10">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              About the Centre
+            </h2>
+            <p className="text-sm sm:text-base">
+              Bagalkot Heart Centre is a modern cardiac care facility providing
+              comprehensive heart care with advanced technology, expert
+              treatment, and compassionate care all under one roof.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {["Advanced Technology", "Close to Home", "Affordable Care"].map(
+              (item) => (
+                <div
+                  key={item}
+                  className="bg-blue-50 p-4 rounded-xl text-center text-sm sm:text-base"
+                >
+                  {item}
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* DOCTOR
+      <section className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+          <div className="bg-white p-4 rounded-2xl">
+            <img
+              src={doctorImage}
+              alt="Dr. Santosh Chikkodi"
+              className="w-full h-auto max-h-[350px] sm:max-h-[400px] object-contain rounded-xl"
+            />
+          </div>
+
+          <div className="text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+              Dr. Santosh Chikkodi
+            </h2>
+            <p className="mb-4 text-sm sm:text-base">
+              MBBS, MD, DNB, DM, DrNB, FICC, FSCAI (USA), MNAMS
+            </p>
+            <p className="mb-4 text-sm sm:text-base">
+              Highly skilled Interventional Cardiologist with 10+ years of
+              experience.
+            </p>
+            <ul className="space-y-2 text-sm sm:text-base">
+              <li>✔ 6000+ Angiograms</li>
+              <li>✔ 2500+ Angioplasties</li>
+              <li>✔ Complex Coronary Interventions</li>
+            </ul>
+          </div>
+        </div>
+      </section> */}
+
+      {/* SERVICES */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
+            Our Services
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Advanced Cath Lab",
+              "Cardiac ICU",
+              "OPD & Diagnostics",
+              "Laboratory",
+              "Pharmacy",
+            ].map((service) => (
+              <div
+                key={service}
+                className="p-6 bg-white shadow rounded-2xl hover:shadow-lg transition"
+              >
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
+                  {service}
+                </h3>
+                <p className="text-sm">
+                  High-quality care with advanced technology and expert support.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INSURANCE */}
+      <section className="bg-blue-50 py-12 sm:py-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+            Schemes & Insurance
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              "ESI",
+              "CGHS",
+              "Railways",
+              "Yashasvini",
+              "KSRTC",
+              "Private Insurance",
+            ].map((item) => (
+              <span
+                key={item}
+                className="bg-white px-4 py-2 rounded-full shadow text-sm"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
+          <div className="text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+              Contact Us
+            </h2>
+            <p className="text-sm sm:text-base">Bagalkot Heart Centre</p>
+            <p className="text-sm sm:text-base">
+              Daddenavar Hospital Campus
+            </p>
+            <p className="mt-2 text-sm sm:text-base">Phone: 91136 89250</p>
+            <p className="text-sm sm:text-base">9914062288</p>
+            <p className="mt-2 text-sm sm:text-base">
+              Email: drchikkodicardio@gmail.com
+            </p>
+          </div>
+
+          <div className="bg-gray-100 p-4 rounded-2xl">
+            <img
+              src={doctorImage}
+              alt="Hospital"
+              className="w-full h-auto max-h-[350px] sm:max-h-[400px] object-contain rounded-xl"
+            />
+          </div>
+        </div>
+      </section> */}
+
+     <footer />
     </div>
   );
-};
-
-export default BagalkotHome;
+}

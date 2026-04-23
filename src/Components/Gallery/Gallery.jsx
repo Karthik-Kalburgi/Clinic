@@ -14,13 +14,28 @@ import gal10 from '../../Images/gallery10.jpg';
 import gal11 from '../../Images/Gal11.jpg';
 import gal12 from '../../Images/Gal12.jpg';
 import gal13 from '../../Images/Gal13.jpg';
+import gal14 from '../../../public/Bagalkot Center/Gallery/1lfbzbtf.jpeg'
+import gal15 from '../../../public/Bagalkot Center/Gallery/23bpp7s2.jpeg'
+import gal16 from '../../../public/Bagalkot Center/Gallery/5l6on5vi.jpeg'
+import gal17 from '../../../public/Bagalkot Center/Gallery/5qksq21e.jpeg'
+import gal18 from '../../../public/Bagalkot Center/Gallery/72p5b89a.jpeg'
+import gal19 from '../../../public/Bagalkot Center/Gallery/7k4kil4n.jpeg'
+import gal20 from '../../../public/Bagalkot Center/Gallery/8xuzswqe.jpeg'
+import gal21 from '../../../public/Bagalkot Center/Gallery/a4smdwil.jpeg'
+import gal22 from '../../../public/Bagalkot Center/Gallery/bara3qnc.jpeg'
+import gal23 from '../../../public/Bagalkot Center/Gallery/d99abxy8.jpeg'
+import gal24 from '../../../public/Bagalkot Center/Gallery/fqneh96b.jpeg'
+import gal25 from '../../../public/Bagalkot Center/Gallery/sf4vlhvd.jpeg'
+import gal26 from '../../../public/Bagalkot Center/Gallery/v9051kge.jpeg'
+import gal27 from '../../../public/Bagalkot Center/Gallery/wjidpkzk.jpeg'
+import gal28 from '../../../public/Bagalkot Center/Gallery/4njveh7r.jpeg'
 
 const Gallery = () => {
   const [isImageGallery, setIsImageGallery] = useState(true);
   const [loading, setLoading] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const images = [gal11, gal12, gal13, gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10];
+  const images = [gal11, gal12, gal13,gal14, gal15, gal16, gal17, gal18, gal19, gal20, gal21, gal22, gal23, gal24, gal25, gal26, gal27, gal28 , gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10 ];
   const videos = [
     "https://www.youtube.com/embed/gyBPtLrKfk4",
     "https://www.youtube.com/embed/xGUfA5wyNXk",
