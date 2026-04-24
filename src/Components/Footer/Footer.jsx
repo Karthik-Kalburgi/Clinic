@@ -12,10 +12,10 @@ const Footer = () => {
         {/* TOP CALL SECTION */}
         <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-8 mb-16 shadow-xl">
 
-          {/* Left */}
+          {/* Ramdurg */}
           <div className="text-center md:text-left">
             <p className="text-gray-300 text-sm tracking-wide">
-              Cardiac Care – Ramdurg
+              Doctor Chikkodi’s Cardiac Center, Ramdurg
             </p>
             <p className="text-xl font-semibold flex items-center justify-center md:justify-start gap-2 text-blue-400 mt-1">
               <IoCallSharp />
@@ -25,20 +25,20 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Center */}
+          {/* Center Name */}
           <h1 className="text-3xl md:text-4xl font-bold text-center tracking-wide">
             Dr. Santosh V. Chikkodi
           </h1>
 
-          {/* Right */}
+          {/* Bagalkot */}
           <div className="text-center md:text-right">
             <p className="text-gray-300 text-sm tracking-wide">
-              Heart Center – Bagalkot
+              Bagalkot Heart Centre, Bagalkot
             </p>
             <p className="text-xl font-semibold flex items-center justify-center md:justify-end gap-2 text-blue-400 mt-1">
               <IoCallSharp />
               <a href="tel:+919113689250" className="hover:underline">
-                +91 9113689250 
+                +91 9113689250
               </a>
             </p>
           </div>
@@ -77,29 +77,39 @@ const Footer = () => {
               Contact
             </h3>
 
-            <div className="space-y-4 text-gray-400 text-base">
+            <div className="space-y-5 text-gray-400 text-base">
 
-              <p className="flex items-center gap-3 hover:text-blue-400 transition">
-                <IoCallSharp size={20} />
-                <a href="tel:+918618757141">+91 8618757141  -Ramdurg </a>
-              </p>
-
-              <p className="flex items-center gap-3 hover:text-blue-400 transition">
-                <IoCallSharp size={20} />
-                <a href="tel:+919113689250">+91 9113689250 -Bagalkot</a>
-              </p>
-
-              <p className="flex items-center gap-3 hover:text-blue-400 transition">
-                <MdEmail size={20} />
-                <a href="mailto:drchikkodicardio@gmail.com">drchikkodicardio@gmail.com</a>
-              </p>
-
-              <p className="flex items-center gap-3 hover:text-blue-400 transition">
-                <FaLocationDot size={20} />
-                <a href="https://www.google.com/maps/place/Daddenavar+Hospital">
-                  Bagalkot Location
+              {/* Phone - Ramdurg */}
+              <div className="flex items-start gap-3 hover:text-blue-400 transition">
+                <IoCallSharp size={26} className="mt-1 flex-shrink-0 text-blue-400" />
+                <a href="tel:+918618757141">
+                  +91 8618757141 – Ramdurg (Doctor Chikkodi’s Cardiac Center)
                 </a>
-              </p>
+              </div>
+
+              {/* Phone - Bagalkot */}
+              <div className="flex items-start gap-3 hover:text-blue-400 transition">
+                <IoCallSharp size={26} className="mt-1 flex-shrink-0 text-blue-400" />
+                <a href="tel:+919113689250">
+                  +91 9113689250 – Bagalkot (Bagalkot Heart Centre)
+                </a>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start gap-3 hover:text-blue-400 transition">
+                <MdEmail size={26} className="mt-1 flex-shrink-0 text-blue-400" />
+                <a href="mailto:drchikkodicardio@gmail.com">
+                  drchikkodicardio@gmail.com
+                </a>
+              </div>
+
+              {/* Location */}
+              <div className="flex items-start gap-3 hover:text-blue-400 transition">
+                <FaLocationDot size={26} className="mt-1 flex-shrink-0 text-blue-400" />
+                <a href="https://www.google.com/maps/place/Daddenavar+Hospital">
+                  Bagalkot Location (Daddenavar Hospital Campus)
+                </a>
+              </div>
 
             </div>
           </div>
