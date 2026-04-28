@@ -61,8 +61,8 @@ const Consultation = () => {
                 </div>
                 <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">
                   <img src={locationicon} alt='location' className='w-[6%] mt-2' />
-                  <span className='text-xl mt-2'>Daddenavar Hospital & Research Centre Campus
-Laxmi Nagar, Near Rural Police Station   Bagalkot – 587101</span>
+                  <span className='text-xl mt-2'>Daddenavar Hospital & Research Centre Campus,
+Laxmi Nagar, Near Rural Police Station,  Bagalkot – 587101</span>
                 </p>
                 <p className="text-base mt-4 flex items-center gap-4 text-cyan-500 font-semibold">
                   <img src={timeicon} alt='time' className='w-[6%] mt-2' />
@@ -78,13 +78,13 @@ Laxmi Nagar, Near Rural Police Station   Bagalkot – 587101</span>
               {/* Card 1 kannada  */}
               <div>
                 <div className="text-xl font-semibold text-black flex items-center gap-4">
-                  <img src={hospitalicon} alt='ಬಾಗಲಕೋಟೆ ಹಾರ್ಟ್ ಸೆಂಟರ್' className='w-[6%]   ' />
+                  <img src={hospitalicon} alt='ಬಾಗಲಕೋಟೆ ಹಾರ್ಟ್ ಸೆಂಟರ್,' className='w-[6%]   ' />
                   <h2 className='text-cyan-500 font-semibold text-2xl'>ಬಾಗಲಕೋಟೆ ಹಾರ್ಟ್ ಸೆಂಟರ್</h2>
                 </div>
                 <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">
                   <img src={locationicon} alt='location' className='w-[6%] mt-2' />
-                  <span className='text-xl mt-2'>ದಡ್ಡೇನವರ್ ಆಸ್ಪತ್ರೆ ಮತ್ತು ಸಂಶೋಧನಾ ಕೇಂದ್ರ ಆವರಣ
-ಲಕ್ಷ್ಮೀ ನಗರ, ಗ್ರಾಮೀಣ ಪೊಲೀಸ್ ಠಾಣೆ ಹತ್ತಿರ
+                  <span className='text-xl mt-2'>ದಡ್ಡೇನವರ್ ಆಸ್ಪತ್ರೆ ಮತ್ತು ಸಂಶೋಧನಾ ಕೇಂದ್ರ ಆವರಣ,
+ಲಕ್ಷ್ಮೀ ನಗರ, ಗ್ರಾಮೀಣ ಪೊಲೀಸ್ ಠಾಣೆ ಹತ್ತಿರ,
 ಬಾಗಲಕೋಟೆ – 587101
 </span>
                 </p>
@@ -104,7 +104,7 @@ Laxmi Nagar, Near Rural Police Station   Bagalkot – 587101</span>
                 </div>
                 <p className="text-base mt-4 flex items-start gap-4 text-cyan-500 font-semibold">
                   <img src={locationicon} alt='location' className='w-[6%] mt-2' />
-                  <span className='text-xl'>RS Patil Building, Opposite Government Hospital, Belgavi Road, Ramdurg, Belgavi, Karnataka 591123</span>
+                  <span className='text-xl'>RS Patil Building, Opposite Government Hospital, Belagavi Road, Ramdurg, Belgavi, Karnataka 591123</span>
                 </p>
                 <p className="text-base mt-4 flex items-center gap-4 text-cyan-500 font-semibold">
                   <img src={timeicon} alt='time' className='w-[6%] mt-2' />

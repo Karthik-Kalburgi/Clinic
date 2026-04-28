@@ -204,7 +204,7 @@ The pharmacy is well-stocked with emergency and cardiac medications, ensuring im
           <p className="mb-6 max-w-3xl mx-auto text-sm whitespace-pre-line">
 {`At Bagalkot Heart Centre, we are committed to making advanced cardiac care accessible and affordable.
 
-We are in the process of empanelling with various government schemes, corporate health programs, and private insurance providers.
+We use empaneled with various  schemes, corporate health programs, and private insurance providers.
 
 We aim to ensure cashless and affordable treatment options for patients undergoing cardiac procedures.`}
           </p>
